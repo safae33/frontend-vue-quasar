@@ -1,4 +1,4 @@
-export class AccountModel {
+export class Account {
   id: number;
   name: string;
   username: string;
@@ -15,3 +15,5 @@ export class AccountModel {
     this.profilePicUrl = profilePicUrl;
   }
 }
+
+export default Account;

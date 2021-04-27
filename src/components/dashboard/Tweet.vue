@@ -1,8 +1,8 @@
 <template>
   <div class="row main cursor-pointer">
-    <q-card flat class="col-12 q-pr-lg">
+    <q-card flat class="col-12">
       <q-card-section class="q-pa-none data">
-        <q-item class="q-mx-none no-border">
+        <q-item class="q-mx-none no-border q-pr-xs">
           <q-item-section avatar>
             <q-avatar>
               <img src="https://picsum.photos/seed/picsum/300/300" />
@@ -15,6 +15,9 @@
               <span class="text-weight-bold">@kullaniciadi</span>
             </q-item-label>
           </q-item-section>
+          <q-item-section top side
+            ><q-icon name="fab fa-twitter-square" color="blue" size="md"
+          /></q-item-section>
         </q-item>
       </q-card-section>
       <q-card-actions class="q-pa-none">

@@ -11,7 +11,7 @@
     <q-drawer
       v-model="drawer"
       :mini="miniState"
-      :mini-width="75"
+      :mini-width="56"
       elevated
       :width="256"
     >
@@ -30,7 +30,7 @@
             icon="menu"
             color="light-blue-1"
             aria-label="Menu"
-            @click="toggleMini"
+            @click="toggleAlwaysNotMini()"
           />
         </div>
       </div>
@@ -40,7 +40,8 @@
         :bar-style="barStyle"
         :style="menuScrollArea"
         class="scrollArea"
-        @mouseenter="miniState ? toggleMini() : pass()"
+        @mouseenter="toggleMini()"
+        @mouseleave="toggleMini()"
       >
         <Menu class="q-py-xs" />
       </q-scroll-area>
@@ -68,9 +69,10 @@ export default defineComponent({
 
   setup() {
     const drawer = ref(true);
-    const toggleButton = ref('col-2');
-    const menuScrollArea = ref('width: 256px;');
-    const miniState = ref(false);
+    const alwaysNotMini = ref(false);
+    const toggleButton = ref('');
+    const menuScrollArea = ref('width: 56px;');
+    const miniState = ref(true);
 
     const thumbStyle = reactive({
       right: '4px',
@@ -90,28 +92,39 @@ export default defineComponent({
 
     onMounted(() => {
       if ($q.platform.is.mobile) drawer.value = false;
+      if ($q.screen.name == 'md') miniState.value = true;
     });
     return {
+      alwaysNotMini,
       drawer,
       menuScrollArea,
       miniState,
       toggleButton,
       toggleMini(): void {
-        miniState.value = !miniState.value;
-        if (miniState.value) {
-          toggleButton.value = '';
-          menuScrollArea.value = 'width: 75px;';
-        } else {
-          toggleButton.value = 'col-2 q-pr-lg';
-          menuScrollArea.value = 'width: 256px;';
+        if (!alwaysNotMini.value) {
+          miniState.value = !miniState.value;
+          if (miniState.value) {
+            toggleButton.value = '';
+            menuScrollArea.value = 'width: 56px;';
+          } else {
+            toggleButton.value = 'col-2 q-pr-lg';
+            menuScrollArea.value = 'width: 256px;';
+          }
         }
       },
       pass(): void {
         return;
       },
-      toggleDrawer() {
-        console.log('123123');
-        drawer.value = true;
+      toggleAlwaysNotMini() {
+        alwaysNotMini.value = !alwaysNotMini.value;
+        miniState.value = !miniState.value;
+        if (miniState.value) {
+          toggleButton.value = '';
+          menuScrollArea.value = 'width: 56px;';
+        } else {
+          toggleButton.value = 'col-2 q-pr-lg';
+          menuScrollArea.value = 'width: 256px;';
+        }
       },
       thumbStyle,
       barStyle,

@@ -19,8 +19,7 @@
     <q-card-actions v-if="withAction" class="row q-pa-none action">
       <div class="col-6 inset-shadow-down" :class="likeComputed">
         <q-btn
-          size="md"
-          icon="mdi-heart"
+          icon="fas fa-heart"
           label="Beğen"
           class="fit text-blue-1"
           @click="like = !like"
@@ -28,10 +27,9 @@
       </div>
       <div class="col-6 inset-shadow-down" :class="retweetComputed">
         <q-btn
-          size="md"
-          icon="check"
+          icon="fas fa-retweet"
           label="Retweet"
-          class="fit text-blue-1"
+          class="fit text-blue-1 q-px-none"
           @click="retweet = !retweet"
         />
       </div>
@@ -65,6 +63,9 @@ export default defineComponent({
 .action {
   div {
     transition: background-color 500ms linear;
+  }
+  .q-btn {
+    padding: 0;
   }
 }
 .img {

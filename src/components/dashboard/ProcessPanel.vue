@@ -24,7 +24,7 @@
             v-ripple
           >
             <draggable
-              :class="'bg-' + item.color"
+              :class="item.color + '-border'"
               class="list-group"
               tag="transition-group"
               :component-data="{
@@ -47,19 +47,19 @@
                   <div
                     class="col-2 ball-border column items-center justify-between"
                   >
-                    <q-btn
+                    <q-icon
                       class="col full-width"
-                      color="transparent"
-                      icon="mdi-delete"
+                      color="blue"
+                      name="mdi-delete"
                       size="sm"
                     />
 
                     <div class="col ball handle" />
 
-                    <q-btn
+                    <q-icon
                       class="col full-width"
-                      color="transparent"
-                      icon="mdi-view-split-horizontal"
+                      color="red"
+                      name="mdi-view-split-horizontal"
                       size="sm"
                     />
                   </div>
@@ -107,7 +107,7 @@ export default defineComponent({
   components: {
     Tweet,
     Account,
-    draggable,
+    draggable: {},
   },
   setup() {
     const thumbStyle = reactive({
@@ -174,6 +174,7 @@ export default defineComponent({
 </script>
 <style lang="scss">
 .list-group {
+  min-width: 223px;
   padding-left: 0;
   border-radius: 8px;
 }
@@ -214,9 +215,8 @@ export default defineComponent({
   }
 }
 .ball {
-  width: 50%;
-  height: auto;
-  aspect-ratio: 1;
+  width: 80%;
+
   border-radius: 50%;
   background-color: $text-color;
 }

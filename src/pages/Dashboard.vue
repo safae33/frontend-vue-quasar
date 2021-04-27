@@ -27,7 +27,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref, computed } from 'vue';
+import { defineComponent, reactive, ref } from 'vue';
 import { QScrollArea } from 'quasar';
 
 import AccountCard from 'src/components/dashboard/AccountCard.vue';
