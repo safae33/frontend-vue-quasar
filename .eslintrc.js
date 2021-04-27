@@ -76,6 +76,8 @@ module.exports = {
   // add your custom rules here
   rules: {
     'prefer-promise-reject-errors': 'off',
+    // draggable import ederken garip bir hata verdiği için bunu off yaptım. ilerde aklında bulunsun.
+    "@typescript-eslint/no-unsafe-assignment": "off",
 
     // TypeScript
     quotes: ['warn', 'single', { avoidEscape: true }],
@@ -86,3 +88,9 @@ module.exports = {
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 }
+
+// module.exports = {
+//   "rules": {
+//     "@typescript-eslint/no-unsafe-assignment": "warn"
+//   }
+// }

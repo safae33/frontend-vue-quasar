@@ -44,6 +44,9 @@ import createQuasarApp from './app.js'
 
 
 
+console.info('[Quasar] Running SPA.')
+
+
 
 
 

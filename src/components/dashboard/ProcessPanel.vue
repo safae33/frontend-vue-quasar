@@ -49,16 +49,16 @@
                   >
                     <q-icon
                       class="col full-width"
-                      color="blue"
+                      color="red"
                       name="mdi-delete"
                       size="sm"
                     />
 
-                    <div class="col ball handle" />
+                    <div class="col ball handle" :class="'bg-' + item.color" />
 
                     <q-icon
                       class="col full-width"
-                      color="red"
+                      color="primary"
                       name="mdi-view-split-horizontal"
                       size="sm"
                     />
@@ -107,7 +107,7 @@ export default defineComponent({
   components: {
     Tweet,
     Account,
-    draggable: {},
+    draggable,
   },
   setup() {
     const thumbStyle = reactive({
@@ -215,8 +215,8 @@ export default defineComponent({
   }
 }
 .ball {
-  width: 80%;
-
+  width: 2em;
+  height: auto;
   border-radius: 50%;
   background-color: $text-color;
 }
