@@ -10,7 +10,7 @@
           <div
             class="col-xs-10 col-sm-10 col-md-10 col-xl-5 col-lg-5 column items-center q-my-md"
           >
-            <AccountCard />
+            <AccountCard :accountCount="accounts.length" />
           </div>
           <div
             class="col-xs-10 col-sm-10 col-md-10 col-xl-5 col-lg-5 column items-center q-my-md"
@@ -18,8 +18,8 @@
             <ProcessCard />
           </div>
         </div>
-        <div class="row justify-center items-center q-ma-xl">
-          <div class="col-12"><ProcessPanel /></div>
+        <div class="row justify-center items-center q-ma-sm">
+          <div class="col-12"><ProcessPanel :accounts="accounts" /></div>
         </div>
       </div>
     </q-scroll-area>
@@ -27,17 +27,56 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref } from 'vue';
+import { defineComponent, reactive, ref, onMounted } from 'vue';
+// import { useStore } from 'vuex';
 import { QScrollArea } from 'quasar';
 
 import AccountCard from 'src/components/dashboard/AccountCard.vue';
 import ProcessCard from 'src/components/dashboard/ProcessCard.vue';
 import ProcessPanel from 'src/components/dashboard/ProcessPanel.vue';
 
+// import mockAccJson from 'src/services/mock.json';
+// import Account from 'src/models/Account.model';
+// import TweetGroup from 'src/models/TweetGroup.model';
+
+import StoreClass from 'src/services/mockService';
+
 export default defineComponent({
   name: 'Dashboard',
   components: { AccountCard, ProcessCard, ProcessPanel },
   setup() {
+    // const store = useStore();
+    // const accounts: ComputedRef<Account[]> = computed(() => {
+    //   return store.state.general.accounts;
+    // });
+
+    // const setAc = () => {
+    //   mockAccJson.accounts.forEach((account) => {
+    //     store.commit(
+    //       'general/pushAccountItem',
+    //       Object.assign(
+    //         new Account(0, 'null', 'null', 'null', false, false),
+    //         account
+    //       )
+    //     );
+    //   });
+    // };
+    // const setTw = () => {
+    //   mockAccJson.tweets.forEach((tweetGroup) => {
+    //     store.commit(
+    //       'general/pushTweetGroup',
+    //       Object.assign(new TweetGroup(), tweetGroup)
+    //     );
+    //   });
+    // };
+    const Store = new StoreClass();
+    const accounts = Store.getAccounts;
+    onMounted(() => {
+      // setAc();
+      // setTw();
+      Store.initialize();
+    });
+
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -56,6 +95,8 @@ export default defineComponent({
     const accountsScroll = ref<QScrollArea>();
 
     return {
+      accounts,
+
       thumbStyle,
       barStyle,
       tweetSelected,

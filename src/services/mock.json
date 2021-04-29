@@ -1,0 +1,243 @@
+{
+  "accounts": [
+    {
+      "id": 0,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 1,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 2,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 3,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 4,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 5,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 6,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 7,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 8,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 9,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 10,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 11,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 12,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 13,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 14,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 15,
+      "name": "Safa",
+      "username": "@testimiz bu",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    }
+  ],
+  "tweets": [
+    {
+      "index": 0,
+      "tweets": [
+        {
+          "id": 0,
+          "tweetUrl": "sadqwe",
+          "tweetText": "Örnek bir tweet olması ihtiyacı ile yazılmıs random bir texttir.",
+          "account": {
+            "id": 0,
+            "name": "Safa",
+            "username": "@testimiz bu",
+            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+            "like": false,
+            "retweet": false
+          }
+        },
+        {
+          "id": 1,
+          "tweetUrl": "sadqwe",
+          "tweetText": "Bu bir texttir ama bir sor nasıl bi text. bunu yapmak zorunda kalmaz ayrı üzücü.",
+          "account": {
+            "id": 1,
+            "name": "Safa",
+            "username": "@testimiz bu",
+            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+            "like": false,
+            "retweet": false
+          }
+        },
+        {
+          "id": 2,
+          "tweetUrl": "sadqwe",
+          "tweetText": "Bu bir texttir.",
+          "account": {
+            "id": 2,
+            "name": "Safa",
+            "username": "@testimiz bu",
+            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+            "like": false,
+            "retweet": false
+          }
+        }
+      ],
+      "accounts": ["accounts"]
+    },
+    {
+      "index": 1,
+      "tweets": [
+        {
+          "id": 3,
+          "tweetUrl": "sadqwe",
+          "tweetText": "Bu bir texttir.",
+          "account": {
+            "id": 3,
+            "name": "Safa",
+            "username": "@testimiz bu",
+            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+            "like": false,
+            "retweet": false
+          }
+        },
+        {
+          "id": 4,
+          "tweetUrl": "sadqwe",
+          "tweetText": "Bu bir texttir.",
+          "account": {
+            "id": 4,
+            "name": "Safa",
+            "username": "@testimiz bu",
+            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+            "like": false,
+            "retweet": false
+          }
+        },
+        {
+          "id": 5,
+          "tweetUrl": "sadqwe",
+          "tweetText": "Bu bir texttir.",
+          "account": {
+            "id": 5,
+            "name": "Safa",
+            "username": "@testimiz bu",
+            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+            "like": false,
+            "retweet": false
+          }
+        }
+      ],
+      "accounts": ["accounts"]
+    },
+    {
+      "index": 2,
+      "tweets": [
+        {
+          "id": 6,
+          "tweetUrl": "sadqwe",
+          "tweetText": "Bu bir texttir.",
+          "account": {
+            "id": 7,
+            "name": "Safa",
+            "username": "@testimiz bu",
+            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+            "like": false,
+            "retweet": false
+          }
+        }
+      ],
+      "accounts": ["accounts"]
+    }
+  ]
+}

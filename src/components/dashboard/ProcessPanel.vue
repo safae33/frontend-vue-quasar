@@ -15,17 +15,17 @@
         <q-scroll-area
           :thumb-style="thumbStyle"
           :bar-style="barStyle"
-          class="fit"
+          class="fit tweet-scroll q-pl-xs q-pr-sm"
         >
           <div
-            v-for="item in items"
-            :key="item.index"
-            class="q-px-sm relative-position"
+            v-for="tweetGroup in tweets"
+            :key="tweetGroup.index"
+            class="q-pl-xs q-pr-sm relative-position"
             v-ripple
           >
             <draggable
-              :class="item.color + '-border'"
-              class="list-group"
+              :class="tweetGroup.color + '-border'"
+              class="list-group q-my-md"
               tag="transition-group"
               :component-data="{
                 tag: 'ul',
@@ -33,34 +33,39 @@
                 name: !drag ? 'flip-list' : null,
               }"
               handle=".handle"
-              v-model="item.list"
+              v-model="tweetGroup.tweets"
               v-bind="dragOptions"
               @start="drag = true"
               @end="end()"
-              item-key="index"
+              item-key="id"
             >
               <template #item="{ element }">
                 <div class="row q-ma-xs list-group-item">
                   <div class="col-10">
-                    <Tweet :name="element.name" />
+                    <Tweet :tweet="element" />
                   </div>
                   <div
                     class="col-2 ball-border column items-center justify-between"
                   >
-                    <q-icon
-                      class="col full-width"
-                      color="red"
-                      name="mdi-delete"
-                      size="sm"
+                    <q-btn
+                      class="col"
+                      icon="mdi-delete"
+                      size="md"
+                      v-ripple.stop
                     />
 
-                    <div class="col ball handle" :class="'bg-' + item.color" />
+                    <q-btn
+                      class="col handle"
+                      icon="fas fa-arrows-alt-v"
+                      size="md"
+                      v-ripple.stop
+                    />
 
-                    <q-icon
-                      class="col full-width"
-                      color="primary"
-                      name="mdi-view-split-horizontal"
-                      size="sm"
+                    <q-btn
+                      class="col"
+                      icon="mdi-view-split-horizontal"
+                      size="md"
+                      v-ripple.stop
                     />
                   </div>
                 </div>
@@ -77,21 +82,25 @@
         <q-scroll-area
           :thumb-style="thumbStyle"
           :bar-style="barStyle"
-          class="fit"
-          ref="accountsScroll"
+          class="fit account-scroll q-pl-xs q-pr-sm"
+          ref="accountsScroll "
         >
-          <div class="row">
+          <div
+            class="row q-pl-xs q-pr-sm"
+            style="margin-top: 12px; margin-bottom: 12px"
+          >
             <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 q-pa-sm column items-center"
-              v-for="i in 38"
-              :key="i"
+              class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 q-pr-sm q-py-sm column items-center"
+              v-for="account in accounts"
+              :key="account.id"
             >
-              <Account :withAction="true" />
+              <Account :accountId="account.id" />
             </div>
           </div>
         </q-scroll-area>
       </div>
     </q-card-section>
+    <q-btn color="primary" icon="check" label="OK" @click="test" />
   </q-card>
 </template>
 
@@ -102,14 +111,21 @@ import draggable from 'vuedraggable';
 
 import Tweet from 'src/components/dashboard/Tweet.vue';
 import Account from 'src/components/dashboard/Account.vue';
+
+import StoreClass from 'src/services/mockService';
+
 export default defineComponent({
   name: 'ProcessPanel',
+  props: ['accounts'],
   components: {
     Tweet,
     Account,
     draggable,
   },
   setup() {
+    const Store = new StoreClass();
+    let tweets = Store.getTweets();
+    console.log(tweets);
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -140,19 +156,28 @@ export default defineComponent({
       { name: '1', index: 1 },
       { name: '2', index: 2 },
       { name: '3', index: 3 },
-      { name: '4', index: 4 },
     ]);
     const list2 = ref([
-      { name: '5', index: 5 },
-      { name: '6', index: 6 },
-      { name: '7', index: 7 },
-      { name: '8', index: 8 },
+      { name: '4', index: 5 },
+      { name: '5', index: 6 },
     ]);
+    const list3 = ref([
+      { name: '6', index: 5 },
+      { name: '7', index: 6 },
+    ]);
+    const list4 = ref([{ name: '8', index: 5 }]);
     const items = reactive([
-      { index: 0, list: list, color: 'red' },
-      { index: 1, list: list2, color: 'green' },
+      { index: 0, list: list4, color: 'none' },
+      { index: 1, list: list, color: 'red' },
+      { index: 2, list: list2, color: 'green' },
+      { index: 3, list: list3, color: 'blue' },
     ]);
+
     return {
+      test() {
+        tweets = Store.getTweets();
+      },
+      tweets,
       end() {
         drag.value = false;
       },
@@ -179,17 +204,37 @@ export default defineComponent({
   border-radius: 8px;
 }
 .red-border {
-  border: red solid 3px;
+  border: $red-4 solid 3px;
 }
 .green-border {
-  border: green solid 3px;
+  border: $green-4 solid 3px;
+}
+.blue-border {
+  border: $blue-4 solid 3px;
 }
 .accounts {
-  background-color: $text-color;
+  background-color: $myCol;
+}
+.account-scroll {
+  border: $myCol solid 2px;
+  transition: border 200ms linear;
+}
+.account-scroll:hover {
+  border: $primary solid 2px;
+  border-radius: 10px;
 }
 .tweets {
   background-color: $myCol;
 }
+.tweet-scroll {
+  border: $myCol solid 2px;
+  transition: border 200ms linear;
+}
+.tweet-scroll:hover {
+  border: $primary solid 2px;
+  border-radius: 10px;
+}
+
 .process-panel {
   transition: box-shadow 300ms linear;
   margin-left: auto;
@@ -214,16 +259,15 @@ export default defineComponent({
     background-color: $text-color;
   }
 }
-.ball {
-  width: 2em;
-  height: auto;
-  border-radius: 50%;
-  background-color: $text-color;
-}
+
 .ball-border {
   border-right: $text-color solid 2px;
   border-bottom: $text-color solid 2px;
   border-top: $text-color solid 2px;
   border-radius: 0 8px 8px 0;
+
+  .q-icon {
+    color: $text-color;
+  }
 }
 </style>

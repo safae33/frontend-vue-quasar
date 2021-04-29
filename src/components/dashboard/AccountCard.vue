@@ -13,7 +13,7 @@
     <q-card-section
       class="q-py-none v count-text aldrich-font row justify-center items-baseline"
     >
-      38<span>/100</span><q-space />
+      {{ accountCount }}<span>/100</span><q-space />
 
       <!-- v: vertical. textlerde eğim olmaması için düzeltme. -->
     </q-card-section>
@@ -33,6 +33,9 @@
 import { defineComponent, ref } from 'vue';
 export default defineComponent({
   name: 'AccountCard',
+  props: {
+    accountCount: Number,
+  },
   setup() {
     const isHovering = ref(false);
     return { isHovering };

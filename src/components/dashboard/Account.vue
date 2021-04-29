@@ -1,17 +1,17 @@
 <template>
-  <q-card flat class="max-size">
+  <q-card class="max-size">
     <q-card-section class="q-pa-none data">
       <q-item class="q-mx-none no-border q-px-xs">
         <q-item-section avatar>
           <q-avatar>
-            <img src="https://picsum.photos/seed/picsum/300/300" />
+            <img :src="account.profilePicUrl + account.id" />
           </q-avatar>
         </q-item-section>
 
         <q-item-section>
-          <q-item-label lines="1">Hesap İsmi Buraya</q-item-label>
+          <q-item-label lines="1">{{ account.name }}</q-item-label>
           <q-item-label caption lines="1">
-            <span class="text-weight-bold">@kullaniciadi</span>
+            <span class="text-weight-bold">{{ account.username }}</span>
           </q-item-label>
         </q-item-section>
         <q-item-section top side style="padding-left:4px; !important"
@@ -19,21 +19,23 @@
         /></q-item-section>
       </q-item>
     </q-card-section>
-    <q-card-actions v-if="withAction" class="row q-pa-none action">
-      <div class="col-6 inset-shadow-down" :class="likeComputed">
+    <q-card-actions class="row q-pa-none action">
+      <div class="col-6 inset-shadow-down">
         <q-btn
+          :class="{ like: account.like, not: !account.like }"
           icon="fas fa-heart"
           label="Beğen"
-          class="fit text-blue-1"
-          @click="like = !like"
+          class="fit"
+          @click="toggleLike"
         />
       </div>
-      <div class="col-6 inset-shadow-down" :class="retweetComputed">
+      <div class="col-6 inset-shadow-down">
         <q-btn
+          :class="{ retweet: account.retweet, not: !account.retweet }"
           icon="fas fa-retweet"
           label="Retweet"
-          class="fit text-blue-1 q-px-none"
-          @click="retweet = !retweet"
+          class="fit"
+          @click="toggleRetweet"
         />
       </div>
     </q-card-actions>
@@ -41,23 +43,19 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, ref } from 'vue';
+import { defineComponent } from 'vue';
+
+import StoreClass from 'src/services/mockService';
 export default defineComponent({
   name: 'Account',
-  props: { withAction: Boolean },
-  setup() {
-    const like = ref(false);
-    const retweet = ref(false);
-    const likeComputed = computed(() => {
-      if (like.value) return 'like';
-      else return 'not';
-    });
-    const retweetComputed = computed(() => {
-      if (retweet.value) return 'retweet';
-      else return 'not';
-    });
+  props: ['accountId'],
+  setup(props) {
+    const Store = new StoreClass(props.accountId);
 
-    return { like, retweet, likeComputed, retweetComputed };
+    const account = Store.getAccountById();
+    const toggleLike = () => Store.toggleLike();
+    const toggleRetweet = () => Store.toggleRetweet();
+    return { account, toggleLike, toggleRetweet };
   },
 });
 </script>
@@ -65,9 +63,9 @@ export default defineComponent({
 <style lang="scss" scoped>
 .action {
   div {
-    transition: background-color 500ms linear;
   }
   .q-btn {
+    transition: background-color 300ms linear, color 300ms linear;
     padding: 0;
   }
 }
@@ -89,15 +87,15 @@ export default defineComponent({
   box-shadow: inset 0 0 10px #708daa;
 }
 .like {
-  // @extend .shadow;
   background-color: $like;
+  color: $myCol;
 }
 .retweet {
-  // @extend .shadow;
   background-color: $retweet;
+  color: $myCol;
 }
 .not {
-  // @extend .shadow;
-  background-color: grey;
+  background-color: whitesmoke;
+  color: $text-color;
 }
 </style>

@@ -4,11 +4,9 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    beforeEnter: (to, from) => {
-      console.log(to)
-      console.log(from)
+    beforeEnter: () => {
       // return {path:'auth'}
-      return true
+      return true;
     },
     children: [{ path: '', component: () => import('pages/Dashboard.vue') }],
   },

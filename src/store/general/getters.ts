@@ -1,11 +1,7 @@
 import { GetterTree } from 'vuex';
 import { StateInterface } from '../index';
-import { ExampleStateInterface } from './state';
+import { GeneralState } from './state';
 
-const getters: GetterTree<ExampleStateInterface, StateInterface> = {
-  someGetter (/* context */) {
-    // your code
-  }
-};
+const getters: GetterTree<GeneralState, StateInterface> = {};
 
 export default getters;

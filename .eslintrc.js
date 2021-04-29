@@ -76,9 +76,12 @@ module.exports = {
   // add your custom rules here
   rules: {
     'prefer-promise-reject-errors': 'off',
-    // draggable import ederken garip bir hata verdiği için bunu off yaptım. ilerde aklında bulunsun.
+    // draggable import ederken garip bir hata verdiği için bunu off yaptım. ilerde aklında bulunsun. vuexi çözersen alttakileri de açarsın. 3 ünü ben kapattım.
     "@typescript-eslint/no-unsafe-assignment": "off",
-
+    "@typescript-eslint/no-unsafe-return": "off",
+    
+    "@typescript-eslint/no-unsafe-member-access": "off",
+    "@typescript-eslint/no-unsafe-call": "off",
     // TypeScript
     quotes: ['warn', 'single', { avoidEscape: true }],
     '@typescript-eslint/explicit-function-return-type': 'off',

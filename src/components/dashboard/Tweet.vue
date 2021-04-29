@@ -5,14 +5,18 @@
         <q-item class="q-mx-none no-border q-pr-xs">
           <q-item-section avatar>
             <q-avatar>
-              <img src="https://picsum.photos/seed/picsum/300/300" />
+              <img
+                :src="tweet?.account.profilePicUrl + '12' + tweet?.account.id"
+              />
             </q-avatar>
           </q-item-section>
 
           <q-item-section>
-            <q-item-label lines="1">Hesap İsmi Buraya {{ name }}</q-item-label>
+            <q-item-label lines="1">{{ tweet?.account.name }}</q-item-label>
             <q-item-label caption lines="1">
-              <span class="text-weight-bold">@kullaniciadi</span>
+              <span class="text-weight-bold">{{
+                tweet?.account.username
+              }}</span>
             </q-item-label>
           </q-item-section>
           <q-item-section top side
@@ -24,9 +28,7 @@
         <q-item class="q-pa-none">
           <q-item-section class="row">
             <q-item-label lines="2" header class="q-pa-none">
-              "Bu bir örnek tweet mesajı9 ol tweet mesajı9 olmak üzer tweet
-              mesajı9 olmak üzer tweet mesajı9 olmak üzer tweet mesajı9 olmak
-              üzermak üzerdir"
+              {{ tweet?.tweetText }}
             </q-item-label>
           </q-item-section>
         </q-item>
@@ -40,12 +42,14 @@
 </template>
 
 <script lang="ts">
+import Tweet from 'src/models/Tweet.model';
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Tweet',
-  props: { name: String },
-  setup() {
-    return {};
+  props: { tweet: Tweet },
+  setup(props) {
+    const tweet = props.tweet;
+    return { tweet };
   },
 });
 </script>
