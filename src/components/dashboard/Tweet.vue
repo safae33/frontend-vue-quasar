@@ -46,9 +46,12 @@ import Tweet from 'src/models/Tweet.model';
 import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Tweet',
-  props: { tweet: Tweet },
+  // props: { tweet: Tweet },
+  props: ['tweetElem'],
   setup(props) {
-    const tweet = props.tweet;
+    const tweet = new Tweet();
+    Object.assign(tweet, props.tweetElem);
+
     return { tweet };
   },
 });

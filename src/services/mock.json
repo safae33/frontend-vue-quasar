@@ -132,9 +132,10 @@
   "tweets": [
     {
       "index": 0,
+      "color": "blue",
       "tweets": [
         {
-          "id": 0,
+          "index": 0,
           "tweetUrl": "sadqwe",
           "tweetText": "Örnek bir tweet olması ihtiyacı ile yazılmıs random bir texttir.",
           "account": {
@@ -147,7 +148,7 @@
           }
         },
         {
-          "id": 1,
+          "index": 1,
           "tweetUrl": "sadqwe",
           "tweetText": "Bu bir texttir ama bir sor nasıl bi text. bunu yapmak zorunda kalmaz ayrı üzücü.",
           "account": {
@@ -160,7 +161,7 @@
           }
         },
         {
-          "id": 2,
+          "index": 2,
           "tweetUrl": "sadqwe",
           "tweetText": "Bu bir texttir.",
           "account": {
@@ -177,9 +178,10 @@
     },
     {
       "index": 1,
+      "color": "green",
       "tweets": [
         {
-          "id": 3,
+          "index": 3,
           "tweetUrl": "sadqwe",
           "tweetText": "Bu bir texttir.",
           "account": {
@@ -192,7 +194,7 @@
           }
         },
         {
-          "id": 4,
+          "index": 4,
           "tweetUrl": "sadqwe",
           "tweetText": "Bu bir texttir.",
           "account": {
@@ -205,7 +207,7 @@
           }
         },
         {
-          "id": 5,
+          "index": 5,
           "tweetUrl": "sadqwe",
           "tweetText": "Bu bir texttir.",
           "account": {
@@ -222,9 +224,10 @@
     },
     {
       "index": 2,
+      "color": "red",
       "tweets": [
         {
-          "id": 6,
+          "index": 6,
           "tweetUrl": "sadqwe",
           "tweetText": "Bu bir texttir.",
           "account": {

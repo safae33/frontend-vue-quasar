@@ -10,7 +10,7 @@
           <div
             class="col-xs-10 col-sm-10 col-md-10 col-xl-5 col-lg-5 column items-center q-my-md"
           >
-            <AccountCard :accountCount="accounts.length" />
+            <AccountCard :accountCount="accountsLength" />
           </div>
           <div
             class="col-xs-10 col-sm-10 col-md-10 col-xl-5 col-lg-5 column items-center q-my-md"
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="row justify-center items-center q-ma-sm">
-          <div class="col-12"><ProcessPanel :accounts="accounts" /></div>
+          <div class="col-12"><ProcessPanel /></div>
         </div>
       </div>
     </q-scroll-area>
@@ -70,7 +70,7 @@ export default defineComponent({
     //   });
     // };
     const Store = new StoreClass();
-    const accounts = Store.getAccounts;
+    const accountsLength = Store.getAccountsLength;
     onMounted(() => {
       // setAc();
       // setTw();
@@ -95,8 +95,7 @@ export default defineComponent({
     const accountsScroll = ref<QScrollArea>();
 
     return {
-      accounts,
-
+      accountsLength,
       thumbStyle,
       barStyle,
       tweetSelected,

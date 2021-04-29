@@ -5,6 +5,15 @@ export class Account {
   profilePicUrl: string;
   like: boolean;
   retweet: boolean;
+
+  constructor(
+    id?: number,
+    name?: string,
+    username?: string,
+    profilePicUrl?: string,
+    like?: boolean,
+    retweet?: boolean
+  );
   constructor(
     id: number,
     name: string,

@@ -22,6 +22,7 @@
             :key="tweetGroup.index"
             class="q-pl-xs q-pr-sm relative-position"
             v-ripple
+            @click="setSelectedTweetGroup(tweetGroup.index)"
           >
             <draggable
               :class="tweetGroup.color + '-border'"
@@ -33,16 +34,16 @@
                 name: !drag ? 'flip-list' : null,
               }"
               handle=".handle"
-              v-model="tweetGroup.tweets"
+              :list="tweetGroup.tweets"
               v-bind="dragOptions"
               @start="drag = true"
               @end="end()"
-              item-key="id"
+              item-key="index"
             >
               <template #item="{ element }">
                 <div class="row q-ma-xs list-group-item">
                   <div class="col-10">
-                    <Tweet :tweet="element" />
+                    <Tweet :tweetElem="element" />
                   </div>
                   <div
                     class="col-2 ball-border column items-center justify-between"
@@ -77,13 +78,21 @@
 
       <div
         class="col-12 col-xl-8 col-lg-8 col-md-8 accounts"
-        :class="{ 'no-pointer-events': !tweetSelected }"
+        :class="{ 'no-pointer-events': !isSelected }"
       >
+        <div
+          v-if="!isSelected"
+          class="row fit items-center no-selected-text aldrich-font"
+        >
+          Önce Tweet veya Tweet Grubu seçmeniz gerekmektedir.
+        </div>
+
         <q-scroll-area
+          v-if="isSelected"
           :thumb-style="thumbStyle"
           :bar-style="barStyle"
           class="fit account-scroll q-pl-xs q-pr-sm"
-          ref="accountsScroll "
+          ref="accountsScroll"
         >
           <div
             class="row q-pl-xs q-pr-sm"
@@ -100,7 +109,6 @@
         </q-scroll-area>
       </div>
     </q-card-section>
-    <q-btn color="primary" icon="check" label="OK" @click="test" />
   </q-card>
 </template>
 
@@ -116,7 +124,6 @@ import StoreClass from 'src/services/mockService';
 
 export default defineComponent({
   name: 'ProcessPanel',
-  props: ['accounts'],
   components: {
     Tweet,
     Account,
@@ -124,8 +131,9 @@ export default defineComponent({
   },
   setup() {
     const Store = new StoreClass();
-    let tweets = Store.getTweets();
-    console.log(tweets);
+    // const tweets: Ref<TweetGroup[]> = ref([]);
+    // setTimeout(() => (tweets.value = Store.getTweetsCloned()), 500);
+    const tweets = Store.getTweets;
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -140,7 +148,7 @@ export default defineComponent({
       width: '9px',
       opacity: 0.2,
     });
-    const tweetSelected = ref(true);
+
     const accountsScroll = ref<QScrollArea>();
     const isHovering = ref(false);
     const dragOptions = computed(() => {
@@ -152,65 +160,62 @@ export default defineComponent({
       };
     });
     const drag = ref(false);
-    const list = ref([
-      { name: '1', index: 1 },
-      { name: '2', index: 2 },
-      { name: '3', index: 3 },
-    ]);
-    const list2 = ref([
-      { name: '4', index: 5 },
-      { name: '5', index: 6 },
-    ]);
-    const list3 = ref([
-      { name: '6', index: 5 },
-      { name: '7', index: 6 },
-    ]);
-    const list4 = ref([{ name: '8', index: 5 }]);
-    const items = reactive([
-      { index: 0, list: list4, color: 'none' },
-      { index: 1, list: list, color: 'red' },
-      { index: 2, list: list2, color: 'green' },
-      { index: 3, list: list3, color: 'blue' },
-    ]);
+
+    const selectedTweetGroupId = Store.getSelectedTweetGroupId;
+    const isSelected = Store.getIsSelectedTweetGroup;
+    const accounts = Store.getSelectedTweetGroupAccounts;
 
     return {
-      test() {
-        tweets = Store.getTweets();
+      isSelected,
+      accounts,
+      selectedTweetGroupId,
+      accountsScroll,
+      setSelectedTweetGroup(id: number) {
+        Store.setSelectedTweetGroupId(id);
+        accountsScroll.value?.setScrollPosition('vertical', 0, 500);
       },
       tweets,
       end() {
         drag.value = false;
       },
       drag,
-      items,
       dragOptions,
       isHovering,
       thumbStyle,
       barStyle,
-      tweetSelected,
-      accountsScroll,
-      toggleSelected() {
-        tweetSelected.value = !tweetSelected.value;
-        accountsScroll.value?.setScrollPosition('vertical', 0, 500);
-      },
+
+      // toggleSelected() {
+      //   tweetSelected.value = !tweetSelected.value;
+      //   accountsScroll.value?.setScrollPosition('vertical', 0, 500);
+      // },
     };
   },
 });
 </script>
 <style lang="scss">
+.no-selected-text {
+  text-align: center;
+  color: $text-color;
+  font-size: 48px;
+  span,
+  p {
+    font-size: 16px;
+    text-align: left;
+  }
+}
 .list-group {
   min-width: 223px;
   padding-left: 0;
   border-radius: 8px;
 }
 .red-border {
-  border: $red-4 solid 3px;
+  border: $red-2 solid 3px;
 }
 .green-border {
-  border: $green-4 solid 3px;
+  border: $green-2 solid 3px;
 }
 .blue-border {
-  border: $blue-4 solid 3px;
+  border: $blue-2 solid 3px;
 }
 .accounts {
   background-color: $myCol;

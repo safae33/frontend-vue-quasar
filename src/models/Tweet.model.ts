@@ -1,19 +1,26 @@
 import Account from './Account.model';
 export class Tweet {
-  id: number;
+  index: number;
   account: Account;
   tweetUrl: string;
   tweetText: string;
+
+  constructor(
+    account?: Account,
+    tweetText?: string,
+    tweetUrl?: string,
+    index?: number
+  );
   constructor(
     account: Account,
     tweetText: string,
     tweetUrl: string,
-    id: number
+    index: number
   ) {
     this.account = account;
     this.tweetText = tweetText;
     this.tweetUrl = tweetUrl;
-    this.id = id;
+    this.index = index;
   }
 }
 

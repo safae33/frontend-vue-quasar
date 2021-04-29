@@ -7,12 +7,16 @@ const mutation: MutationTree<GeneralState> = {
   pushAccountItem(state, account) {
     state.accounts.push(account);
   },
-  toggleAccountItemLike(state, id: number) {
-    state.accounts[id].like = !state.accounts[id].like;
+  toggleAccountLike(state, id: number) {
+    state.tweets[state.selectedTweetGroupId].accounts[id].like = !state.tweets[
+      state.selectedTweetGroupId
+    ].accounts[id].like;
   },
-  toggleAccountItemRetweet(state, id: number) {
-    state.accounts[id].retweet = !state.accounts[id].retweet;
+  toggleAccountRetweet(state, id: number) {
+    state.tweets[state.selectedTweetGroupId].accounts[id].retweet = !state
+      .tweets[state.selectedTweetGroupId].accounts[id].retweet;
   },
+
   pushTweetGroup(state, tweetGroup: TweetGroup) {
     state.tweets.push(tweetGroup);
     const clonedAccounts: Account[] = [];
@@ -23,6 +27,10 @@ const mutation: MutationTree<GeneralState> = {
   },
   setTweets(state, tweets: TweetGroup[]) {
     state.tweets = tweets;
+  },
+  setSelectedTweetGroupId(state, id) {
+    state.isSelectedTweetGroup = true;
+    state.selectedTweetGroupId = id;
   },
 };
 

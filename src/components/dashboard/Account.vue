@@ -4,14 +4,14 @@
       <q-item class="q-mx-none no-border q-px-xs">
         <q-item-section avatar>
           <q-avatar>
-            <img :src="account.profilePicUrl + account.id" />
+            <img :src="account().profilePicUrl + account().id" />
           </q-avatar>
         </q-item-section>
 
         <q-item-section>
-          <q-item-label lines="1">{{ account.name }}</q-item-label>
+          <q-item-label lines="1">{{ account().name }}</q-item-label>
           <q-item-label caption lines="1">
-            <span class="text-weight-bold">{{ account.username }}</span>
+            <span class="text-weight-bold">{{ account().username }}</span>
           </q-item-label>
         </q-item-section>
         <q-item-section top side style="padding-left:4px; !important"
@@ -22,7 +22,7 @@
     <q-card-actions class="row q-pa-none action">
       <div class="col-6 inset-shadow-down">
         <q-btn
-          :class="{ like: account.like, not: !account.like }"
+          :class="{ like: account().like, not: !account().like }"
           icon="fas fa-heart"
           label="Beğen"
           class="fit"
@@ -31,7 +31,7 @@
       </div>
       <div class="col-6 inset-shadow-down">
         <q-btn
-          :class="{ retweet: account.retweet, not: !account.retweet }"
+          :class="{ retweet: account().retweet, not: !account().retweet }"
           icon="fas fa-retweet"
           label="Retweet"
           class="fit"
@@ -46,13 +46,21 @@
 import { defineComponent } from 'vue';
 
 import StoreClass from 'src/services/mockService';
+
 export default defineComponent({
   name: 'Account',
   props: ['accountId'],
   setup(props) {
-    const Store = new StoreClass(props.accountId);
+    const Store = new StoreClass();
+    Store.setAccountId(props.accountId);
+    // const account = Store.getAccountById;
+    const tweets = Store.getTweets;
+    const selectedTweetGroupId = Store.getSelectedTweetGroupId;
+    // const account = Store.getAcc;
+    // console.log(account(2));
+    const account = () =>
+      tweets.value[selectedTweetGroupId.value].accounts[props.accountId];
 
-    const account = Store.getAccountById();
     const toggleLike = () => Store.toggleLike();
     const toggleRetweet = () => Store.toggleRetweet();
     return { account, toggleLike, toggleRetweet };
