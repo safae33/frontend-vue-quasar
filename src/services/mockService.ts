@@ -57,15 +57,6 @@ export class Store {
   //   }
   // );
 
-  tweets: ComputedRef<TweetGroup[]> = computed({
-    get() {
-      return useStore().state.general.tweets;
-    },
-    set(val) {
-      console.log('asdas');
-      useStore().commit('general/setTweets', val);
-    },
-  });
   //   getTweets: ComputedRef<TweetGroup[]> = computed(() => {
   //     return this.store.state.general.tweets;
   //   });

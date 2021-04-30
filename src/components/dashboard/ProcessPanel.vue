@@ -24,7 +24,8 @@
             v-ripple
             @click="setSelectedTweetGroup(tweetGroup.index)"
           >
-            <draggable
+            <DraggableTweets :tweetGroupIndex="tweetGroup.index" />
+            <!-- <draggable
               :class="tweetGroup.color + '-border'"
               class="list-group q-my-md"
               tag="transition-group"
@@ -71,7 +72,7 @@
                   </div>
                 </div>
               </template>
-            </draggable>
+            </draggable> -->
           </div>
         </q-scroll-area>
       </div>
@@ -113,21 +114,23 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive, computed } from 'vue';
+import { defineComponent, ref, reactive } from 'vue';
 import { QScrollArea } from 'quasar';
 import draggable from 'vuedraggable';
 
-import Tweet from 'src/components/dashboard/Tweet.vue';
+// import Tweet from 'src/components/dashboard/Tweet.vue';
 import Account from 'src/components/dashboard/Account.vue';
+import DraggableTweets from 'src/components/dashboard/DraggableTweets.vue';
 
 import StoreClass from 'src/services/mockService';
 
 export default defineComponent({
   name: 'ProcessPanel',
   components: {
-    Tweet,
+    // Tweet,
     Account,
     draggable,
+    DraggableTweets,
   },
   setup() {
     const Store = new StoreClass();
@@ -151,15 +154,15 @@ export default defineComponent({
 
     const accountsScroll = ref<QScrollArea>();
     const isHovering = ref(false);
-    const dragOptions = computed(() => {
-      return {
-        animation: 200,
-        group: 'description',
-        disabled: false,
-        ghostClass: 'ghost',
-      };
-    });
-    const drag = ref(false);
+    // const dragOptions = computed(() => {
+    //   return {
+    //     animation: 200,
+    //     group: 'description',
+    //     disabled: false,
+    //     ghostClass: 'ghost',
+    //   };
+    // });
+    // const drag = ref(false);
 
     const selectedTweetGroupId = Store.getSelectedTweetGroupId;
     const isSelected = Store.getIsSelectedTweetGroup;
@@ -175,11 +178,11 @@ export default defineComponent({
         accountsScroll.value?.setScrollPosition('vertical', 0, 500);
       },
       tweets,
-      end() {
-        drag.value = false;
-      },
-      drag,
-      dragOptions,
+      // end() {
+      //   drag.value = false;
+      // },
+      // drag,
+      // dragOptions,
       isHovering,
       thumbStyle,
       barStyle,
@@ -203,20 +206,20 @@ export default defineComponent({
     text-align: left;
   }
 }
-.list-group {
-  min-width: 223px;
-  padding-left: 0;
-  border-radius: 8px;
-}
-.red-border {
-  border: $red-2 solid 3px;
-}
-.green-border {
-  border: $green-2 solid 3px;
-}
-.blue-border {
-  border: $blue-2 solid 3px;
-}
+// .list-group {
+//   min-width: 223px;
+//   padding-left: 0;
+//   border-radius: 8px;
+// }
+// .red-border {
+//   border: $red-2 solid 3px;
+// }
+// .green-border {
+//   border: $green-2 solid 3px;
+// }
+// .blue-border {
+//   border: $blue-2 solid 3px;
+// }
 .accounts {
   background-color: $myCol;
 }

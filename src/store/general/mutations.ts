@@ -32,6 +32,9 @@ const mutation: MutationTree<GeneralState> = {
     state.isSelectedTweetGroup = true;
     state.selectedTweetGroupId = id;
   },
+  setTweetGroupTweets(state, payload) {
+    state.tweets[payload.index].tweets = payload.val;
+  },
 };
 
 export default mutation;

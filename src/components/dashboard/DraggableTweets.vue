@@ -1,6 +1,6 @@
 <template>
+  <!-- :class="tweetGroup.color + '-border'" -->
   <draggable
-    :class="tweetGroup.color + '-border'"
     class="list-group q-my-md"
     tag="transition-group"
     :component-data="{
@@ -9,7 +9,7 @@
       name: !drag ? 'flip-list' : null,
     }"
     handle=".handle"
-    :list="tweetGroup.tweets"
+    v-model="tweetGroup"
     v-bind="dragOptions"
     @start="drag = true"
     @end="end()"
@@ -43,18 +43,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, ref } from 'vue';
-import Tweet from 'src/models/Tweet.model';
+import { defineComponent, computed, ref, ComputedRef } from 'vue';
+import { useStore } from 'vuex';
+import Tweet from 'src/components/dashboard/Tweet.vue';
 import draggable from 'vuedraggable';
 import TweetGroup from 'src/models/TweetGroup.model';
+import StoreClass from 'src/services/mockService';
+import TweetM from 'src/models/Tweet.model';
 
 export default defineComponent({
   name: 'DraggableTweets',
   components: { Tweet, draggable },
   // props: { tweet: Tweet },
-  props: ['tweetGroup'],
+  props: ['tweetGroupIndex'],
   setup(props) {
-    const tweetGroup: TweetGroup = props.tweetGroup;
+    const tweetGroupIndex: number = props.tweetGroupIndex;
     const dragOptions = computed(() => {
       return {
         animation: 200,
@@ -65,6 +68,20 @@ export default defineComponent({
     });
     const drag = ref(false);
 
+    const store = new StoreClass();
+
+    const tweetGroup: ComputedRef<TweetM[]> = computed({
+      get() {
+        return store.store.state.general.tweets[tweetGroupIndex].tweets;
+      },
+      set(val) {
+        const payload = { val: val, index: tweetGroupIndex };
+        store.store.commit('general/setTweetGroupTweets', payload);
+      },
+    });
+    // const tweetGroup: ComputedRef<TweetGroup> = store.tweetGroup(
+    //   props.tweetGroupIndex
+    // );
     return {
       tweetGroup,
       drag,
