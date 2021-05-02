@@ -22,12 +22,13 @@
           <div class="col-12"><ProcessPanel /></div>
         </div>
       </div>
+      <!-- {{ test }} -->
     </q-scroll-area>
   </q-page>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref, onMounted } from 'vue';
+import { defineComponent, reactive, ref, onMounted, computed } from 'vue';
 // import { useStore } from 'vuex';
 import { QScrollArea } from 'quasar';
 
@@ -40,41 +41,28 @@ import ProcessPanel from 'src/components/dashboard/ProcessPanel.vue';
 // import TweetGroup from 'src/models/TweetGroup.model';
 
 import StoreClass from 'src/services/mockService';
+import TweetGroup from 'src/models/TweetGroup.model';
 
 export default defineComponent({
   name: 'Dashboard',
   components: { AccountCard, ProcessCard, ProcessPanel },
   setup() {
-    // const store = useStore();
-    // const accounts: ComputedRef<Account[]> = computed(() => {
-    //   return store.state.general.accounts;
-    // });
-
-    // const setAc = () => {
-    //   mockAccJson.accounts.forEach((account) => {
-    //     store.commit(
-    //       'general/pushAccountItem',
-    //       Object.assign(
-    //         new Account(0, 'null', 'null', 'null', false, false),
-    //         account
-    //       )
-    //     );
-    //   });
-    // };
-    // const setTw = () => {
-    //   mockAccJson.tweets.forEach((tweetGroup) => {
-    //     store.commit(
-    //       'general/pushTweetGroup',
-    //       Object.assign(new TweetGroup(), tweetGroup)
-    //     );
-    //   });
-    // };
     const Store = new StoreClass();
     const accountsLength = Store.getAccountsLength;
     onMounted(() => {
-      // setAc();
-      // setTw();
       Store.initialize();
+    });
+
+    const tweets = Store.getTweets;
+    const test = computed(() => {
+      const cl: TweetGroup[] = [];
+      tweets.value.forEach((tweet) => {
+        cl.push(Object.assign(new TweetGroup(), tweet));
+      });
+      cl.forEach((val) => {
+        val.accounts = [];
+      });
+      return cl;
     });
 
     const thumbStyle = reactive({
@@ -95,6 +83,11 @@ export default defineComponent({
     const accountsScroll = ref<QScrollArea>();
 
     return {
+      test,
+
+      init() {
+        Store.initialize();
+      },
       accountsLength,
       thumbStyle,
       barStyle,
@@ -113,7 +106,7 @@ export default defineComponent({
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 56px;
+  padding-top: 24px;
   padding-bottom: 56px;
 }
 .scroll-main {
@@ -125,9 +118,9 @@ export default defineComponent({
   margin: 24px;
   background-color: transparent;
   border-radius: 10px;
-  transform: skew(-5deg);
+  // transform: skew(-5deg);
 }
-.v {
-  transform: skew(5deg);
-}
+// .v {
+//   transform: skew(5deg);
+// }
 </style>

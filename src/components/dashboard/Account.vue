@@ -1,45 +1,53 @@
 <template>
-  <q-card class="max-size">
-    <q-card-section class="q-pa-none data">
-      <q-item class="q-mx-none no-border q-px-xs">
-        <q-item-section avatar>
-          <q-avatar>
-            <img :src="account().profilePicUrl + account().id" />
-          </q-avatar>
-        </q-item-section>
+  <div class="row">
+    <div
+      v-for="(item, index) in accountElem"
+      :key="index"
+      class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 q-pr-sm q-py-sm column items-center"
+    >
+      <q-card class="max-size">
+        <q-card-section class="q-pa-none data">
+          <q-item class="q-mx-none no-border q-px-xs">
+            <q-item-section avatar>
+              <q-avatar>
+                <img :src="item.profilePicUrl + item.id" />
+              </q-avatar>
+            </q-item-section>
 
-        <q-item-section>
-          <q-item-label lines="1">{{ account().name }}</q-item-label>
-          <q-item-label caption lines="1">
-            <span class="text-weight-bold">{{ account().username }}</span>
-          </q-item-label>
-        </q-item-section>
-        <q-item-section top side style="padding-left:4px; !important"
-          ><q-icon name="fab fa-twitter-square" color="blue" size="md"
-        /></q-item-section>
-      </q-item>
-    </q-card-section>
-    <q-card-actions class="row q-pa-none action">
-      <div class="col-6 inset-shadow-down">
-        <q-btn
-          :class="{ like: account().like, not: !account().like }"
-          icon="fas fa-heart"
-          label="Beğen"
-          class="fit"
-          @click="toggleLike"
-        />
-      </div>
-      <div class="col-6 inset-shadow-down">
-        <q-btn
-          :class="{ retweet: account().retweet, not: !account().retweet }"
-          icon="fas fa-retweet"
-          label="Retweet"
-          class="fit"
-          @click="toggleRetweet"
-        />
-      </div>
-    </q-card-actions>
-  </q-card>
+            <q-item-section>
+              <q-item-label lines="1">{{ item.name }}</q-item-label>
+              <q-item-label caption lines="1">
+                <span class="text-weight-bold">{{ item.username }}</span>
+              </q-item-label>
+            </q-item-section>
+            <q-item-section top side style="padding-left:4px; !important"
+              ><q-icon name="fab fa-twitter-square" color="blue" size="md"
+            /></q-item-section>
+          </q-item>
+        </q-card-section>
+        <q-card-actions class="row q-pa-none action">
+          <div class="col-6 btn-shadow">
+            <q-btn
+              :class="{ like: item.like, not: !item.like }"
+              icon="fas fa-heart"
+              label="Beğen"
+              class="fit"
+              @click="toggleLike(item.id)"
+            />
+          </div>
+          <div class="col-6 btn-shadow">
+            <q-btn
+              :class="{ retweet: item.retweet, not: !item.retweet }"
+              icon="fas fa-retweet"
+              label="Retweet"
+              class="fit"
+              @click="toggleRetweet(item.id)"
+            />
+          </div>
+        </q-card-actions>
+      </q-card>
+    </div>
+  </div>
 </template>
 
 <script lang="ts">
@@ -49,21 +57,25 @@ import StoreClass from 'src/services/mockService';
 
 export default defineComponent({
   name: 'Account',
-  props: ['accountId'],
-  setup(props) {
+  props: ['accountElem'],
+  setup() {
     const Store = new StoreClass();
-    Store.setAccountId(props.accountId);
-    // const account = Store.getAccountById;
-    const tweets = Store.getTweets;
-    const selectedTweetGroupId = Store.getSelectedTweetGroupId;
-    // const account = Store.getAcc;
-    // console.log(account(2));
-    const account = () =>
-      tweets.value[selectedTweetGroupId.value].accounts[props.accountId];
+    //ref içindeki value kullanmak gerekince arrow function ile yapmak gerekiyor.
+    // const account = (): Account =>
+    //   Object.assign(new Account(), props.accountElem);
+    // Store.setAccountId(account().id);
 
-    const toggleLike = () => Store.toggleLike();
-    const toggleRetweet = () => Store.toggleRetweet();
-    return { account, toggleLike, toggleRetweet };
+    const toggleLike = (id: number) => Store.toggleLike(id);
+    const toggleRetweet = (id: number) => Store.toggleRetweet(id);
+
+    // onMounted(() => {
+    //   document.getElementById('qvs_1')?.classList.add('row');
+    // });
+    // onUpdated(() => {
+    //   document.getElementById('qvs_1')?.classList.add('row');
+    // });
+
+    return { toggleLike, toggleRetweet };
   },
 });
 </script>
@@ -73,7 +85,7 @@ export default defineComponent({
   div {
   }
   .q-btn {
-    transition: background-color 300ms linear, color 300ms linear;
+    transition: border 300ms linear, box-shadow 300ms linear, color 300ms linear;
     padding: 0;
   }
 }
@@ -89,21 +101,25 @@ export default defineComponent({
   @extend .max-size;
   background-color: $myCol;
 }
-.shadow {
-  -moz-box-shadow: inset 0 0 10px #708daa;
-  -webkit-box-shadow: inset 0 0 10px #708daa;
-  box-shadow: inset 0 0 10px #708daa;
+
+.btn-shadow {
+  box-shadow: 0 -7px 9px -7px rgb(0 0 0 / 70%) inset !important;
 }
 .like {
-  background-color: $like;
-  color: $myCol;
+  // background-color: $like;
+  color: $like;
+  border: $like solid 1px;
+  box-shadow: 0 -7px 9px -7px $like inset !important;
 }
 .retweet {
-  background-color: $retweet;
-  color: $myCol;
+  // background-color: $retweet;
+  color: $retweet;
+  border: $retweet solid 1px;
+  box-shadow: 0 -7px 9px -7px $retweet inset !important;
 }
 .not {
-  background-color: whitesmoke;
+  background-color: white;
   color: $text-color;
+  box-shadow: 0 -7px 9px -7px $text-color inset !important;
 }
 </style>

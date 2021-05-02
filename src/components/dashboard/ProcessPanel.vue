@@ -1,9 +1,10 @@
 <template>
   <q-card
     class="process-panel mitr-font fit"
-    :class="{ 'shadow-12': isHovering }"
+    :class="{ shadow: isHovering }"
     @mouseover="isHovering = true"
     @mouseout="isHovering = false"
+    flat
   >
     <q-card-section class="col-12 row pp-header q-pa-none">
       <span class="q-pa-sm">İşlem Paneli</span>
@@ -11,132 +12,119 @@
       <div class="dot"></div>
     </q-card-section>
     <q-card-section class="row pp-body q-pa-none">
-      <div class="col-12 col-xl-4 col-lg-4 col-md-4 tweets non-selectable">
-        <q-scroll-area
-          :thumb-style="thumbStyle"
-          :bar-style="barStyle"
-          class="fit tweet-scroll q-pl-xs q-pr-sm"
-        >
-          <div
-            v-for="tweetGroup in tweets"
-            :key="tweetGroup.index"
-            class="q-pl-xs q-pr-sm relative-position"
-            v-ripple
-            @click="setSelectedTweetGroup(tweetGroup.index)"
-          >
-            <DraggableTweets :tweetGroupIndex="tweetGroup.index" />
-            <!-- <draggable
-              :class="tweetGroup.color + '-border'"
-              class="list-group q-my-md"
-              tag="transition-group"
-              :component-data="{
-                tag: 'ul',
-                type: 'transition-group',
-                name: !drag ? 'flip-list' : null,
-              }"
-              handle=".handle"
-              :list="tweetGroup.tweets"
-              v-bind="dragOptions"
-              @start="drag = true"
-              @end="end()"
-              item-key="index"
+      <div class="col-12 col-xl-4 col-lg-4 col-md-4 non-selectable">
+        <q-card class="fit" flat>
+          <q-card-section class="q-pa-none q-px-xs">
+            <q-input
+              dense
+              type="text"
+              v-model="inputUrl"
+              label="Tweet eklemek linkini giriniz."
+              @keypress="pushNewTweet"
+            />
+          </q-card-section>
+          <q-card-section class="full-width tweets-card-section q-pa-none">
+            <q-scroll-area
+              :thumb-style="thumbStyle"
+              :bar-style="barStyle"
+              class="tweet-scroll fit q-pr-sm"
             >
-              <template #item="{ element }">
-                <div class="row q-ma-xs list-group-item">
-                  <div class="col-10">
-                    <Tweet :tweetElem="element" />
-                  </div>
-                  <div
-                    class="col-2 ball-border column items-center justify-between"
-                  >
-                    <q-btn
-                      class="col"
-                      icon="mdi-delete"
-                      size="md"
-                      v-ripple.stop
-                    />
-
-                    <q-btn
-                      class="col handle"
-                      icon="fas fa-arrows-alt-v"
-                      size="md"
-                      v-ripple.stop
-                    />
-
-                    <q-btn
-                      class="col"
-                      icon="mdi-view-split-horizontal"
-                      size="md"
-                      v-ripple.stop
-                    />
-                  </div>
-                </div>
-              </template>
-            </draggable> -->
-          </div>
-        </q-scroll-area>
+              <div
+                v-for="tweetGroup in tweets"
+                :key="tweetGroup.index"
+                class="q-pr-sm q-py-xs relative-position"
+              >
+                <DraggableTweets :tweetGroupIndex="tweetGroup.index" />
+                <q-separator inset class="color-text" />
+              </div>
+            </q-scroll-area>
+          </q-card-section>
+        </q-card>
       </div>
 
-      <div
-        class="col-12 col-xl-8 col-lg-8 col-md-8 accounts"
-        :class="{ 'no-pointer-events': !isSelected }"
-      >
+      <div class="col-12 col-xl-8 col-lg-8 col-md-8 accounts">
         <div
           v-if="!isSelected"
           class="row fit items-center no-selected-text aldrich-font"
         >
           Önce Tweet veya Tweet Grubu seçmeniz gerekmektedir.
         </div>
-
-        <q-scroll-area
-          v-if="isSelected"
-          :thumb-style="thumbStyle"
-          :bar-style="barStyle"
-          class="fit account-scroll q-pl-xs q-pr-sm"
-          ref="accountsScroll"
-        >
-          <div
+        <q-card v-if="isSelected" class="fit" flat>
+          <q-card-section class="q-pa-none q-pr-xs" style="height: 40px">
+            <div class="row full-height">
+              <div class="col-1 bg-red">a</div>
+              <div class="col-3 bg-green">s</div>
+              <div class="col-4 bg-blue">d</div>
+              <div class="col-4 bg-indigo">f</div>
+            </div>
+          </q-card-section>
+          <q-card-section class="accounts-card-section full-width q-pa-none">
+            <q-scroll-area
+              :thumb-style="thumbStyle"
+              :bar-style="barStyle"
+              class="account-scroll fit q-pl-xs q-pr-sm"
+              ref="accountsScroll"
+              id="accounts-scroll-area"
+            >
+              <!-- <div
             class="row q-pl-xs q-pr-sm"
             style="margin-top: 12px; margin-bottom: 12px"
-          >
-            <div
+          > -->
+              <q-virtual-scroll
+                scroll-target="#accounts-scroll-area > .scroll"
+                :virtual-scroll-item-size="108"
+                :items="accounts"
+                id="accounts-virtual-scroll"
+              >
+                <template v-slot="{ item, index }">
+                  <Account :accountElem="item" :key="index" />
+                </template>
+              </q-virtual-scroll>
+
+              <!-- <div
               class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 q-pr-sm q-py-sm column items-center"
-              v-for="account in accounts"
+              v-for="account in accounts()"
               :key="account.id"
             >
-              <Account :accountId="account.id" />
-            </div>
-          </div>
-        </q-scroll-area>
+              <Account :accountElem="account" />
+            </div> -->
+              <!-- </div> -->
+            </q-scroll-area>
+          </q-card-section>
+        </q-card>
       </div>
     </q-card-section>
   </q-card>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive } from 'vue';
-import { QScrollArea } from 'quasar';
-import draggable from 'vuedraggable';
-
-// import Tweet from 'src/components/dashboard/Tweet.vue';
+import { defineComponent, ref, reactive, computed, watchEffect } from 'vue';
+import { useQuasar, QScrollArea } from 'quasar';
 import Account from 'src/components/dashboard/Account.vue';
 import DraggableTweets from 'src/components/dashboard/DraggableTweets.vue';
 
+import AccountModel from 'src/models/Account.model';
 import StoreClass from 'src/services/mockService';
 
 export default defineComponent({
   name: 'ProcessPanel',
   components: {
-    // Tweet,
     Account,
-    draggable,
     DraggableTweets,
   },
   setup() {
+    //ref içindeki value kullanmak gerekince arrow function ile yapmak gerekiyor.
+    const $q = useQuasar();
     const Store = new StoreClass();
-    // const tweets: Ref<TweetGroup[]> = ref([]);
-    // setTimeout(() => (tweets.value = Store.getTweetsCloned()), 500);
     const tweets = Store.getTweets;
+
+    const test = [1, 2, 3, 4, 5, 6];
+    console.log(test.splice(2, 2), 'bunlar silinenler');
+    console.log(test);
+    watchEffect(() => Store.scanForEmptyTweetGroup(tweets.value.length));
+    watchEffect(() => console.log('Tweetts: ', tweets));
+
+    const inputUrl = ref('');
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -151,24 +139,48 @@ export default defineComponent({
       width: '9px',
       opacity: 0.2,
     });
-
     const accountsScroll = ref<QScrollArea>();
     const isHovering = ref(false);
-    // const dragOptions = computed(() => {
-    //   return {
-    //     animation: 200,
-    //     group: 'description',
-    //     disabled: false,
-    //     ghostClass: 'ghost',
-    //   };
-    // });
-    // const drag = ref(false);
 
     const selectedTweetGroupId = Store.getSelectedTweetGroupId;
     const isSelected = Store.getIsSelectedTweetGroup;
-    const accounts = Store.getSelectedTweetGroupAccounts;
+
+    function slice(size: number) {
+      const accounts: [AccountModel[]] = [[]];
+      for (
+        let index = 0;
+        index < tweets.value[selectedTweetGroupId.value].accounts.length;
+        index += size
+      ) {
+        const sliced = tweets.value[selectedTweetGroupId.value].accounts.slice(
+          index,
+          index + size
+        );
+        accounts.push(sliced);
+      }
+      if (accounts[-1] == []) accounts.pop();
+      return accounts;
+    }
+    const accounts = computed(() => {
+      if (Store.getIsSelectedTweetGroup) {
+        if ($q.screen.name == 'xl' || $q.screen.name == 'lg') {
+          return slice(3);
+        } else if ($q.screen.name == 'md' || $q.screen.name == 'sm') {
+          return slice(2);
+        } else {
+          return slice(1);
+        }
+      } else return [];
+    });
+
+    console.log('panelden accounts slicedli', accounts);
 
     return {
+      inputUrl,
+      pushNewTweet() {
+        Store.pushNewTweet(inputUrl.value);
+        inputUrl.value = '';
+      },
       isSelected,
       accounts,
       selectedTweetGroupId,
@@ -178,24 +190,27 @@ export default defineComponent({
         accountsScroll.value?.setScrollPosition('vertical', 0, 500);
       },
       tweets,
-      // end() {
-      //   drag.value = false;
-      // },
-      // drag,
-      // dragOptions,
       isHovering,
       thumbStyle,
       barStyle,
-
-      // toggleSelected() {
-      //   tweetSelected.value = !tweetSelected.value;
-      //   accountsScroll.value?.setScrollPosition('vertical', 0, 500);
-      // },
     };
   },
 });
 </script>
 <style lang="scss">
+// #accounts-virtual-scroll {
+//   .q-virtual-scroll__content {
+//     display: flex;
+//     flex-wrap: wrap;
+//   }
+// }
+.color-text {
+  background: $text-color;
+}
+.shadow {
+  box-shadow: 0 7px 8px -4px rgb(0 0 0 / 20%), 0 12px 17px 2px rgb(0 0 0 / 14%),
+    0 5px 22px 4px rgb(0 0 0 / 12%);
+}
 .no-selected-text {
   text-align: center;
   color: $text-color;
@@ -206,23 +221,6 @@ export default defineComponent({
     text-align: left;
   }
 }
-// .list-group {
-//   min-width: 223px;
-//   padding-left: 0;
-//   border-radius: 8px;
-// }
-// .red-border {
-//   border: $red-2 solid 3px;
-// }
-// .green-border {
-//   border: $green-2 solid 3px;
-// }
-// .blue-border {
-//   border: $blue-2 solid 3px;
-// }
-.accounts {
-  background-color: $myCol;
-}
 .account-scroll {
   border: $myCol solid 2px;
   transition: border 200ms linear;
@@ -231,9 +229,7 @@ export default defineComponent({
   border: $primary solid 2px;
   border-radius: 10px;
 }
-.tweets {
-  background-color: $myCol;
-}
+
 .tweet-scroll {
   border: $myCol solid 2px;
   transition: border 200ms linear;
@@ -241,6 +237,14 @@ export default defineComponent({
 .tweet-scroll:hover {
   border: $primary solid 2px;
   border-radius: 10px;
+}
+
+.tweets-card-section {
+  height: 515px;
+}
+
+.accounts-card-section {
+  height: 515px;
 }
 
 .process-panel {
@@ -255,27 +259,20 @@ export default defineComponent({
     border-bottom: 5px solid $text-color;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
+    span {
+      font-size: 20px;
+    }
   }
   .pp-body {
     height: 555px;
     max-height: 855px;
+    background-color: white;
   }
   .dot {
-    height: 40px;
+    height: 51px;
     width: 36px;
     border-top-right-radius: 10px;
-    background-color: $text-color;
-  }
-}
-
-.ball-border {
-  border-right: $text-color solid 2px;
-  border-bottom: $text-color solid 2px;
-  border-top: $text-color solid 2px;
-  border-radius: 0 8px 8px 0;
-
-  .q-icon {
-    color: $text-color;
+    // background-color: $text-color;
   }
 }
 </style>

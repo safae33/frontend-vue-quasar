@@ -1,7 +1,10 @@
 <template>
-  <div class="row main cursor-pointer">
-    <q-card flat class="col-12">
-      <q-card-section class="q-pa-none data">
+  <div class="row cursor-pointer">
+    <q-card flat class="col-12 tweeet-card">
+      <q-card-section
+        class="q-pa-none"
+        :class="{ 'not-selected': !isSelected, selected: isSelected }"
+      >
         <q-item class="q-mx-none no-border q-pr-xs">
           <q-item-section avatar>
             <q-avatar>
@@ -24,7 +27,10 @@
           /></q-item-section>
         </q-item>
       </q-card-section>
-      <q-card-actions class="q-pa-none">
+      <q-card-section
+        class="q-pa-none"
+        :class="{ 'not-selected': !isSelected, selected: isSelected }"
+      >
         <q-item class="q-pa-none">
           <q-item-section class="row">
             <q-item-label lines="2" header class="q-pa-none">
@@ -32,12 +38,8 @@
             </q-item-label>
           </q-item-section>
         </q-item>
-      </q-card-actions>
+      </q-card-section>
     </q-card>
-    <!-- <div class="col-2 column justify-center items-center">
-      <div class="ball" />
-      <div class="line" />
-    </div> -->
   </div>
 </template>
 
@@ -47,7 +49,7 @@ import { defineComponent } from 'vue';
 export default defineComponent({
   name: 'Tweet',
   // props: { tweet: Tweet },
-  props: ['tweetElem'],
+  props: ['tweetElem', 'isSelected'],
   setup(props) {
     const tweet = new Tweet();
     Object.assign(tweet, props.tweetElem);
@@ -58,15 +60,15 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.ball {
-  width: 35%;
-  height: auto;
-  aspect-ratio: 1;
-  border-radius: 50%;
-  background-color: $text-color;
+.tweeet-card {
+  .q-card__section {
+    transition: background-color 300ms linear;
+  }
 }
-.main {
-  border: $text-color solid 2px;
-  border-radius: 8px 0 0 8px;
+.selected {
+  background-color: $myCol1;
+}
+.not-selected {
+  background-color: $myCol;
 }
 </style>

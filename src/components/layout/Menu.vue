@@ -62,7 +62,7 @@ export default defineComponent({
 
 <style lang="scss">
 .exact {
-  border-left: 5px solid $primary !important;
+  border-left: $text-color solid 5px !important;
   color: $primary !important;
 }
 .q-item {
@@ -70,7 +70,7 @@ export default defineComponent({
   color: $text-color;
 }
 .q-item:hover {
-  border-left: 5px solid #eff4fa;
+  border-left: $myCol solid 5px;
 }
 .q-expansion-item--expanded {
   .q-item__section {

@@ -1,7 +1,9 @@
 <template>
   <!-- :class="tweetGroup.color + '-border'" -->
+
   <draggable
-    class="list-group q-my-md"
+    :class="{ 'selected-tg': isSelected() }"
+    class="list-group q-my-sm"
     tag="transition-group"
     :component-data="{
       tag: 'ul',
@@ -17,24 +19,33 @@
   >
     <template #item="{ element }">
       <div class="row q-ma-xs list-group-item">
-        <div class="col-10">
-          <Tweet :tweetElem="element" />
+        <div class="col-10" @click="setSelectedTweetGroup">
+          <Tweet :tweetElem="element" :isSelected="isSelected()" />
         </div>
-        <div class="col-2 ball-border column items-center justify-between">
-          <q-btn class="col" icon="mdi-delete" size="md" v-ripple.stop />
-
+        <div
+          class="col-2 action-border column items-center justify-end q-py-xs q-px-xs"
+          :class="{ 'not-selected': !isSelected(), selected: isSelected() }"
+        >
           <q-btn
-            class="col handle"
-            icon="fas fa-arrows-alt-v"
+            class="col handle q-mb-xs q-py-none full-width"
+            icon="fas fa-arrows-alt"
             size="md"
-            v-ripple.stop
+            flat
+          />
+          <q-btn
+            class="col q-mb-xs q-py-none full-width"
+            icon="mdi-delete"
+            size="md"
+            flat
           />
 
           <q-btn
-            class="col"
+            :disable="tweetGroup.length == 1"
+            flat
+            class="col q-py-none full-width"
             icon="mdi-view-split-horizontal"
             size="md"
-            v-ripple.stop
+            @click="splitTweet(element.index)"
           />
         </div>
       </div>
@@ -44,20 +55,18 @@
 
 <script lang="ts">
 import { defineComponent, computed, ref, ComputedRef } from 'vue';
-import { useStore } from 'vuex';
+
 import Tweet from 'src/components/dashboard/Tweet.vue';
 import draggable from 'vuedraggable';
-import TweetGroup from 'src/models/TweetGroup.model';
+
 import StoreClass from 'src/services/mockService';
 import TweetM from 'src/models/Tweet.model';
 
 export default defineComponent({
   name: 'DraggableTweets',
   components: { Tweet, draggable },
-  // props: { tweet: Tweet },
   props: ['tweetGroupIndex'],
   setup(props) {
-    const tweetGroupIndex: number = props.tweetGroupIndex;
     const dragOptions = computed(() => {
       return {
         animation: 200,
@@ -68,26 +77,37 @@ export default defineComponent({
     });
     const drag = ref(false);
 
-    const store = new StoreClass();
+    const Store = new StoreClass();
 
     const tweetGroup: ComputedRef<TweetM[]> = computed({
       get() {
-        return store.store.state.general.tweets[tweetGroupIndex].tweets;
+        return Store.store.state.general.tweets[props.tweetGroupIndex].tweets;
       },
       set(val) {
-        const payload = { val: val, index: tweetGroupIndex };
-        store.store.commit('general/setTweetGroupTweets', payload);
+        const payload = { tweets: val, index: props.tweetGroupIndex };
+        Store.store.commit('general/setTweetGroupTweets', payload);
       },
     });
-    // const tweetGroup: ComputedRef<TweetGroup> = store.tweetGroup(
-    //   props.tweetGroupIndex
-    // );
+
+    const isSelected = (): boolean => {
+      if (Store.getIsSelectedTweetGroup)
+        return Store.getSelectedTweetGroupId.value == props.tweetGroupIndex;
+      else return false;
+    };
+
     return {
+      isSelected,
       tweetGroup,
       drag,
       dragOptions,
       end() {
         drag.value = false;
+      },
+      splitTweet(tweetIndex: number) {
+        Store.splitTweetToNewGroup(props.tweetGroupIndex, tweetIndex);
+      },
+      setSelectedTweetGroup() {
+        Store.setSelectedTweetGroupId(props.tweetGroupIndex);
       },
     };
   },
@@ -95,10 +115,32 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.selected-tg {
+  border-left: $text-color solid 5px !important;
+}
+.selected {
+  background-color: $myCol1;
+}
+.not-selected {
+  background-color: $myCol;
+}
 .list-group {
+  transition: border-left 300ms linear;
   min-width: 223px;
   padding-left: 0;
-  border-radius: 8px;
+  border-radius: 5px;
+  border-left: transparent solid 5px;
+}
+.action-border {
+  transition: background-color 300ms linear;
+  .q-btn {
+    color: $text-color;
+    background-color: white;
+  }
+}
+
+.bottom-border {
+  border-bottom: $myCol solid 2px;
 }
 .red-border {
   border: $red-2 solid 3px;

@@ -1,7 +1,8 @@
 <template>
   <q-card
+    flat
     class="account-card mitr-font fit"
-    :class="{ 'shadow-12': isHovering }"
+    :class="{ shadow: isHovering }"
     @mouseover="isHovering = true"
     @mouseout="isHovering = false"
   >
@@ -13,8 +14,8 @@
     <q-card-section
       class="q-py-none v count-text aldrich-font row justify-center items-baseline"
     >
-      {{ accountCount }}<span>/100</span><q-space />
-
+      {{ accountCount }}<span>/500</span><q-space />
+      <q-icon name="fas fa-users" class="q-pr-md" />
       <!-- v: vertical. textlerde eğim olmaması için düzeltme. -->
     </q-card-section>
     <q-card-actions class="v count-text"
@@ -43,17 +44,24 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
+.shadow {
+  box-shadow: 0 7px 8px -4px rgb(0 0 0 / 20%), 0 12px 17px 2px rgb(0 0 0 / 14%),
+    0 5px 22px 4px rgb(0 0 0 / 12%) !important;
+}
 .account-card {
   border-radius: 10px;
-  background-color: #f5f5f5;
+  background-color: white !important;
   transition: box-shadow 300ms linear;
 }
 
 .card-header {
   border-bottom: 5px solid $text-color;
+  span {
+    font-size: 20px;
+  }
 }
 .dot {
-  height: 40px;
+  height: 51px;
   width: 36px;
   background-color: $text-color;
 }

@@ -4,7 +4,7 @@ import { Tweet } from './Tweet.model';
 class TweetGroup {
   index: number;
   tweets: Tweet[] = [];
-  color = 'grey';
+
   accounts: Account[] = [];
 
   constructor(index?: number, tweet?: Tweet);

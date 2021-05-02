@@ -2,128 +2,715 @@
   "accounts": [
     {
       "id": 0,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 0numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 1,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 1numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 2,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 2numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 3,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 3numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 4,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 4numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 5,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 5numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 6,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 6numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 7,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 7numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 8,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 8numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 9,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 9numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 10,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 10numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 11,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 11numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 12,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 12numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 13,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 13numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 14,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 14numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
     },
     {
       "id": 15,
-      "name": "Safa",
-      "username": "@testimiz bu",
+      "name": "Safa 15numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 16,
+      "name": "Safa 16numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 17,
+      "name": "Safa 17numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 18,
+      "name": "Safa 18numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 19,
+      "name": "Safa 19numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 20,
+      "name": "Safa 20numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 21,
+      "name": "Safa 21numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 22,
+      "name": "Safa 22numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 23,
+      "name": "Safa 23numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 24,
+      "name": "Safa 24numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 25,
+      "name": "Safa 25numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 26,
+      "name": "Safa 26numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 27,
+      "name": "Safa 27numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 28,
+      "name": "Safa 28numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 29,
+      "name": "Safa 29numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 30,
+      "name": "Safa 30numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 31,
+      "name": "Safa 31numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 32,
+      "name": "Safa 32numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 33,
+      "name": "Safa 33numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 34,
+      "name": "Safa 34numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 35,
+      "name": "Safa 35numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 36,
+      "name": "Safa 36numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 37,
+      "name": "Safa 37numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 38,
+      "name": "Safa 38numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 39,
+      "name": "Safa 39numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 40,
+      "name": "Safa 40numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 41,
+      "name": "Safa 41numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 42,
+      "name": "Safa 42numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 43,
+      "name": "Safa 43numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 44,
+      "name": "Safa 44numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 45,
+      "name": "Safa 45numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 46,
+      "name": "Safa 46numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 47,
+      "name": "Safa 47numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 48,
+      "name": "Safa 48numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 49,
+      "name": "Safa 49numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 50,
+      "name": "Safa 50numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 51,
+      "name": "Safa 51numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 52,
+      "name": "Safa 52numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 53,
+      "name": "Safa 53numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 54,
+      "name": "Safa 54numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 55,
+      "name": "Safa 55numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 56,
+      "name": "Safa 56numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 57,
+      "name": "Safa 57numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 58,
+      "name": "Safa 58numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 59,
+      "name": "Safa 59numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 60,
+      "name": "Safa 60numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 61,
+      "name": "Safa 61numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 62,
+      "name": "Safa 62numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 63,
+      "name": "Safa 63numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 64,
+      "name": "Safa 64numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 65,
+      "name": "Safa 65numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 66,
+      "name": "Safa 66numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 67,
+      "name": "Safa 67numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 68,
+      "name": "Safa 68numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 69,
+      "name": "Safa 69numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 70,
+      "name": "Safa 70numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 71,
+      "name": "Safa 71numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 72,
+      "name": "Safa 72numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 73,
+      "name": "Safa 73numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 74,
+      "name": "Safa 74numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 75,
+      "name": "Safa 75numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 76,
+      "name": "Safa 76numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 77,
+      "name": "Safa 77numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 78,
+      "name": "Safa 78numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 79,
+      "name": "Safa 79numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 80,
+      "name": "Safa 80numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 81,
+      "name": "Safa 81numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 82,
+      "name": "Safa 82numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 83,
+      "name": "Safa 83numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 84,
+      "name": "Safa 84numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 85,
+      "name": "Safa 85numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 86,
+      "name": "Safa 86numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 87,
+      "name": "Safa 87numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 88,
+      "name": "Safa 88numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 89,
+      "name": "Safa 89numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 90,
+      "name": "Safa 90numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 91,
+      "name": "Safa 91numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 92,
+      "name": "Safa 92numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 93,
+      "name": "Safa 93numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 94,
+      "name": "Safa 94numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 95,
+      "name": "Safa 95numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 96,
+      "name": "Safa 96numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 97,
+      "name": "Safa 97numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 98,
+      "name": "Safa 98numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 99,
+      "name": "Safa 99numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+    {
+      "id": 100,
+      "name": "Safa 100numara",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "like": false,
+      "retweet": false
+    },
+
+    {
+      "id": 433,
+      "name": "Safa 433numara",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
       "like": false,
       "retweet": false
@@ -132,7 +719,7 @@
   "tweets": [
     {
       "index": 0,
-      "color": "blue",
+
       "tweets": [
         {
           "index": 0,
@@ -166,72 +753,6 @@
           "tweetText": "Bu bir texttir.",
           "account": {
             "id": 2,
-            "name": "Safa",
-            "username": "@testimiz bu",
-            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-            "like": false,
-            "retweet": false
-          }
-        }
-      ],
-      "accounts": ["accounts"]
-    },
-    {
-      "index": 1,
-      "color": "green",
-      "tweets": [
-        {
-          "index": 3,
-          "tweetUrl": "sadqwe",
-          "tweetText": "Bu bir texttir.",
-          "account": {
-            "id": 3,
-            "name": "Safa",
-            "username": "@testimiz bu",
-            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-            "like": false,
-            "retweet": false
-          }
-        },
-        {
-          "index": 4,
-          "tweetUrl": "sadqwe",
-          "tweetText": "Bu bir texttir.",
-          "account": {
-            "id": 4,
-            "name": "Safa",
-            "username": "@testimiz bu",
-            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-            "like": false,
-            "retweet": false
-          }
-        },
-        {
-          "index": 5,
-          "tweetUrl": "sadqwe",
-          "tweetText": "Bu bir texttir.",
-          "account": {
-            "id": 5,
-            "name": "Safa",
-            "username": "@testimiz bu",
-            "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-            "like": false,
-            "retweet": false
-          }
-        }
-      ],
-      "accounts": ["accounts"]
-    },
-    {
-      "index": 2,
-      "color": "red",
-      "tweets": [
-        {
-          "index": 6,
-          "tweetUrl": "sadqwe",
-          "tweetText": "Bu bir texttir.",
-          "account": {
-            "id": 7,
             "name": "Safa",
             "username": "@testimiz bu",
             "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
