@@ -1,33 +1,29 @@
+import { Action } from './Action.model';
+
 export class Account {
   id: number;
   name: string;
   username: string;
   profilePicUrl: string;
-  like: boolean;
-  retweet: boolean;
+  /**bunun boş olmama sebebi de mockdaki groupları atamak için */
+  actions: Action[] = [new Action(0), new Action(1)];
 
   constructor(
     id?: number,
     name?: string,
     username?: string,
-    profilePicUrl?: string,
-    like?: boolean,
-    retweet?: boolean
+    profilePicUrl?: string
   );
   constructor(
     id: number,
     name: string,
     username: string,
-    profilePicUrl: string,
-    like: boolean,
-    retweet: boolean
+    profilePicUrl: string
   ) {
     this.id = id;
     this.name = name;
     this.username = username;
     this.profilePicUrl = profilePicUrl;
-    this.like = like;
-    this.retweet = retweet;
   }
 }
 

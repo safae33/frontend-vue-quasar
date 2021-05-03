@@ -4,20 +4,21 @@ import Tweet from 'src/models/Tweet.model';
 import TweetGroup from 'src/models/TweetGroup.model';
 
 export interface GeneralState {
-  tweets: TweetGroup[];
+  tweetGroups: TweetGroup[];
+  tweetGroupIdSequence: number;
+  tweets: Tweet[];
   accounts: Account[];
   selectedTweetGroupId: number;
-  isSelectedTweetGroup: boolean;
-  splicedTweet: Tweet;
 }
 
 function state(): GeneralState {
   return {
-    splicedTweet: new Tweet(),
+    tweetGroups: [],
+    //2 olmasının sebebi mock.json da 2 tane tweetgroup olması. sonraki 2 idsini alacak yani
+    tweetGroupIdSequence: 2,
     tweets: [],
-    selectedTweetGroupId: 9999,
     accounts: [],
-    isSelectedTweetGroup: false,
+    selectedTweetGroupId: 999999,
   };
 }
 

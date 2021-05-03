@@ -1,16 +1,11 @@
-import Account from './Account.model';
-import { Tweet } from './Tweet.model';
-
 class TweetGroup {
-  index: number;
-  tweets: Tweet[] = [];
+  id: number;
+  tweets: number[] = [];
 
-  accounts: Account[] = [];
-
-  constructor(index?: number, tweet?: Tweet);
-  constructor(index: number, tweet: Tweet) {
-    this.index = index;
-    this.tweets.push(tweet);
+  constructor(id?: number, tweetIndex?: number);
+  constructor(id: number, tweetIndex: number) {
+    this.id = id;
+    this.tweets.push(tweetIndex);
   }
 }
 

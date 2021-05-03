@@ -9,7 +9,7 @@
           <q-item-section avatar>
             <q-avatar>
               <img
-                :src="tweet?.account.profilePicUrl + '12' + tweet?.account.id"
+                :src="tweet?.account.profilePicUrl + '1' + tweet?.tweetUrl"
               />
             </q-avatar>
           </q-item-section>
@@ -44,15 +44,18 @@
 </template>
 
 <script lang="ts">
+import { defineComponent, computed, ComputedRef } from 'vue';
+
 import Tweet from 'src/models/Tweet.model';
-import { defineComponent } from 'vue';
+import StoreClass from 'src/services/mockService';
 export default defineComponent({
   name: 'Tweet',
-  // props: { tweet: Tweet },
-  props: ['tweetElem', 'isSelected'],
+  props: ['tweetIndex', 'isSelected'],
   setup(props) {
-    const tweet = new Tweet();
-    Object.assign(tweet, props.tweetElem);
+    const Store = new StoreClass();
+    const tweet: ComputedRef<Tweet> = computed(
+      () => Store.getTweets.value[props.tweetIndex]
+    );
 
     return { tweet };
   },

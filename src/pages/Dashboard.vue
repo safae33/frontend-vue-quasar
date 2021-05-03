@@ -22,26 +22,18 @@
           <div class="col-12"><ProcessPanel /></div>
         </div>
       </div>
-      <!-- {{ test }} -->
     </q-scroll-area>
   </q-page>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, ref, onMounted, computed } from 'vue';
-// import { useStore } from 'vuex';
-import { QScrollArea } from 'quasar';
+import { defineComponent, reactive, onMounted } from 'vue';
 
 import AccountCard from 'src/components/dashboard/AccountCard.vue';
 import ProcessCard from 'src/components/dashboard/ProcessCard.vue';
 import ProcessPanel from 'src/components/dashboard/ProcessPanel.vue';
 
-// import mockAccJson from 'src/services/mock.json';
-// import Account from 'src/models/Account.model';
-// import TweetGroup from 'src/models/TweetGroup.model';
-
 import StoreClass from 'src/services/mockService';
-import TweetGroup from 'src/models/TweetGroup.model';
 
 export default defineComponent({
   name: 'Dashboard',
@@ -52,19 +44,6 @@ export default defineComponent({
     onMounted(() => {
       Store.initialize();
     });
-
-    const tweets = Store.getTweets;
-    const test = computed(() => {
-      const cl: TweetGroup[] = [];
-      tweets.value.forEach((tweet) => {
-        cl.push(Object.assign(new TweetGroup(), tweet));
-      });
-      cl.forEach((val) => {
-        val.accounts = [];
-      });
-      return cl;
-    });
-
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -79,24 +58,11 @@ export default defineComponent({
       width: '9px',
       opacity: 0.2,
     });
-    const tweetSelected = ref(true);
-    const accountsScroll = ref<QScrollArea>();
 
     return {
-      test,
-
-      init() {
-        Store.initialize();
-      },
       accountsLength,
       thumbStyle,
       barStyle,
-      tweetSelected,
-      accountsScroll,
-      toggleSelected() {
-        tweetSelected.value = !tweetSelected.value;
-        accountsScroll.value?.setScrollPosition('vertical', 0, 500);
-      },
     };
   },
 });
@@ -118,9 +84,5 @@ export default defineComponent({
   margin: 24px;
   background-color: transparent;
   border-radius: 10px;
-  // transform: skew(-5deg);
 }
-// .v {
-//   transform: skew(5deg);
-// }
 </style>

@@ -20,7 +20,6 @@
               type="text"
               v-model="inputUrl"
               label="Tweet eklemek linkini giriniz."
-              @keypress="pushNewTweet"
             />
           </q-card-section>
           <q-card-section class="full-width tweets-card-section q-pa-none">
@@ -28,13 +27,17 @@
               :thumb-style="thumbStyle"
               :bar-style="barStyle"
               class="tweet-scroll fit q-pr-sm"
+              ref="tweetsScroll"
             >
               <div
-                v-for="tweetGroup in tweets"
-                :key="tweetGroup.index"
+                v-for="tweetGroup in tweetGroups"
+                :key="tweetGroup.id"
                 class="q-pr-sm q-py-xs relative-position"
               >
-                <DraggableTweets :tweetGroupIndex="tweetGroup.index" />
+                <DraggableTweets
+                  :tweetGroupId="tweetGroup.id"
+   
+                />
                 <q-separator inset class="color-text" />
               </div>
             </q-scroll-area>
@@ -66,10 +69,6 @@
               ref="accountsScroll"
               id="accounts-scroll-area"
             >
-              <!-- <div
-            class="row q-pl-xs q-pr-sm"
-            style="margin-top: 12px; margin-bottom: 12px"
-          > -->
               <q-virtual-scroll
                 scroll-target="#accounts-scroll-area > .scroll"
                 :virtual-scroll-item-size="108"
@@ -80,15 +79,6 @@
                   <Account :accountElem="item" :key="index" />
                 </template>
               </q-virtual-scroll>
-
-              <!-- <div
-              class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 q-pr-sm q-py-sm column items-center"
-              v-for="account in accounts()"
-              :key="account.id"
-            >
-              <Account :accountElem="account" />
-            </div> -->
-              <!-- </div> -->
             </q-scroll-area>
           </q-card-section>
         </q-card>
@@ -98,8 +88,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive, computed, watchEffect } from 'vue';
-import { useQuasar, QScrollArea } from 'quasar';
+import { defineComponent, ref, reactive, computed } from 'vue';
+import { QScrollArea, useQuasar } from 'quasar';
 import Account from 'src/components/dashboard/Account.vue';
 import DraggableTweets from 'src/components/dashboard/DraggableTweets.vue';
 
@@ -114,16 +104,12 @@ export default defineComponent({
   },
   setup() {
     //ref içindeki value kullanmak gerekince arrow function ile yapmak gerekiyor.
+    // const accountsScroll = ref<QScrollArea>();
+    // accountsScroll.value?.setScrollPosition('vertical', 0, 500);
+
+    //*sabitler //////////////////////////////
     const $q = useQuasar();
     const Store = new StoreClass();
-    const tweets = Store.getTweets;
-
-    const test = [1, 2, 3, 4, 5, 6];
-    console.log(test.splice(2, 2), 'bunlar silinenler');
-    console.log(test);
-    watchEffect(() => Store.scanForEmptyTweetGroup(tweets.value.length));
-    watchEffect(() => console.log('Tweetts: ', tweets));
-
     const inputUrl = ref('');
     const thumbStyle = reactive({
       right: '4px',
@@ -139,30 +125,27 @@ export default defineComponent({
       width: '9px',
       opacity: 0.2,
     });
-    const accountsScroll = ref<QScrollArea>();
     const isHovering = ref(false);
+    //*tweets side //////////////////////////////
+    const tweetGroups = Store.getTweetGroups;
 
-    const selectedTweetGroupId = Store.getSelectedTweetGroupId;
-    const isSelected = Store.getIsSelectedTweetGroup;
+    //*accounts side //////////////////////////////
+    const isSelected = computed(
+      () => Store.getSelectedTweetGroupId.value != 999999
+    );
 
     function slice(size: number) {
+      const oldAccounts = Store.getAccounts.value;
       const accounts: [AccountModel[]] = [[]];
-      for (
-        let index = 0;
-        index < tweets.value[selectedTweetGroupId.value].accounts.length;
-        index += size
-      ) {
-        const sliced = tweets.value[selectedTweetGroupId.value].accounts.slice(
-          index,
-          index + size
-        );
+      for (let index = 0; index < oldAccounts.length; index += size) {
+        const sliced = oldAccounts.slice(index, index + size);
         accounts.push(sliced);
       }
       if (accounts[-1] == []) accounts.pop();
       return accounts;
     }
     const accounts = computed(() => {
-      if (Store.getIsSelectedTweetGroup) {
+      if (isSelected.value) {
         if ($q.screen.name == 'xl' || $q.screen.name == 'lg') {
           return slice(3);
         } else if ($q.screen.name == 'md' || $q.screen.name == 'sm') {
@@ -173,23 +156,11 @@ export default defineComponent({
       } else return [];
     });
 
-    console.log('panelden accounts slicedli', accounts);
-
     return {
-      inputUrl,
-      pushNewTweet() {
-        Store.pushNewTweet(inputUrl.value);
-        inputUrl.value = '';
-      },
-      isSelected,
       accounts,
-      selectedTweetGroupId,
-      accountsScroll,
-      setSelectedTweetGroup(id: number) {
-        Store.setSelectedTweetGroupId(id);
-        accountsScroll.value?.setScrollPosition('vertical', 0, 500);
-      },
-      tweets,
+      inputUrl,
+      isSelected,
+      tweetGroups,
       isHovering,
       thumbStyle,
       barStyle,
@@ -198,12 +169,6 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
-// #accounts-virtual-scroll {
-//   .q-virtual-scroll__content {
-//     display: flex;
-//     flex-wrap: wrap;
-//   }
-// }
 .color-text {
   background: $text-color;
 }

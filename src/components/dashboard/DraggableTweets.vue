@@ -11,20 +11,20 @@
       name: !drag ? 'flip-list' : null,
     }"
     handle=".handle"
-    v-model="tweetGroup"
+    v-model="tweets"
     v-bind="dragOptions"
     @start="drag = true"
     @end="end()"
-    item-key="index"
+    item-key="valueOf"
   >
     <template #item="{ element }">
       <div class="row q-ma-xs list-group-item">
-        <div class="col-10" @click="setSelectedTweetGroup">
-          <Tweet :tweetElem="element" :isSelected="isSelected()" />
+        <!-- <div class="col-10" @click="setSelectedTweetGroup"> -->
+        <div class="col-10">
+          <Tweet :tweetIndex="element" :isSelected="isSelected()" />
         </div>
         <div
           class="col-2 action-border column items-center justify-end q-py-xs q-px-xs"
-          :class="{ 'not-selected': !isSelected(), selected: isSelected() }"
         >
           <q-btn
             class="col handle q-mb-xs q-py-none full-width"
@@ -37,15 +37,16 @@
             icon="mdi-delete"
             size="md"
             flat
+            @click="removeTweetIndex(element)"
           />
 
           <q-btn
-            :disable="tweetGroup.length == 1"
+            :disable="tweets.length == 1"
             flat
             class="col q-py-none full-width"
             icon="mdi-view-split-horizontal"
             size="md"
-            @click="splitTweet(element.index)"
+            @click="splitTweet(element)"
           />
         </div>
       </div>
@@ -60,13 +61,16 @@ import Tweet from 'src/components/dashboard/Tweet.vue';
 import draggable from 'vuedraggable';
 
 import StoreClass from 'src/services/mockService';
-import TweetM from 'src/models/Tweet.model';
+
+import TweetGroup from 'src/models/TweetGroup.model';
 
 export default defineComponent({
   name: 'DraggableTweets',
   components: { Tweet, draggable },
-  props: ['tweetGroupIndex'],
+  props: ['tweetGroupId'],
   setup(props) {
+    //*sabitler //////////////////////////////
+    const Store = new StoreClass();
     const dragOptions = computed(() => {
       return {
         animation: 200,
@@ -77,37 +81,38 @@ export default defineComponent({
     });
     const drag = ref(false);
 
-    const Store = new StoreClass();
-
-    const tweetGroup: ComputedRef<TweetM[]> = computed({
+    const tweets: ComputedRef<number[]> = computed({
       get() {
-        return Store.store.state.general.tweets[props.tweetGroupIndex].tweets;
+        return Store.store.state.general.tweetGroups.filter(
+          (tweetGroup: TweetGroup) => tweetGroup.id == props.tweetGroupId
+        )[0].tweets;
       },
       set(val) {
-        const payload = { tweets: val, index: props.tweetGroupIndex };
+        const payload = { tweets: val, id: props.tweetGroupId };
         Store.store.commit('general/setTweetGroupTweets', payload);
       },
     });
-
     const isSelected = (): boolean => {
-      if (Store.getIsSelectedTweetGroup)
-        return Store.getSelectedTweetGroupId.value == props.tweetGroupIndex;
-      else return false;
+      return Store.getSelectedTweetGroupId.value == props.tweetGroupId;
     };
 
     return {
+      tweets,
       isSelected,
-      tweetGroup,
       drag,
       dragOptions,
       end() {
         drag.value = false;
+        Store.scanForEmptyTweetGroup();
+      },
+      removeTweetIndex(tweetIndex: number) {
+        Store.removeTweetIndexFromTweetGroup(props.tweetGroupId, tweetIndex);
       },
       splitTweet(tweetIndex: number) {
-        Store.splitTweetToNewGroup(props.tweetGroupIndex, tweetIndex);
+        Store.splitTweetToNewGroup(props.tweetGroupId, tweetIndex);
       },
       setSelectedTweetGroup() {
-        Store.setSelectedTweetGroupId(props.tweetGroupIndex);
+        Store.setSelectedTweetGroupId(props.tweetGroupId);
       },
     };
   },
