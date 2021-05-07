@@ -27,6 +27,18 @@ import '@quasar/extras/material-icons/material-icons.css'
 
 
 
+import '@quasar/extras/animate/slideInDown.css'
+
+import '@quasar/extras/animate/slideOutUp.css'
+
+import '@quasar/extras/animate/fadeIn.css'
+
+import '@quasar/extras/animate/fadeOut.css'
+
+import '@quasar/extras/animate/bounceIn.css'
+
+import '@quasar/extras/animate/bounceOut.css'
+
 
 // We load Quasar stylesheet file
 import 'quasar/dist/quasar.sass'
@@ -50,7 +62,7 @@ console.info('[Quasar] Running SPA.')
 
 
 
-const publicPath = `/`
+const publicPath = ``
 
 
 async function start ({ app, router, store, storeKey }, bootFiles) {
@@ -119,7 +131,9 @@ createQuasarApp(createApp)
       
       import(/* webpackMode: "eager" */ 'boot/i18n'),
       
-      import(/* webpackMode: "eager" */ 'boot/axios')
+      import(/* webpackMode: "eager" */ 'boot/axios'),
+      
+      import(/* webpackMode: "eager" */ 'boot/notifyTypes')
       
     ]).then(bootFiles => {
       const boot = bootFiles

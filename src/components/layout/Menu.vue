@@ -1,5 +1,5 @@
 <template>
-  <q-list>
+  <q-list class="menu">
     <div v-for="root in this.menu" :key="root.label">
       <q-item
         v-if="!root.expansion"
@@ -28,6 +28,7 @@
         :icon="root.icon"
         :label="root.label"
         dense-toggle
+        exact-active-class="exact"
       >
         <q-item
           v-for="item in root.items"
@@ -65,16 +66,22 @@ export default defineComponent({
   border-left: $text-color solid 5px !important;
   color: $primary !important;
 }
-.q-item {
-  border-left: 5px solid transparent;
-  color: $text-color;
-}
-.q-item:hover {
-  border-left: $myCol solid 5px;
-}
-.q-expansion-item--expanded {
-  .q-item__section {
-    color: #8db8e2 !important;
+.menu {
+  .q-item {
+    border-left: 5px solid transparent;
+    color: $text-color;
+  }
+  .q-item:hover {
+    border-left: $myCol solid 5px;
+  }
+  .q-expansion-item--expanded {
+    div.q-item {
+      border-left: rgba(81, 167, 247, 0.445) solid 5px !important;
+    }
+
+    .q-item__section {
+      color: $twitter-blue !important;
+    }
   }
 }
 </style>

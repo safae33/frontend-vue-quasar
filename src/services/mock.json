@@ -3,206 +3,433 @@
     {
       "id": 0,
       "name": "Safa 0numara",
-      "usernname": "@Safa 0.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 0.kullan\u0131c\u0131",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processes": [
+        {
+          "id": 0,
+          "type": 0,
+          "createDate": "20.04.2021:15.10",
+          "targetDate": "20.04.2021:15.10",
+          "status": 0,
+          "statusText": "İşlem başarıyla tamamlandı",
+          "targetTweet": {
+            "account": {
+              "id": 0,
+              "name": "Safa 0numara",
+              "username": "@Safa 0.kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": "0",
+            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
+          }
+        },
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "20.04.2021:15.10",
+          "targetDate": "20.04.2021:15.10",
+          "status": 0,
+          "statusText": "İşlem başarıyla tamamlandı",
+          "targetTweet": {
+            "account": {
+              "id": 0,
+              "name": "Safa 0numara",
+              "username": "@Safa 0.kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": "0",
+            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "20.04.2021:15.10",
+          "targetDate": "20.04.2021:15.10",
+          "status": 2,
+          "statusText": "İşlem zamanı bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 0,
+              "name": "Safa 0numara",
+              "username": "@Safa 0.kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": "0",
+            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "20.04.2021:15.10",
+          "targetDate": "20.04.2021:15.10",
+          "status": 1,
+          "statusText": "İşlem başarısız oldu. İşlem tarihinde tweet silinmişti.",
+          "targetTweet": {
+            "account": {
+              "id": 0,
+              "name": "Safa 0numara",
+              "username": "@Safa 0.kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": "0",
+            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "20.04.2021:15.10",
+          "targetDate": "20.04.2021:15.10",
+          "status": 0,
+          "statusText": "İşlem başarıyla tamamlandı",
+          "targetTweet": {
+            "account": {
+              "id": 0,
+              "name": "Safa 0numara",
+              "username": "@Safa 0.kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": "0",
+            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "20.04.2021:15.10",
+          "targetDate": "20.04.2021:15.10",
+          "status": 1,
+          "statusText": "İşlem başarısız oldu. Kullanıcıya erişilemedi. Lütfen yeniden hesabı aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 0,
+              "name": "Safa 0numara",
+              "username": "@Safa 0.kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": "0",
+            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "20.04.2021:15.10",
+          "targetDate": "20.04.2021:15.10",
+          "status": 2,
+          "statusText": "İşlem zamanı bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 0,
+              "name": "Safa 0numara",
+              "username": "@Safa 0.kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": "0",
+            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
+          }
+        }
+      ]
     },
     {
       "id": 1,
       "name": "Safa 1numara",
-      "usernname": "@Safa 1.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 1.kullan\u0131c\u0131",
+      "createDate": "105.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 1s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 2,
       "name": "Safa 2numara",
-      "usernname": "@Safa 2.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 2.kullan\u0131c\u0131",
+      "createDate": "205.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 2s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 3,
       "name": "Safa 3numara",
-      "usernname": "@Safa 3.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 3.kullan\u0131c\u0131",
+      "createDate": "305.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 3s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 4,
       "name": "Safa 4numara",
-      "usernname": "@Safa 4.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 4.kullan\u0131c\u0131",
+      "createDate": "405.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 4s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 5,
       "name": "Safa 5numara",
-      "usernname": "@Safa 5.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 5.kullan\u0131c\u0131",
+      "createDate": "505.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 5s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 6,
       "name": "Safa 6numara",
-      "usernname": "@Safa 6.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 6.kullan\u0131c\u0131",
+      "createDate": "605.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 6s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 7,
       "name": "Safa 7numara",
-      "usernname": "@Safa 7.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 7.kullan\u0131c\u0131",
+      "createDate": "705.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 7s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 8,
       "name": "Safa 8numara",
-      "usernname": "@Safa 8.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 8.kullan\u0131c\u0131",
+      "createDate": "805.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 8s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 9,
       "name": "Safa 9numara",
-      "usernname": "@Safa 9.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 9.kullan\u0131c\u0131",
+      "createDate": "905.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 9s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 10,
       "name": "Safa 10numara",
-      "usernname": "@Safa 10.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 10.kullan\u0131c\u0131",
+      "createDate": "1005.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 10s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 11,
       "name": "Safa 11numara",
-      "usernname": "@Safa 11.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 11.kullan\u0131c\u0131",
+      "createDate": "1105.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 11s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 12,
       "name": "Safa 12numara",
-      "usernname": "@Safa 12.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 12.kullan\u0131c\u0131",
+      "createDate": "1205.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 12s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 13,
       "name": "Safa 13numara",
-      "usernname": "@Safa 13.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 13.kullan\u0131c\u0131",
+      "createDate": "1305.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 13s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 14,
       "name": "Safa 14numara",
-      "usernname": "@Safa 14.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 14.kullan\u0131c\u0131",
+      "createDate": "1405.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 14s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 15,
       "name": "Safa 15numara",
-      "usernname": "@Safa 15.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 15.kullan\u0131c\u0131",
+      "createDate": "1505.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 15s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 16,
       "name": "Safa 16numara",
-      "usernname": "@Safa 16.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 16.kullan\u0131c\u0131",
+      "createDate": "1605.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 16s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 17,
       "name": "Safa 17numara",
-      "usernname": "@Safa 17.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 17.kullan\u0131c\u0131",
+      "createDate": "1705.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 17s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 18,
       "name": "Safa 18numara",
-      "usernname": "@Safa 18.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 18.kullan\u0131c\u0131",
+      "createDate": "1805.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 18s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 19,
       "name": "Safa 19numara",
-      "usernname": "@Safa 19.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 19.kullan\u0131c\u0131",
+      "createDate": "1905.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 19s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 20,
       "name": "Safa 20numara",
-      "usernname": "@Safa 20.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 20.kullan\u0131c\u0131",
+      "createDate": "2005.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 20s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 21,
       "name": "Safa 21numara",
-      "usernname": "@Safa 21.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 21.kullan\u0131c\u0131",
+      "createDate": "2105.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 21s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 22,
       "name": "Safa 22numara",
-      "usernname": "@Safa 22.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 22.kullan\u0131c\u0131",
+      "createDate": "2205.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 22s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 23,
       "name": "Safa 23numara",
-      "usernname": "@Safa 23.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 23.kullan\u0131c\u0131",
+      "createDate": "2305.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 23s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 24,
       "name": "Safa 24numara",
-      "usernname": "@Safa 24.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 24.kullan\u0131c\u0131",
+      "createDate": "2405.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 24s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 25,
       "name": "Safa 25numara",
-      "usernname": "@Safa 25.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 25.kullan\u0131c\u0131",
+      "createDate": "2505.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 25s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 26,
       "name": "Safa 26numara",
-      "usernname": "@Safa 26.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 26.kullan\u0131c\u0131",
+      "createDate": "2605.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 26s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 27,
       "name": "Safa 27numara",
-      "usernname": "@Safa 27.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 27.kullan\u0131c\u0131",
+      "createDate": "2705.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 27s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 28,
       "name": "Safa 28numara",
-      "usernname": "@Safa 28.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 28.kullan\u0131c\u0131",
+      "createDate": "2805.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 28s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 29,
       "name": "Safa 29numara",
-      "usernname": "@Safa 29.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 29.kullan\u0131c\u0131",
+      "createDate": "2905.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 29s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 30,
       "name": "Safa 30numara",
-      "usernname": "@Safa 30.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 30.kullan\u0131c\u0131",
+      "createDate": "005.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 30s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 31,
       "name": "Safa 31numara",
-      "usernname": "@Safa 31.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 31.kullan\u0131c\u0131",
+      "createDate": "105.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 31s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 32,
       "name": "Safa 32numara",
-      "usernname": "@Safa 32.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 32.kullan\u0131c\u0131",
+      "createDate": "205.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 32s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     },
     {
       "id": 33,
       "name": "Safa 33numara",
-      "usernname": "@Safa 33.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+      "username": "@Safa 33.kullan\u0131c\u0131",
+      "createDate": "305.2021",
+      "comments": "Bu bir test hesab\u0131d\u0131r. 33s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
+      "processed": []
     }
   ],
   "tweetGroups": [
@@ -271,5 +498,14 @@
         "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
       }
     }
-  ]
+  ],
+  "mockNewTweet": {
+    "tweetUrl": "9999999",
+    "tweetText": "Bu yeni eklenmiş bir tweetin textidir. herkes akıllı olacak ",
+    "account": {
+      "name": "Safa tabii",
+      "username": "@yeni eklenen test bu be",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+    }
+  }
 }

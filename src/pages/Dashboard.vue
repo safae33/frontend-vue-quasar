@@ -1,33 +1,25 @@
 <template>
   <q-page>
-    <q-scroll-area
-      :thumb-style="thumbStyle"
-      :bar-style="barStyle"
-      class="scroll-main"
-    >
-      <div class="page">
-        <div class="row justify-around items-center toparea">
-          <div
-            class="col-xs-10 col-sm-10 col-md-10 col-xl-5 col-lg-5 column items-center q-my-md"
-          >
-            <AccountCard :accountCount="accountsLength" />
-          </div>
-          <div
-            class="col-xs-10 col-sm-10 col-md-10 col-xl-5 col-lg-5 column items-center q-my-md"
-          >
-            <ProcessCard />
-          </div>
-        </div>
-        <div class="row justify-center items-center q-ma-sm">
-          <div class="col-12"><ProcessPanel /></div>
-        </div>
+    <div class="row justify-around items-center toparea">
+      <div
+        class="col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5 column items-center q-mb-md"
+      >
+        <AccountCard :accountCount="accountsLength" />
       </div>
-    </q-scroll-area>
+      <div
+        class="col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5 column items-center q-mb-md"
+      >
+        <ProcessCard />
+      </div>
+    </div>
+    <div class="row justify-center items-center q-ma-sm">
+      <div class="col-12"><ProcessPanel /></div>
+    </div>
   </q-page>
 </template>
 
 <script lang="ts">
-import { defineComponent, reactive, onMounted } from 'vue';
+import { defineComponent, reactive } from 'vue';
 
 import AccountCard from 'src/components/dashboard/AccountCard.vue';
 import ProcessCard from 'src/components/dashboard/ProcessCard.vue';
@@ -41,9 +33,9 @@ export default defineComponent({
   setup() {
     const Store = new StoreClass();
     const accountsLength = Store.getAccountsLength;
-    onMounted(() => {
-      Store.initialize();
-    });
+    // onMounted(() => {
+    //   Store.initialize();
+    // });
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -67,21 +59,8 @@ export default defineComponent({
   },
 });
 </script>
-<style lang="scss">
-.page {
-  max-width: 1280px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 24px;
-  padding-bottom: 56px;
-}
-.scroll-main {
-  height: 100vh;
-  width: auto;
-}
-
+<style lang="scss" scoped>
 .toparea {
-  margin: 24px;
   background-color: transparent;
   border-radius: 10px;
 }

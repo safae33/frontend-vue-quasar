@@ -2,7 +2,7 @@
   <!-- :class="tweetGroup.color + '-border'" -->
 
   <draggable
-    :class="{ 'selected-tg': isSelected() }"
+    :class="{ 'selected-tg': isSelected(), newAdded: newAdded }"
     class="list-group q-my-sm"
     tag="transition-group"
     :component-data="{
@@ -18,10 +18,12 @@
     item-key="valueOf"
   >
     <template #item="{ element }">
-      <div class="row q-ma-xs list-group-item">
-        <!-- <div class="col-10" @click="setSelectedTweetGroup"> -->
-        <div class="col-10">
-          <Tweet :tweetIndex="element" :isSelected="isSelected()" />
+      <div
+        class="row q-ma-xs list-group-item"
+        :class="{ 'not-selected': !isSelected(), selected: isSelected() }"
+      >
+        <div class="col-10" @click="setSelectedTweetGroup">
+          <Tweet :tweetIndex="element" :isRipple="true" />
         </div>
         <div
           class="col-2 action-border column items-center justify-end q-py-xs q-px-xs"
@@ -34,8 +36,9 @@
           />
           <q-btn
             class="col q-mb-xs q-py-none full-width"
-            icon="mdi-delete"
+            icon="fas fa-trash"
             size="md"
+            text-color="negative"
             flat
             @click="removeTweetIndex(element)"
           />
@@ -55,7 +58,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed, ref, ComputedRef } from 'vue';
+import { defineComponent, computed, ref, ComputedRef, onMounted } from 'vue';
 
 import Tweet from 'src/components/dashboard/Tweet.vue';
 import draggable from 'vuedraggable';
@@ -71,6 +74,7 @@ export default defineComponent({
   setup(props) {
     //*sabitler //////////////////////////////
     const Store = new StoreClass();
+
     const dragOptions = computed(() => {
       return {
         animation: 200,
@@ -80,6 +84,7 @@ export default defineComponent({
       };
     });
     const drag = ref(false);
+    const newAdded = ref(true);
 
     const tweets: ComputedRef<number[]> = computed({
       get() {
@@ -96,14 +101,20 @@ export default defineComponent({
       return Store.getSelectedTweetGroupId.value == props.tweetGroupId;
     };
 
+    onMounted(() => {
+      setTimeout(() => {
+        newAdded.value = false;
+      }, 1200);
+    });
+
     return {
+      newAdded,
       tweets,
       isSelected,
       drag,
       dragOptions,
       end() {
         drag.value = false;
-        Store.scanForEmptyTweetGroup();
       },
       removeTweetIndex(tweetIndex: number) {
         Store.removeTweetIndexFromTweetGroup(props.tweetGroupId, tweetIndex);
@@ -120,6 +131,27 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.newAdded {
+  box-shadow: 0 0 0 0 rgba(4, 61, 117, 0);
+  border-radius: 10px;
+  animation: pulse 0.8s infinite;
+}
+@keyframes pulse {
+  0% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(4, 61, 117, 0.7);
+  }
+
+  50% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(4, 61, 117, 0.3);
+  }
+
+  100% {
+    transform: scale(0.9);
+    box-shadow: 0 0 0 0 rgba(4, 61, 117, 0);
+  }
+}
 .selected-tg {
   border-left: $text-color solid 5px !important;
 }

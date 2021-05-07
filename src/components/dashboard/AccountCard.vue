@@ -25,6 +25,7 @@
         icon="mdi-format-list-bulleted-square"
         flat
         label="Hesaplara git"
+        to="/accounts"
       />
     </q-card-actions>
   </q-card>

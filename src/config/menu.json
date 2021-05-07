@@ -1,165 +1,31 @@
 {
-    "menu": [
-        {
-            "expansion": false,
-            "label": "Örnek Sayfa",
-            "icon": "mdi-package-variant",
-            "iconColor": "text-color",
-            "iconTextColor": "text-color",
-            "to": "/",
-            "items": []
-        },
-        {
-            "expansion": false,
-            "label": "Öpörnek Bir Sayfa",
-            "icon": "mdi-package-variant",
-            "iconColor": "text-color",
-            "iconTextColor": "text-color",
-            "to": "/user/test",
-            "items": []
-        },
-        {
-            "expansion": true,
-            "label": "Firmalar",
-            "icon": "mdi-home",
-            "default": true,
-            "items": [
-                {
-                    "label": "Tüm Firmalar",
-                    "to": "/",
-                    "icon": "mdi-home-group",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Şaşırtıcılar",
-                    "to": "/user/a",
-                    "icon": "mdi-home-group",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                }
-            ]
-        },
-        {
-            "expansion": true,
-            "label": "Örnek Açılan Menü",
-            "icon": "mdi-home",
-            "default": false,
-            "items": [
-                {
-                    "label": "Tüm Ayarlar",
-                    "to": "/user",
-                    "icon": "mdi-home-group",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Kalanlar",
-                    "to": "/user/a",
-                    "icon": "mdi-person",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                }
-            ]
-        },
-        {
-            "expansion": true,
-            "label": "Örnek Açılan Menü Daha",
-            "icon": "mdi-home",
-            "default": false,
-            "items": [
-                {
-                    "label": "Tüm Ayarlar",
-                    "to": "/user",
-                    "icon": "mdi-home-group",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar1",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar2",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar3",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar4",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar5",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar6",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar7",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar8",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar9",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Azalanlar12",
-                    "to": "/user/a",
-                    "icon": "mdi-home",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                },
-                {
-                    "label": "Tüm Kalanlar13",
-                    "to": "/user/a",
-                    "icon": "mdi-person",
-                    "iconColor": "blue-10",
-                    "iconTextColor": "white"
-                }
-            ]
-        }
-    ]
+  "menu": [
+    {
+      "expansion": false,
+      "label": "Giriş",
+      "icon": "fas fa-home",
+      "iconColor": "text-color",
+      "iconTextColor": "text-color",
+      "to": "/",
+      "items": []
+    },
+    {
+      "expansion": false,
+      "label": "İşlem Geçmişi",
+      "icon": "far fa-check-circle",
+      "iconColor": "text-color",
+      "iconTextColor": "text-color",
+      "to": "/1",
+      "items": []
+    },
+    {
+      "expansion": false,
+      "label": "Hesaplar",
+      "icon": "fas fa-users-cog",
+      "iconColor": "text-color",
+      "iconTextColor": "text-color",
+      "to": "/accounts",
+      "items": []
+    }
+  ]
 }

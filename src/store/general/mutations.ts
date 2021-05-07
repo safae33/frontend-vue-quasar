@@ -1,3 +1,4 @@
+import Action from 'src/models/Action.model';
 import TweetGroup from 'src/models/TweetGroup.model';
 import { MutationTree } from 'vuex';
 import { GeneralState } from './state';
@@ -19,74 +20,87 @@ const mutation: MutationTree<GeneralState> = {
     });
     state.tweetGroups.splice(target, 1);
   },
+  removeActionForDeletedTweetGroup(state, tgId) {
+    state.accounts.forEach((account) => {
+      account.actions.splice(
+        account.actions.findIndex((action) => action.tweetGroupId == tgId),
+        1
+      );
+    });
+  },
 
   createNewTweetGroup(state, tweetIndex?: number) {
-    state.tweetGroups.push(
-      new TweetGroup(state.tweetGroupIdSequence++, tweetIndex)
-    );
+    if (tweetIndex != undefined)
+      state.tweetGroups.push(
+        new TweetGroup(state.tweetGroupIdSequence++, tweetIndex)
+      );
+    else
+      state.tweetGroups.push(
+        new TweetGroup(state.tweetGroupIdSequence++, state.tweets.length - 1)
+      );
+  },
+
+  addActionForRecentAddedTweetGroup(state) {
+    state.accounts.forEach((account) => {
+      account.actions.push(new Action(state.tweetGroupIdSequence - 1));
+    });
   },
 
   removeTweetIndexFromTweetGroup(state, payload) {
     const tg = state.tweetGroups.filter(
       (tg) => tg.id == payload.tweetGroupId
     )[0];
+
     tg.tweets.splice(tg.tweets.indexOf(payload.tweetIndex), 1);
   },
+  //utilrow //////////////////////
+  resetAllActions(state) {
+    state.accounts.forEach((account) => {
+      const action = account.actions.filter(
+        (action) => action.tweetGroupId == state.selectedTweetGroupId
+      )[0];
+      action.like = false;
+      action.retweet = false;
+    });
+  },
 
-  //   pushAccountItem(state, account) {
-  //     state.accounts.push(account);
-  //   },
-  //   toggleAccountLike(state, id: number) {
-  //     state.tweets[state.selectedTweetGroupId].accounts[id].like = !state.tweets[
-  //       state.selectedTweetGroupId
-  //     ].accounts[id].like;
-  //   },
-  //   toggleAccountRetweet(state, id: number) {
-  //     state.tweets[state.selectedTweetGroupId].accounts[id].retweet = !state
-  //       .tweets[state.selectedTweetGroupId].accounts[id].retweet;
-  //   },
+  likeAllActions(state) {
+    state.accounts.forEach((account) => {
+      const action = account.actions.filter(
+        (action) => action.tweetGroupId == state.selectedTweetGroupId
+      )[0];
+      action.like = true;
+    });
+  },
+  retweetAllActions(state) {
+    state.accounts.forEach((account) => {
+      const action = account.actions.filter(
+        (action) => action.tweetGroupId == state.selectedTweetGroupId
+      )[0];
+      action.retweet = true;
+    });
+  },
 
-  //   pushTweetGroup(state, tweetGroup: TweetGroup) {
-  //     state.tweets.push(tweetGroup);
-  //     const clonedAccounts: Account[] = [];
-  //     state.accounts.forEach((val) =>
-  //       clonedAccounts.push(Object.assign(new Account(), val))
-  //     );
-  //     state.tweets[tweetGroup.index].accounts = clonedAccounts;
-  //   },
+  //allAccounts
+  setSelectedAccountId(state, id: number) {
+    state.selectedAccountId = id;
+  },
+  delSelectedAccounts(state) {
+    state.accounts = state.accounts.filter(
+      (account) => !state.delSelectedAccountIdArr.includes(account.id)
+    );
+  },
+  setDelSelectedAccountIdArr(state, val: number[]) {
+    state.delSelectedAccountIdArr = val;
+  },
+  setDelSelectMode(state, value: boolean) {
+    state.delSelectMode = value;
+  },
+  toggleDelSelectMode(state) {
+    state.delSelectMode = !state.delSelectMode;
+  },
 
-  //   setTweets(state, tweets: TweetGroup[]) {
-  //     state.tweets = tweets;
-  //   },
-
-  //   setSelectedTweetGroupId(state, id) {
-  //     state.selectedTweetGroupId = id;
-  //   },
-  //   setIsSelectedTweetGroup(state, val: boolean) {
-  //     state.isSelectedTweetGroup = val;
-  //   },
-  //   /**index değeri verilen TweetGroup'a verilen tweet[] ataması yapılır*/
-  //   setTweetGroupTweets(state, payload: ISetTweetGroupTweetsPayload) {
-  //     state.tweets[payload.index].tweets = payload.tweets;
-  //   },
-  //   spliceTweet(state, payload: ISliceTweetPayload) {
-  //     let target = 0;
-  //     state.tweets[payload.tweetGroupIndex_].tweets.forEach((tweet) => {
-  //       if (tweet.index == payload.tweetIndex_) target = tweet.index;
-  //     });
-  //     state.splicedTweet = state.tweets[payload.tweetGroupIndex_].tweets.splice(
-  //       target,
-  //       1
-  //     )[0];
-  //   },
-
-  //   /** index değeri verilen tweetGroup tweets içinden silinir.
-  //    * @ elemanlar taşınırken boş kalan tweetgroup'u silmek için kullanılıyor.
-  //    * @ arrayden eleman eksiltmek için çok iyi yöntem. kısa ve anlaşılır. */
-  //   deleteTweetGroupByIndex(state, index) {
-  //     // state.tweets.splice()
-  //     state.tweets = state.tweets.filter((tweet) => tweet.index != index);
-  //   },
+  //*halledilenler //////////////////////////////
   toggleActionLike(state, id) {
     state.accounts
       .filter((account) => account.id == id)[0]

@@ -8,7 +8,23 @@ const routes: RouteRecordRaw[] = [
       // return {path:'auth'}
       return true;
     },
-    children: [{ path: '', component: () => import('pages/Dashboard.vue') }],
+    children: [
+      {
+        path: '',
+        name: 'Giriş',
+        component: () => import('pages/Dashboard.vue'),
+      },
+      {
+        path: '1',
+        name: 'İşlem Geçmişi',
+        component: () => import('pages/Dashboard.vue'),
+      },
+      {
+        path: 'accounts',
+        name: 'Tüm Hesaplar',
+        component: () => import('pages/AllAccounts.vue'),
+      },
+    ],
   },
   {
     path: '/auth',

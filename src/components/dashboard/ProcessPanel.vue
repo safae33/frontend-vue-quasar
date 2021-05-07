@@ -14,30 +14,40 @@
     <q-card-section class="row pp-body q-pa-none">
       <div class="col-12 col-xl-4 col-lg-4 col-md-4 non-selectable">
         <q-card class="fit" flat>
-          <q-card-section class="q-pa-none q-px-xs">
+          <q-card-section class="addTweetInput q-pa-none q-px-xs">
             <q-input
-              dense
               type="text"
-              v-model="inputUrl"
-              label="Tweet eklemek linkini giriniz."
+              v-model="addTweetValue"
+              ref="addTweetRef"
+              label="Tweet eklemek için linkini giriniz."
+              @keyup="addNewTweet"
+              :class="{ pulse: !tweetGroups.length }"
+              dense
             />
           </q-card-section>
           <q-card-section class="full-width tweets-card-section q-pa-none">
+            <div
+              v-if="!tweetGroups.length"
+              class="row fit content-start no-tweet-text aldrich-font q-pt-md"
+            >
+              <q-icon class="col-12" name="fas fa-arrow-circle-up" />
+              <div class="col-12">
+                <span>Önce Tweet Eklemeniz Gerekmektedir</span>
+              </div>
+            </div>
             <q-scroll-area
               :thumb-style="thumbStyle"
               :bar-style="barStyle"
               class="tweet-scroll fit q-pr-sm"
               ref="tweetsScroll"
+              visible
             >
               <div
                 v-for="tweetGroup in tweetGroups"
                 :key="tweetGroup.id"
                 class="q-pr-sm q-py-xs relative-position"
               >
-                <DraggableTweets
-                  :tweetGroupId="tweetGroup.id"
-   
-                />
+                <DraggableTweets :tweetGroupId="tweetGroup.id" />
                 <q-separator inset class="color-text" />
               </div>
             </q-scroll-area>
@@ -45,21 +55,58 @@
         </q-card>
       </div>
 
-      <div class="col-12 col-xl-8 col-lg-8 col-md-8 accounts">
+      <div class="col-12 col-xl-8 col-lg-8 col-md-8 accounts relative-position">
         <div
           v-if="!isSelected"
-          class="row fit items-center no-selected-text aldrich-font"
+          class="row fit items-center no-selected-text aldrich-font absolute-center z-top pulse"
         >
-          Önce Tweet veya Tweet Grubu seçmeniz gerekmektedir.
+          <div class="col-2">
+            <q-icon size="xl" name="fas fa-arrow-circle-left" />
+          </div>
+          <div class="col-10 non-selectable mitr-font">
+            Önce Tweet veya Tweet Grubu seçmeniz gerekmektedir.
+          </div>
         </div>
-        <q-card v-if="isSelected" class="fit" flat>
-          <q-card-section class="q-pa-none q-pr-xs" style="height: 40px">
-            <div class="row full-height">
-              <div class="col-1 bg-red">a</div>
-              <div class="col-3 bg-green">s</div>
-              <div class="col-4 bg-blue">d</div>
-              <div class="col-4 bg-indigo">f</div>
-            </div>
+        <q-card class="fit" flat>
+          <q-card-section
+            class="util-row q-pa-none q-pr-xs row align-between justify-between"
+          >
+            <q-input
+              class="col-3 q-pa-none q-pl-xs"
+              v-model="accountsFilterValue"
+              type="text"
+              label="Ara"
+              clear-icon="fas fa-times"
+              clearable
+              dense
+            />
+
+            <q-btn
+              dense
+              class="col-3 like-color"
+              icon="fas fa-heart"
+              label="Tümüyle Beğen"
+              flat
+              @click="likeAllActions"
+            />
+            <q-btn
+              dense
+              class="col-3 retweet-color"
+              icon="fas fa-retweet"
+              label="Tümüyle Retweet"
+              flat
+              @click="retweetAllActions"
+            />
+
+            <q-btn
+              dense
+              class="col-2"
+              color="primary"
+              icon="fas fa-redo"
+              label="Sıfırla"
+              flat
+              @click="resetActions"
+            />
           </q-card-section>
           <q-card-section class="accounts-card-section full-width q-pa-none">
             <q-scroll-area
@@ -68,6 +115,7 @@
               class="account-scroll fit q-pl-xs q-pr-sm"
               ref="accountsScroll"
               id="accounts-scroll-area"
+              visible
             >
               <q-virtual-scroll
                 scroll-target="#accounts-scroll-area > .scroll"
@@ -76,7 +124,11 @@
                 id="accounts-virtual-scroll"
               >
                 <template v-slot="{ item, index }">
-                  <Account :accountElem="item" :key="index" />
+                  <Account
+                    :accountElem="item"
+                    :isWithAction="true"
+                    :key="index"
+                  />
                 </template>
               </q-virtual-scroll>
             </q-scroll-area>
@@ -88,13 +140,21 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, reactive, computed } from 'vue';
-import { QScrollArea, useQuasar } from 'quasar';
+import {
+  defineComponent,
+  ref,
+  reactive,
+  computed,
+  watch,
+  ComputedRef,
+} from 'vue';
+import { QScrollArea, QInput, useQuasar } from 'quasar';
 import Account from 'src/components/dashboard/Account.vue';
 import DraggableTweets from 'src/components/dashboard/DraggableTweets.vue';
 
 import AccountModel from 'src/models/Account.model';
 import StoreClass from 'src/services/mockService';
+import TweetGroup from 'src/models/TweetGroup.model';
 
 export default defineComponent({
   name: 'ProcessPanel',
@@ -104,13 +164,10 @@ export default defineComponent({
   },
   setup() {
     //ref içindeki value kullanmak gerekince arrow function ile yapmak gerekiyor.
-    // const accountsScroll = ref<QScrollArea>();
-    // accountsScroll.value?.setScrollPosition('vertical', 0, 500);
 
     //*sabitler //////////////////////////////
     const $q = useQuasar();
     const Store = new StoreClass();
-    const inputUrl = ref('');
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -127,15 +184,32 @@ export default defineComponent({
     });
     const isHovering = ref(false);
     //*tweets side //////////////////////////////
-    const tweetGroups = Store.getTweetGroups;
+    // const tweetGroups = Store.getTweetGroups;
+    const tweetGroups: ComputedRef<TweetGroup[]> = computed(() => {
+      const tweetGroups_: TweetGroup[] = [];
+      Store.getTweetGroups.value.forEach((tweetGroup) => {
+        tweetGroups_.push(Object.assign(new TweetGroup(), tweetGroup));
+      });
+      return tweetGroups_.reverse();
+    });
+    const tweetsScroll = ref<QScrollArea>();
+    watch(Store.getTweetGroups.value, () => {
+      Store.scanForEmptyTweetGroup();
+      tweetsScroll.value?.setScrollPosition('vertical', 0, 100);
+    });
 
     //*accounts side //////////////////////////////
     const isSelected = computed(
       () => Store.getSelectedTweetGroupId.value != 999999
     );
-
-    function slice(size: number) {
-      const oldAccounts = Store.getAccounts.value;
+    function slice(size: number, filter: string) {
+      let oldAccounts = Store.getAccounts.value;
+      if (filter != '' && filter != null)
+        oldAccounts = oldAccounts.filter((account) => {
+          return (
+            account.name.includes(filter) || account.username.includes(filter)
+          );
+        });
       const accounts: [AccountModel[]] = [[]];
       for (let index = 0; index < oldAccounts.length; index += size) {
         const sliced = oldAccounts.slice(index, index + size);
@@ -145,20 +219,46 @@ export default defineComponent({
       return accounts;
     }
     const accounts = computed(() => {
-      if (isSelected.value) {
-        if ($q.screen.name == 'xl' || $q.screen.name == 'lg') {
-          return slice(3);
-        } else if ($q.screen.name == 'md' || $q.screen.name == 'sm') {
-          return slice(2);
-        } else {
-          return slice(1);
-        }
-      } else return [];
+      const filter = accountsFilterValue.value;
+      if ($q.screen.name == 'xl' || $q.screen.name == 'lg') {
+        return slice(3, filter);
+      } else if ($q.screen.name == 'md' || $q.screen.name == 'sm') {
+        return slice(2, filter);
+      } else {
+        return slice(1, filter);
+      }
     });
+    const accountsFilterValue = ref('');
+
+    function resetActions() {
+      Store.resetAllActions();
+    }
+    function likeAllActions() {
+      Store.likeAllActions();
+    }
+    function retweetAllActions() {
+      Store.retweetAllActions();
+    }
+
+    //*add tweet side //////////////////////////////
+    const addTweetValue = ref('');
+    const addTweetRef = ref<QInput>();
+    function addNewTweet() {
+      addTweetValue.value = '';
+      addTweetRef.value?.blur();
+      Store.addNewTweet();
+    }
 
     return {
+      retweetAllActions,
+      likeAllActions,
+      accountsFilterValue,
+      resetActions,
+      tweetsScroll,
+      addNewTweet,
+      addTweetRef,
       accounts,
-      inputUrl,
+      addTweetValue,
       isSelected,
       tweetGroups,
       isHovering,
@@ -169,6 +269,39 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
+.retweet-color {
+  color: $retweet;
+}
+.like-color {
+  color: $like;
+}
+.util-row {
+  max-height: 56px;
+}
+.addTweetInput {
+  .q-field__label {
+    padding-left: 20px;
+  }
+  border-right: 2px solid $text-color !important;
+}
+.pulse {
+  box-shadow: 0 0 0 0 rgba(4, 61, 117, 0);
+  border-radius: 6px;
+  animation: pulse 0.8s infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(4, 61, 117, 0.7);
+  }
+
+  50% {
+    box-shadow: 2px 10px 0 10px rgba(4, 61, 117, 0.3);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(4, 61, 117, 0);
+  }
+}
 .color-text {
   background: $text-color;
 }
@@ -178,12 +311,33 @@ export default defineComponent({
 }
 .no-selected-text {
   text-align: center;
-  color: $text-color;
-  font-size: 48px;
+  // color: $text-color;
+  color: $myCol1;
+  font-size: 42px;
+  background-color: #000000a9;
   span,
   p {
     font-size: 16px;
     text-align: left;
+  }
+  .q-icon {
+    font-size: 110px !important;
+    color: $myCol1;
+  }
+}
+.no-tweet-text {
+  text-align: center;
+  color: $text-color;
+
+  font-size: 48px;
+
+  span,
+  p {
+    font-size: 16px;
+    text-align: left;
+  }
+  .q-icon {
+    color: $text-color;
   }
 }
 .account-scroll {

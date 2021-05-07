@@ -7,3 +7,5 @@ export class Action {
     this.tweetGroupId = tweetGroupId;
   }
 }
+
+export default Action;

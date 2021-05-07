@@ -31,7 +31,7 @@ module.exports = configure(function (ctx) {
     boot: [
       'i18n',
       'axios',
-
+      'notifyTypes',
     ],
 
     // https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-css
@@ -55,7 +55,7 @@ module.exports = configure(function (ctx) {
 
     // Full list of options: https://v2.quasar.dev/quasar-cli/quasar-conf-js#Property%3A-build
     build: {
-      vueRouterMode: 'history', // available values: 'hash', 'history'
+      vueRouterMode: 'hash', // available values: 'hash', 'history'
 
       // transpile: false,
 
@@ -102,12 +102,17 @@ module.exports = configure(function (ctx) {
       // directives: [],
 
       // Quasar plugins
-      plugins: []
+      plugins: [
+        'Notify',
+        'Dialog'
+      ]
     },
 
     // animations: 'all', // --- includes all animations
     // https://v2.quasar.dev/options/animations
-    animations: [],
+    animations: ['slideInDown', 'slideOutUp', 'fadeIn','fadeOut', 'bounceIn', 'bounceOut'],
+    // animations: 'all',
+    // animations: [],
 
     // https://v2.quasar.dev/quasar-cli/developing-ssr/configuring-ssr
     ssr: {
