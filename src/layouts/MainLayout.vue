@@ -50,10 +50,11 @@
         style="width: auto; height: 65px; background-color: #c5ddf3"
       >
         <q-btn
-          class="mitr-font fit text-h6 text-weight-bolder"
+          class="mitr-font fit text-subtitle1 text-weight-bolder"
           flat
           color="primary"
-          label="Safa Emre YILDIRIM"
+          :label="!miniState ? 'Safa Emre Yıldırım' : null"
+          :icon="miniState ? 'fas fa-user' : null"
         >
           <q-menu fit>
             <div class="row no-wrap q-pa-md">
@@ -80,7 +81,14 @@
         ref="mainScroll"
         visible
       >
-        <router-view class="page" />
+        <transition
+          :appear="true"
+          mode="out-in"
+          enter-active-class="animated fadeIn"
+          leave-active-class="animated fadeOut"
+        >
+          <router-view class="page" />
+        </transition>
       </q-scroll-area>
     </q-page-container>
   </q-layout>
@@ -125,10 +133,15 @@ export default defineComponent({
 
     const mainScroll = ref<QScrollArea>();
     watch(router, () => {
-      mainScroll.value?.setScrollPosition('vertical', 0, 500);
+      mainScroll.value?.setScrollPosition('vertical', 0);
+      Store.resetWhenRouteChange();
     });
+
     watch(Store.getSelectedAccountId, () => {
-      mainScroll.value?.setScrollPosition('vertical', 170, 200);
+      if (router.path == '/accounts')
+        setTimeout(() => {
+          mainScroll.value?.setScrollPercentage('vertical', 1, 200);
+        }, 300);
     });
 
     onMounted(() => {

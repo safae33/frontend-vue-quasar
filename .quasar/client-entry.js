@@ -29,6 +29,10 @@ import '@quasar/extras/material-icons/material-icons.css'
 
 import '@quasar/extras/animate/slideInDown.css'
 
+import '@quasar/extras/animate/slideInLeft.css'
+
+import '@quasar/extras/animate/slideOutRight.css'
+
 import '@quasar/extras/animate/slideOutUp.css'
 
 import '@quasar/extras/animate/fadeIn.css'
@@ -38,6 +42,8 @@ import '@quasar/extras/animate/fadeOut.css'
 import '@quasar/extras/animate/bounceIn.css'
 
 import '@quasar/extras/animate/bounceOut.css'
+
+import '@quasar/extras/animate/fadeInUp.css'
 
 
 // We load Quasar stylesheet file

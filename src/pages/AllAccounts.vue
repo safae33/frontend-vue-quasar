@@ -1,177 +1,195 @@
 <template>
   <q-page>
-    <q-card class="accounts-panel mitr-font" flat>
-      <!-- accounts detail header -->
-      <q-card-section class="row ap-header q-pa-none">
-        <span class="q-pa-sm">Hesap Yönetim Paneli</span>
-        <q-space />
-        <div class="dot"></div>
-      </q-card-section>
-      <!-- accounts util row -->
-      <q-card-section
-        class="ap-accounts-util-row q-pa-none q-pr-xs row align-between justify-between"
-      >
-        <q-input
-          class="col-4 q-pa-none q-px-sm"
-          type="text"
-          label="Ara"
-          clear-icon="fas fa-times"
-          clearable
-          v-model="accountsFilterValue"
-        />
-
-        <transition
-          mode="out-in"
-          appear
-          enter-active-class="animated bounceIn"
-          leave-active-class="animated bounceOut"
-        >
-          <q-btn
-            v-if="!delSelectMode"
-            class="offset-4 col-2"
-            icon="fas fa-trash"
-            color="negative"
-            label="Hesap Sil"
-            flat
-            @click="enableDelSelectMode"
-          />
-          <q-btn
-            v-else
-            class="offset-4 col-2 text-weight-bolder pulse-negative-button"
-            icon="fas fa-trash"
-            color="negative"
-            label="Seçilenleri Sil"
-            push
-            @click="disableDelSelectMode"
-          />
-        </transition>
-
-        <q-btn
-          class="col-2 newAccountButton"
-          icon="fas fa-user-plus"
-          label="Hesap Ekle"
-          icon-right="fab fa-twitter-square"
-          flat
-        >
-          <q-menu fit auto-close>
-            <q-list>
-              <q-item
-                clickable
-                v-ripple:primary
-                @click="addSelect = 'internal'"
-              >
-                <q-item-section>Sayfa İçi Ekle</q-item-section>
-              </q-item>
-              <q-item
-                clickable
-                v-ripple:primary
-                @click="addSelect = 'external'"
-              >
-                <q-item-section>Mail Gönderme</q-item-section>
-              </q-item>
-            </q-list></q-menu
-          >
-        </q-btn>
-      </q-card-section>
-      <!-- add account row -->
-      <q-card-section
-        class="ap-accounts-add-account q-pa-none q-pr-xs full-width row align-center justify-center"
-        :class="{ 'ap-accounts-add-account__max_height': addSelect != '' }"
-      >
-        <transition
-          mode="out-in"
-          appear
-          enter-active-class="animated fadeIn"
-          leave-active-class="animated fadeOut"
-        >
-          <div v-if="addSelect == 'internal'">
-            <AddAccountInternal :closeAddRow="closeAddRow" class="fit" />
-          </div>
-          <div v-else-if="addSelect == 'external'"></div>
-          <div v-else></div>
-        </transition>
-      </q-card-section>
-      <!-- accounts body -->
-      <q-card-section
-        :class="{ deleteMode: delSelectMode }"
-        class="ap-accounts full-width q-pa-none"
-      >
-        <q-scroll-area
-          :thumb-style="thumbStyle"
-          :bar-style="barStyle"
-          class="account-scroll fit q-pl-xs q-pr-sm"
-          ref="accountsScroll"
-          id="accounts-scroll-area"
-          visible
-        >
-          <q-virtual-scroll
-            scroll-target="#accounts-scroll-area > .scroll"
-            :virtual-scroll-item-size="108"
-            :items="accounts"
-            id="accounts-virtual-scroll"
-          >
-            <template v-slot="{ item, index }">
-              <Account :accountElem="item" :isWithAction="false" :key="index" />
-            </template>
-          </q-virtual-scroll>
-        </q-scroll-area>
-      </q-card-section>
-
-      <!-- process detail header -->
-      <q-card-section
-        class="ap-process-header non-selectable q-pa-none inset-shadow-down"
-      >
-        <div
-          class="row items-between full-width"
-          :class="{ pulse: selectedAccountId == null && !delSelectMode }"
-        >
-          <div class="col-1 q-pl-sm">
-            <q-icon
-              :class="{ selectedIcon: selectedAccountId != null }"
-              name="fas fa-arrow-circle-up"
-            />
-          </div>
-
-          <div class="q-pa-sm col-10 column items-center justify-center">
-            <transition
-              mode="out-in"
-              appear
-              enter-active-class="animated fadeIn"
-              leave-active-class="animated fadeOut"
-            >
-              <span :key="selectedText">{{ selectedText }}</span>
-            </transition>
-          </div>
-
-          <div class="col-1 q-pr-sm">
-            <q-icon
-              :class="{ selectedIcon: selectedAccountId != null }"
-              name="fas fa-arrow-circle-up"
-            />
-          </div>
-        </div>
-      </q-card-section>
-
-      <!-- ac&process detail body -->
-      <transition
-        appear
-        mode="out-in"
-        enter-active-class="animated slideInDown"
-        leave-active-class="animated slideOutDown"
-      >
+    <transition appear enter-active-class="animated fadeInUp">
+      <q-card class="accounts-panel mitr-font" flat>
+        <!-- accounts detail header -->
+        <q-card-section class="row ap-header q-pa-none">
+          <span class="q-pa-sm">Hesap Yönetim Paneli</span>
+          <q-space />
+          <div class="dot"></div>
+        </q-card-section>
+        <!-- accounts util row -->
         <q-card-section
-          v-if="selectedAccountId != null"
-          :key="selectedAccountId"
-          class="row ap-process-body q-pa-none inset-shadow-down"
-          style="scroll-direction: horizontal"
+          class="ap-accounts-util-row q-pa-none q-pr-xs row align-between justify-between"
         >
-          <div class="col-4 full-height"><AccountDetail /></div>
-          <div class="col-8 full-height process-detail-bg">
-            <ProcessDetail />
+          <q-input
+            class="col-4 q-pa-none q-px-sm"
+            type="text"
+            label="Ara"
+            clear-icon="fas fa-times"
+            clearable
+            v-model="accountsFilterValue"
+          />
+
+          <transition
+            mode="out-in"
+            appear
+            enter-active-class="animated bounceIn"
+            leave-active-class="animated bounceOut"
+          >
+            <q-btn
+              v-if="!delSelectMode"
+              class="offset-4 col-2"
+              icon="fas fa-trash"
+              color="negative"
+              label="Hesap Sil"
+              :disable="addSelect != ''"
+              flat
+              @click="enableDelSelectMode"
+            />
+            <q-btn
+              v-else
+              class="offset-4 col-2 text-weight-bolder pulse-negative-button"
+              icon="fas fa-trash"
+              color="negative"
+              label="Seçilenleri Sil"
+              push
+              @click="disableDelSelectMode"
+            />
+          </transition>
+
+          <transition appear enter-active-class="animated bounceIn">
+            <q-btn
+              class="col-2 newAccountButton"
+              icon="fas fa-user-plus"
+              label="Hesap Ekle"
+              icon-right="fab fa-twitter-square"
+              flat
+              :disable="delSelectMode"
+            >
+              <q-menu fit auto-close>
+                <q-list>
+                  <q-item
+                    clickable
+                    v-ripple:primary
+                    @click="addSelect = 'internal'"
+                  >
+                    <q-item-section>Sayfa İçi Ekle</q-item-section>
+                  </q-item>
+                  <q-item
+                    clickable
+                    v-ripple:primary
+                    @click="addSelect = 'external'"
+                  >
+                    <q-item-section>Mail Gönderme</q-item-section>
+                  </q-item>
+                </q-list></q-menu
+              >
+            </q-btn>
+          </transition>
+        </q-card-section>
+        <!-- add account row -->
+        <q-card-section
+          class="ap-accounts-add-account q-pa-none q-pr-xs full-width row align-center justify-center"
+          :class="{ 'ap-accounts-add-account__max_height': addSelect != '' }"
+        >
+          <transition
+            mode="out-in"
+            appear
+            enter-active-class="animated fadeIn"
+            leave-active-class="animated fadeOut"
+          >
+            <div v-if="addSelect == 'internal'">
+              <AddAccountInternal :closeAddRow="closeAddRow" />
+            </div>
+            <div v-else-if="addSelect == 'external'">
+              <AddAccountExternal :closeAddRow="closeAddRow" />
+            </div>
+            <div v-else></div>
+          </transition>
+        </q-card-section>
+        <!-- accounts body -->
+        <q-card-section
+          :class="{ deleteMode: delSelectMode }"
+          class="ap-accounts full-width q-pa-none"
+        >
+          <q-scroll-area
+            :thumb-style="thumbStyle"
+            :bar-style="barStyle"
+            class="fit q-pl-xs q-pr-sm"
+            ref="accountsScroll"
+            id="accounts-scroll-area"
+            visible
+          >
+            <q-virtual-scroll
+              scroll-target="#accounts-scroll-area > .scroll"
+              :virtual-scroll-item-size="108"
+              :items="accounts"
+              id="accounts-virtual-scroll"
+            >
+              <template v-slot="{ item, index }">
+                <Account
+                  :accountElem="item"
+                  :isWithAction="false"
+                  :key="index"
+                />
+              </template>
+            </q-virtual-scroll>
+          </q-scroll-area>
+        </q-card-section>
+
+        <!-- detail header -->
+        <q-card-section
+          class="ap-process-header non-selectable q-pa-none inset-shadow-down"
+        >
+          <div
+            class="row items-between full-width"
+            :class="{ pulse: selectedAccountId == null && !delSelectMode }"
+          >
+            <div class="col-1 q-pl-sm">
+              <q-icon
+                :class="{ selectedIcon: selectedAccountId != null }"
+                name="fas fa-arrow-circle-up"
+              />
+            </div>
+
+            <div class="q-pa-sm col-10 column items-center justify-center">
+              <transition
+                mode="out-in"
+                appear
+                enter-active-class="animated fadeIn"
+                leave-active-class="animated fadeOut"
+              >
+                <span :key="selectedText">{{ selectedText }}</span>
+              </transition>
+            </div>
+
+            <div class="col-1 q-pr-sm">
+              <q-icon
+                :class="{ selectedIcon: selectedAccountId != null }"
+                name="fas fa-arrow-circle-up"
+              />
+            </div>
           </div>
         </q-card-section>
-      </transition>
-    </q-card>
+
+        <!-- detail body -->
+        <transition
+          appear
+          mode="out-in"
+          enter-active-class="animated slideInDown"
+          leave-active-class="animated fadeOut"
+        >
+          <q-card-section
+            v-if="selectedAccountId != null"
+            :key="selectedAccountId"
+            class="row ap-process-body q-pa-none"
+            style="scroll-direction: horizontal"
+          >
+            <div class="col-4 full-height inset-shadow-down">
+              <AccountDetail />
+            </div>
+            <div class="col-8 full-height process-detail-bg relative-position">
+              <div
+                class="inset-shadow-down absolute-bottom pd__shadow_div z-top"
+              ></div>
+
+              <ProcessDetail />
+            </div>
+          </q-card-section>
+        </transition>
+      </q-card>
+    </transition>
   </q-page>
 </template>
 
@@ -184,11 +202,18 @@ import Account from 'src/components/dashboard/Account.vue';
 import AccountDetail from 'src/components/accounts/AccountDetail.vue';
 import ProcessDetail from 'src/components/accounts/ProcessDetail.vue';
 import AddAccountInternal from 'src/components/accounts/AddAccountInternal.vue';
+import AddAccountExternal from 'src/components/accounts/AddAcountExternal.vue';
 
 import AccountModel from 'src/models/Account.model';
 export default defineComponent({
   name: 'AllAccounts',
-  components: { Account, AccountDetail, ProcessDetail, AddAccountInternal },
+  components: {
+    Account,
+    AccountDetail,
+    ProcessDetail,
+    AddAccountInternal,
+    AddAccountExternal,
+  },
   setup() {
     const Store = new StoreClass();
     const q = useQuasar();
@@ -261,16 +286,13 @@ export default defineComponent({
       if (!delSelectModeArray.value.length) {
         Store.setDelSelectMode(false);
 
-        setTimeout(
-          () =>
-            q.notify({
-              type: 'positive',
-              message: 'Hiçbir hesap seçilmedi.',
-              timeout: 800,
-              position: 'top-right',
-            }),
-          300
-        );
+        q.notify({
+          type: 'info',
+          message: 'Hiçbir hesap seçilmedi.',
+          timeout: 800,
+          position: 'top-right',
+        });
+
         return;
       }
       q.dialog({
@@ -311,7 +333,7 @@ export default defineComponent({
           setTimeout(
             () =>
               q.notify({
-                type: 'info',
+                type: 'negative',
                 message: 'İşlem iptal edildi. Seçimler kaldırıldı.',
                 timeout: 800,
                 position: 'top-right',
@@ -343,6 +365,10 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
+.pd__shadow_div {
+  width: 100%;
+  height: 50px;
+}
 .deleteMode {
   border: $negative solid 2px !important;
   @extend .pulse-negative;
@@ -496,7 +522,7 @@ export default defineComponent({
     height: 400px;
     max-height: 515px;
     background-color: white;
-    border: transparent solid 2px;
+    border: transparent solid 2px !important;
     border-radius: 10px;
     transition: border 300ms linear, margin 300ms linear;
     z-index: 1;

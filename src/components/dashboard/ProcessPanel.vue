@@ -14,6 +14,7 @@
     <q-card-section class="row pp-body q-pa-none">
       <div class="col-12 col-xl-4 col-lg-4 col-md-4 non-selectable">
         <q-card class="fit" flat>
+          <!-- tweets-input -->
           <q-card-section class="addTweetInput q-pa-none q-px-xs">
             <q-input
               type="text"
@@ -25,7 +26,13 @@
               dense
             />
           </q-card-section>
-          <q-card-section class="full-width tweets-card-section q-pa-none">
+          <!-- tweets-body -->
+          <q-card-section
+            class="full-width tweets-card-section q-pa-none relative-position"
+          >
+            <div
+              class="inset-shadow-down absolute-bottom shadow_div z-top"
+            ></div>
             <div
               v-if="!tweetGroups.length"
               class="row fit content-start no-tweet-text aldrich-font q-pt-md"
@@ -52,10 +59,14 @@
               </div>
             </q-scroll-area>
           </q-card-section>
+          <q-inner-loading :showing="isNewTweetLoading" color="primary">
+            <q-spinner-hourglass color="teal-4" size="100px" />
+          </q-inner-loading>
         </q-card>
       </div>
-
+      <!-- accounts -->
       <div class="col-12 col-xl-8 col-lg-8 col-md-8 accounts relative-position">
+        <div class="inset-shadow-down absolute-bottom shadow_div z-top"></div>
         <div
           v-if="!isSelected"
           class="row fit items-center no-selected-text aldrich-font absolute-center z-top pulse"
@@ -197,6 +208,7 @@ export default defineComponent({
       Store.scanForEmptyTweetGroup();
       tweetsScroll.value?.setScrollPosition('vertical', 0, 100);
     });
+    const isNewTweetLoading = ref(false);
 
     //*accounts side //////////////////////////////
     const isSelected = computed(
@@ -244,12 +256,17 @@ export default defineComponent({
     const addTweetValue = ref('');
     const addTweetRef = ref<QInput>();
     function addNewTweet() {
-      addTweetValue.value = '';
-      addTweetRef.value?.blur();
-      Store.addNewTweet();
+      isNewTweetLoading.value = true;
+      setTimeout(() => {
+        isNewTweetLoading.value = false;
+        addTweetValue.value = '';
+        addTweetRef.value?.blur();
+        Store.addNewTweet();
+      }, 3000);
     }
 
     return {
+      isNewTweetLoading,
       retweetAllActions,
       likeAllActions,
       accountsFilterValue,
@@ -269,6 +286,10 @@ export default defineComponent({
 });
 </script>
 <style lang="scss">
+.shadow_div {
+  width: 100%;
+  height: 50px;
+}
 .retweet-color {
   color: $retweet;
 }
@@ -341,22 +362,22 @@ export default defineComponent({
   }
 }
 .account-scroll {
-  border: $myCol solid 2px;
+  border: transparent solid 2px;
+  border-radius: 10px;
   transition: border 200ms linear;
 }
 .account-scroll:hover {
   border: $primary solid 2px;
-  border-radius: 10px;
 }
 
 .tweet-scroll {
   border: $myCol solid 2px;
   transition: border 200ms linear;
 }
-.tweet-scroll:hover {
-  border: $primary solid 2px;
-  border-radius: 10px;
-}
+// .tweet-scroll:hover {
+//   border: $primary solid 2px;
+//   border-radius: 10px;
+// }
 
 .tweets-card-section {
   height: 515px;

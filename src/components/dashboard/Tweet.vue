@@ -1,7 +1,8 @@
 <template>
   <q-card
     flat
-    class="tweeet-card cursor-pointer relative-position q-pl-xs bg-transparent"
+    class="tweeet-card relative-position q-pl-xs bg-transparent"
+    :class="{ 'cursor-pointer': isRipple, 'bg-myCol1': !isRipple }"
     v-ripple:primary="isRipple"
   >
     <q-card-section class="q-pa-none">
@@ -62,6 +63,9 @@ export default defineComponent({
   transition: background-color 300ms linear;
 }
 .tweeet-card:hover {
+  background-color: $myCol1 !important;
+}
+.bg-myCol1 {
   background-color: $myCol1 !important;
 }
 </style>

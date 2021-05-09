@@ -20,13 +20,15 @@
     </q-card-section>
     <q-card-actions class="v count-text"
       ><span class="q-pl-sm">Kayıtlı Hesap Sayısı</span> <q-space />
-      <q-btn
-        color="primary"
-        icon="mdi-format-list-bulleted-square"
-        flat
-        label="Hesaplara git"
-        to="/accounts"
-      />
+      <transition appear enter-active-class="animated bounceIn">
+        <q-btn
+          color="primary"
+          icon="mdi-format-list-bulleted-square"
+          flat
+          label="Hesaplara git"
+          to="/accounts"
+        />
+      </transition>
     </q-card-actions>
   </q-card>
 </template>

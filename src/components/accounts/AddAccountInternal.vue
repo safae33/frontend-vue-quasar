@@ -39,21 +39,21 @@
     >
       <q-input
         filled
-        v-model="account.name"
+        v-model="name"
         label="Hesap ismi"
         lazy-rules
         :rules="[(val) => (val && val.length > 0) || 'Please type something']"
       />
       <q-input
         filled
-        v-model="account.username"
+        v-model="username"
         label="Hesap kullanıcı adı"
         lazy-rules
         :rules="[(val) => (val && val.length > 0) || 'Please type something']"
       />
 
       <div>
-        <q-btn label="Submit" type="submit" color="primary" />
+        <q-btn label="Giriş Yap" type="submit" color="primary" />
         <q-btn
           label="Reset"
           type="reset"
@@ -86,19 +86,25 @@ export default defineComponent({
   props: ['closeAddRow'],
   setup() {
     const Store = new StoreClass();
-    const username = ref('');
-    const password = ref('');
+    // const username = ref('');
+    // const password = ref('');
 
     const account = new Account();
     account.profilePicUrl = 'https://source.unsplash.com/random/200x200?sig=';
     account.id = Store.getAccounts.value.slice(-1)[0].id + 1;
+    account.name = '';
+    account.username = '';
+
+    const name = ref('');
+    const username = ref('');
 
     return {
+      name,
       username,
-      password,
       account,
-
       onSubmit() {
+        account.username = username.value;
+        account.name = name.value;
         Store.addActionsForNewAccountAndPushToAccounts(account);
       },
     };

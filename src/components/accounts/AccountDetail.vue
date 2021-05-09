@@ -1,21 +1,17 @@
 <template>
-  <q-card class="detail-card full-height inset-shadow-down" flat>
-    <q-card-section
-      class="dc-tweet-info q-pb-none"
-      v-for="account in account()"
-      :key="account.id"
-    >
+  <q-card class="detail-card full-height inset-shadow-down q-py-md" flat>
+    <q-card-section class="dc-tweet-info q-pa-sm">
       <q-item class="q-mx-none no-border q-px-xs">
         <q-item-section avatar>
           <q-avatar>
-            <img :src="account.profilePicUrl + account.id" />
+            <img :src="account().profilePicUrl + account().id" />
           </q-avatar>
         </q-item-section>
 
         <q-item-section>
-          <q-item-label lines="1">{{ account.name }}</q-item-label>
+          <q-item-label lines="1">{{ account().name }}</q-item-label>
           <q-item-label caption lines="1">
-            <span class="text-weight-bold">{{ account.username }}</span>
+            <span class="text-weight-bold">{{ account().username }}</span>
           </q-item-label>
         </q-item-section>
         <q-item-section top side style="padding-left:4px; !important"
@@ -23,17 +19,37 @@
         /></q-item-section>
       </q-item>
     </q-card-section>
-    <q-card-section class="dc-process-info row">
-      <div class="col-6">
-        <div class="row justify-center align-center">Tamamlanmış İşlem</div>
+    <q-card-section class="dc-process-info row q-pt-lg">
+      <div class="col-6 q-pb-md">
+        <div class="row justify-center align-center">
+          <span class="detail-text">Tamamlanmış İşlem</span>
+        </div>
         <div class="row justify-center align-center aldrich-font text-h2">
-          22
+          <span>{{ completedProcesses }}</span>
+        </div>
+      </div>
+      <div class="col-6 q-pb-md">
+        <div class="row justify-center align-center">
+          <span class="detail-text">Bekleyen İşlem</span>
+        </div>
+        <div class="row justify-center align-center aldrich-font text-h2">
+          <span>{{ notCompletedProcesses }}</span>
         </div>
       </div>
       <div class="col-6">
-        <div class="row justify-center align-center">Aktif İşlem</div>
+        <div class="row justify-center align-center">
+          <span class="detail-text">Aylık İşlem</span>
+        </div>
         <div class="row justify-center align-center aldrich-font text-h2">
-          2
+          <span>{{ completedProcesses }}</span>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="row justify-center align-center">
+          <span class="detail-text">Toplam İşlem</span>
+        </div>
+        <div class="row justify-center align-center aldrich-font text-h2">
+          <span>{{ completedProcesses + notCompletedProcesses }}</span>
         </div>
       </div>
     </q-card-section>
@@ -53,8 +69,16 @@ export default defineComponent({
     const account = () =>
       Store.getAccounts.value.filter(
         (account) => account.id == Store.getSelectedAccountId.value
-      );
-    return { account };
+      )[0];
+
+    const completedProcesses = account().processes.filter(
+      (process) => process.status == 0 || process.status == 1
+    ).length;
+    const notCompletedProcesses = account().processes.filter(
+      (process) => process.status == 2
+    ).length;
+
+    return { account, completedProcesses, notCompletedProcesses };
   },
 });
 </script>
@@ -66,5 +90,14 @@ export default defineComponent({
 }
 .dc-tweet-info {
   background-color: $myCol1;
+}
+.dc-process-info {
+  span {
+    color: $text-color;
+  }
+}
+.detail-text {
+  font-size: 16px;
+  color: #757575 !important;
 }
 </style>

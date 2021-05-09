@@ -6,7 +6,9 @@ export class Process {
   id: number;
   type: number;
   createDate: string;
+  createHour: string;
   targetDate: string;
+  targetHour: string;
   targetTweet: Tweet;
   status: number;
   statusText: string;
@@ -15,7 +17,9 @@ export class Process {
     id?: number,
     type?: number,
     createDate?: string,
+    createHour?: string,
     targetDate?: string,
+    targetHour?: string,
     targetTweet?: Tweet,
     status?: number,
     statusText?: string
@@ -24,14 +28,18 @@ export class Process {
     id: number,
     type: number,
     createDate: string,
+    createHour: string,
     targetDate: string,
+    targetHour: string,
     targetTweet: Tweet,
     status: number,
     statusText: string
   ) {
     this.id = id;
     this.createDate = createDate;
+    this.createHour = createHour;
     this.targetDate = targetDate;
+    this.targetHour = targetHour;
     this.type = type;
     this.targetTweet = targetTweet;
     this.status = status;

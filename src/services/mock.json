@@ -1,147 +1,134 @@
 {
   "accounts": [
     {
-      "id": 0,
-      "name": "Safa 0numara",
-      "username": "@Safa 0.kullan\u0131c\u0131",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processes": [
-        {
-          "id": 0,
-          "type": 0,
-          "createDate": "20.04.2021:15.10",
-          "targetDate": "20.04.2021:15.10",
-          "status": 0,
-          "statusText": "İşlem başarıyla tamamlandı",
-          "targetTweet": {
-            "account": {
-              "id": 0,
-              "name": "Safa 0numara",
-              "username": "@Safa 0.kullan\u0131c\u0131",
-              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-            },
-            "tweetUrl": "0",
-            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
-          }
-        },
-        {
-          "id": 1,
-          "type": 1,
-          "createDate": "20.04.2021:15.10",
-          "targetDate": "20.04.2021:15.10",
-          "status": 0,
-          "statusText": "İşlem başarıyla tamamlandı",
-          "targetTweet": {
-            "account": {
-              "id": 0,
-              "name": "Safa 0numara",
-              "username": "@Safa 0.kullan\u0131c\u0131",
-              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-            },
-            "tweetUrl": "0",
-            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
-          }
-        },
-        {
-          "id": 2,
-          "type": 1,
-          "createDate": "20.04.2021:15.10",
-          "targetDate": "20.04.2021:15.10",
-          "status": 2,
-          "statusText": "İşlem zamanı bekleniyor.",
-          "targetTweet": {
-            "account": {
-              "id": 0,
-              "name": "Safa 0numara",
-              "username": "@Safa 0.kullan\u0131c\u0131",
-              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-            },
-            "tweetUrl": "0",
-            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
-          }
-        },
-        {
-          "id": 3,
-          "type": 0,
-          "createDate": "20.04.2021:15.10",
-          "targetDate": "20.04.2021:15.10",
-          "status": 1,
-          "statusText": "İşlem başarısız oldu. İşlem tarihinde tweet silinmişti.",
-          "targetTweet": {
-            "account": {
-              "id": 0,
-              "name": "Safa 0numara",
-              "username": "@Safa 0.kullan\u0131c\u0131",
-              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-            },
-            "tweetUrl": "0",
-            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
-          }
-        },
-        {
-          "id": 4,
-          "type": 1,
-          "createDate": "20.04.2021:15.10",
-          "targetDate": "20.04.2021:15.10",
-          "status": 0,
-          "statusText": "İşlem başarıyla tamamlandı",
-          "targetTweet": {
-            "account": {
-              "id": 0,
-              "name": "Safa 0numara",
-              "username": "@Safa 0.kullan\u0131c\u0131",
-              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-            },
-            "tweetUrl": "0",
-            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
-          }
-        },
-        {
-          "id": 5,
-          "type": 0,
-          "createDate": "20.04.2021:15.10",
-          "targetDate": "20.04.2021:15.10",
-          "status": 1,
-          "statusText": "İşlem başarısız oldu. Kullanıcıya erişilemedi. Lütfen yeniden hesabı aktive ediniz.",
-          "targetTweet": {
-            "account": {
-              "id": 0,
-              "name": "Safa 0numara",
-              "username": "@Safa 0.kullan\u0131c\u0131",
-              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-            },
-            "tweetUrl": "0",
-            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
-          }
-        },
-        {
-          "id": 6,
-          "type": 0,
-          "createDate": "20.04.2021:15.10",
-          "targetDate": "20.04.2021:15.10",
-          "status": 2,
-          "statusText": "İşlem zamanı bekleniyor.",
-          "targetTweet": {
-            "account": {
-              "id": 0,
-              "name": "Safa 0numara",
-              "username": "@Safa 0.kullan\u0131c\u0131",
-              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-            },
-            "tweetUrl": "0",
-            "tweetText": "Bu process alanında test edilmek için yazılmış bir texttir. hem de akıllı olmanız hala gçeerli ulaaan."
-          }
-        }
-      ]
-    },
-    {
       "id": 1,
       "name": "Safa 1numara",
       "username": "@Safa 1.kullan\u0131c\u0131",
       "createDate": "105.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 1s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 1,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 2,
@@ -150,7 +137,488 @@
       "createDate": "205.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 2s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 0,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 1,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 0,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 0,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 0,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 0,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 1,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 16,
+          "type": 0,
+          "createDate": "16.32021",
+          "createHour": "16:31",
+          "targetDate": "26.5.2021",
+          "targetHour": "52:9",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 16,
+              "name": "Safa 16 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 16,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 17,
+          "type": 0,
+          "createDate": "17.42021",
+          "createHour": "17:31",
+          "targetDate": "27.6.2021",
+          "targetHour": "53:10",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 17,
+              "name": "Safa 17 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 17,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 18,
+          "type": 0,
+          "createDate": "18.52021",
+          "createHour": "18:31",
+          "targetDate": "28.7.2021",
+          "targetHour": "54:11",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 18,
+              "name": "Safa 18 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 18,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 19,
+          "type": 0,
+          "createDate": "19.62021",
+          "createHour": "19:31",
+          "targetDate": "29.8.2021",
+          "targetHour": "55:12",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 19,
+              "name": "Safa 19 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 19,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 20,
+          "type": 0,
+          "createDate": "20.72021",
+          "createHour": "20:31",
+          "targetDate": "30.9.2021",
+          "targetHour": "56:13",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 20,
+              "name": "Safa 20 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 20,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 21,
+          "type": 1,
+          "createDate": "21.82021",
+          "createHour": "21:31",
+          "targetDate": "0.10.2021",
+          "targetHour": "57:14",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 21,
+              "name": "Safa 21 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 21,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 22,
+          "type": 1,
+          "createDate": "22.92021",
+          "createHour": "22:31",
+          "targetDate": "1.11.2021",
+          "targetHour": "58:15",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 22,
+              "name": "Safa 22 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 22,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 23,
+          "type": 1,
+          "createDate": "23.102021",
+          "createHour": "23:31",
+          "targetDate": "2.12.2021",
+          "targetHour": "59:16",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 23,
+              "name": "Safa 23 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 23,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 24,
+          "type": 0,
+          "createDate": "24.112021",
+          "createHour": "24:31",
+          "targetDate": "3.0.2021",
+          "targetHour": "60:17",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 24,
+              "name": "Safa 24 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 24,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 3,
@@ -159,7 +627,48 @@
       "createDate": "305.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 3s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 4,
@@ -168,7 +677,208 @@
       "createDate": "405.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 4s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 1,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 1,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 1,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 0,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 1,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 5,
@@ -177,7 +887,368 @@
       "createDate": "505.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 5s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 1,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 1,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 0,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 1,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 0,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 0,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 1,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 0,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 16,
+          "type": 1,
+          "createDate": "16.32021",
+          "createHour": "16:31",
+          "targetDate": "26.5.2021",
+          "targetHour": "52:9",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 16,
+              "name": "Safa 16 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 16,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 17,
+          "type": 0,
+          "createDate": "17.42021",
+          "createHour": "17:31",
+          "targetDate": "27.6.2021",
+          "targetHour": "53:10",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 17,
+              "name": "Safa 17 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 17,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 18,
+          "type": 1,
+          "createDate": "18.52021",
+          "createHour": "18:31",
+          "targetDate": "28.7.2021",
+          "targetHour": "54:11",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 18,
+              "name": "Safa 18 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 18,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 6,
@@ -186,7 +1257,228 @@
       "createDate": "605.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 6s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 1,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 0,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 1,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 0,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 7,
@@ -195,7 +1487,288 @@
       "createDate": "705.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 7s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 1,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 0,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 0,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 1,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 1,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 1,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 8,
@@ -204,7 +1777,448 @@
       "createDate": "805.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 8s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 1,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 1,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 0,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 0,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 1,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 0,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 1,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 16,
+          "type": 0,
+          "createDate": "16.32021",
+          "createHour": "16:31",
+          "targetDate": "26.5.2021",
+          "targetHour": "52:9",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 16,
+              "name": "Safa 16 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 16,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 17,
+          "type": 0,
+          "createDate": "17.42021",
+          "createHour": "17:31",
+          "targetDate": "27.6.2021",
+          "targetHour": "53:10",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 17,
+              "name": "Safa 17 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 17,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 18,
+          "type": 0,
+          "createDate": "18.52021",
+          "createHour": "18:31",
+          "targetDate": "28.7.2021",
+          "targetHour": "54:11",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 18,
+              "name": "Safa 18 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 18,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 19,
+          "type": 0,
+          "createDate": "19.62021",
+          "createHour": "19:31",
+          "targetDate": "29.8.2021",
+          "targetHour": "55:12",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 19,
+              "name": "Safa 19 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 19,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 20,
+          "type": 1,
+          "createDate": "20.72021",
+          "createHour": "20:31",
+          "targetDate": "30.9.2021",
+          "targetHour": "56:13",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 20,
+              "name": "Safa 20 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 20,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 21,
+          "type": 1,
+          "createDate": "21.82021",
+          "createHour": "21:31",
+          "targetDate": "0.10.2021",
+          "targetHour": "57:14",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 21,
+              "name": "Safa 21 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 21,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 22,
+          "type": 0,
+          "createDate": "22.92021",
+          "createHour": "22:31",
+          "targetDate": "1.11.2021",
+          "targetHour": "58:15",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 22,
+              "name": "Safa 22 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 22,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 9,
@@ -213,7 +2227,108 @@
       "createDate": "905.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 9s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 10,
@@ -222,7 +2337,528 @@
       "createDate": "1005.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 10s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 1,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 1,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 1,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 1,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 0,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 1,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 1,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 1,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 16,
+          "type": 0,
+          "createDate": "16.32021",
+          "createHour": "16:31",
+          "targetDate": "26.5.2021",
+          "targetHour": "52:9",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 16,
+              "name": "Safa 16 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 16,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 17,
+          "type": 1,
+          "createDate": "17.42021",
+          "createHour": "17:31",
+          "targetDate": "27.6.2021",
+          "targetHour": "53:10",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 17,
+              "name": "Safa 17 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 17,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 18,
+          "type": 1,
+          "createDate": "18.52021",
+          "createHour": "18:31",
+          "targetDate": "28.7.2021",
+          "targetHour": "54:11",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 18,
+              "name": "Safa 18 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 18,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 19,
+          "type": 0,
+          "createDate": "19.62021",
+          "createHour": "19:31",
+          "targetDate": "29.8.2021",
+          "targetHour": "55:12",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 19,
+              "name": "Safa 19 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 19,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 20,
+          "type": 1,
+          "createDate": "20.72021",
+          "createHour": "20:31",
+          "targetDate": "30.9.2021",
+          "targetHour": "56:13",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 20,
+              "name": "Safa 20 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 20,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 21,
+          "type": 0,
+          "createDate": "21.82021",
+          "createHour": "21:31",
+          "targetDate": "0.10.2021",
+          "targetHour": "57:14",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 21,
+              "name": "Safa 21 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 21,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 22,
+          "type": 0,
+          "createDate": "22.92021",
+          "createHour": "22:31",
+          "targetDate": "1.11.2021",
+          "targetHour": "58:15",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 22,
+              "name": "Safa 22 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 22,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 23,
+          "type": 1,
+          "createDate": "23.102021",
+          "createHour": "23:31",
+          "targetDate": "2.12.2021",
+          "targetHour": "59:16",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 23,
+              "name": "Safa 23 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 23,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 24,
+          "type": 1,
+          "createDate": "24.112021",
+          "createHour": "24:31",
+          "targetDate": "3.0.2021",
+          "targetHour": "60:17",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 24,
+              "name": "Safa 24 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 24,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 25,
+          "type": 0,
+          "createDate": "25.122021",
+          "createHour": "0:31",
+          "targetDate": "4.1.2021",
+          "targetHour": "0:18",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 25,
+              "name": "Safa 25 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 25,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 26,
+          "type": 1,
+          "createDate": "26.02021",
+          "createHour": "1:31",
+          "targetDate": "5.2.2021",
+          "targetHour": "1:19",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 26,
+              "name": "Safa 26 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 26,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 11,
@@ -231,7 +2867,68 @@
       "createDate": "1105.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 11s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 12,
@@ -240,7 +2937,148 @@
       "createDate": "1205.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 12s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 13,
@@ -249,7 +3087,268 @@
       "createDate": "1305.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 13s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 1,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 0,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 0,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 0,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 14,
@@ -258,7 +3357,488 @@
       "createDate": "1405.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 14s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 1,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 1,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 0,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 1,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 0,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 1,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 0,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 0,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 16,
+          "type": 0,
+          "createDate": "16.32021",
+          "createHour": "16:31",
+          "targetDate": "26.5.2021",
+          "targetHour": "52:9",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 16,
+              "name": "Safa 16 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 16,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 17,
+          "type": 1,
+          "createDate": "17.42021",
+          "createHour": "17:31",
+          "targetDate": "27.6.2021",
+          "targetHour": "53:10",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 17,
+              "name": "Safa 17 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 17,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 18,
+          "type": 1,
+          "createDate": "18.52021",
+          "createHour": "18:31",
+          "targetDate": "28.7.2021",
+          "targetHour": "54:11",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 18,
+              "name": "Safa 18 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 18,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 19,
+          "type": 1,
+          "createDate": "19.62021",
+          "createHour": "19:31",
+          "targetDate": "29.8.2021",
+          "targetHour": "55:12",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 19,
+              "name": "Safa 19 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 19,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 20,
+          "type": 1,
+          "createDate": "20.72021",
+          "createHour": "20:31",
+          "targetDate": "30.9.2021",
+          "targetHour": "56:13",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 20,
+              "name": "Safa 20 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 20,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 21,
+          "type": 1,
+          "createDate": "21.82021",
+          "createHour": "21:31",
+          "targetDate": "0.10.2021",
+          "targetHour": "57:14",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 21,
+              "name": "Safa 21 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 21,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 22,
+          "type": 0,
+          "createDate": "22.92021",
+          "createHour": "22:31",
+          "targetDate": "1.11.2021",
+          "targetHour": "58:15",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 22,
+              "name": "Safa 22 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 22,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 23,
+          "type": 1,
+          "createDate": "23.102021",
+          "createHour": "23:31",
+          "targetDate": "2.12.2021",
+          "targetHour": "59:16",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 23,
+              "name": "Safa 23 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 23,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 24,
+          "type": 0,
+          "createDate": "24.112021",
+          "createHour": "24:31",
+          "targetDate": "3.0.2021",
+          "targetHour": "60:17",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 24,
+              "name": "Safa 24 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 24,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 15,
@@ -267,7 +3847,488 @@
       "createDate": "1505.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 15s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 1,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 1,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 0,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 0,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 0,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 1,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 0,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 1,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 16,
+          "type": 1,
+          "createDate": "16.32021",
+          "createHour": "16:31",
+          "targetDate": "26.5.2021",
+          "targetHour": "52:9",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 16,
+              "name": "Safa 16 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 16,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 17,
+          "type": 0,
+          "createDate": "17.42021",
+          "createHour": "17:31",
+          "targetDate": "27.6.2021",
+          "targetHour": "53:10",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 17,
+              "name": "Safa 17 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 17,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 18,
+          "type": 1,
+          "createDate": "18.52021",
+          "createHour": "18:31",
+          "targetDate": "28.7.2021",
+          "targetHour": "54:11",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 18,
+              "name": "Safa 18 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 18,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 19,
+          "type": 0,
+          "createDate": "19.62021",
+          "createHour": "19:31",
+          "targetDate": "29.8.2021",
+          "targetHour": "55:12",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 19,
+              "name": "Safa 19 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 19,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 20,
+          "type": 1,
+          "createDate": "20.72021",
+          "createHour": "20:31",
+          "targetDate": "30.9.2021",
+          "targetHour": "56:13",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 20,
+              "name": "Safa 20 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 20,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 21,
+          "type": 1,
+          "createDate": "21.82021",
+          "createHour": "21:31",
+          "targetDate": "0.10.2021",
+          "targetHour": "57:14",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 21,
+              "name": "Safa 21 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 21,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 22,
+          "type": 0,
+          "createDate": "22.92021",
+          "createHour": "22:31",
+          "targetDate": "1.11.2021",
+          "targetHour": "58:15",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 22,
+              "name": "Safa 22 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 22,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 23,
+          "type": 0,
+          "createDate": "23.102021",
+          "createHour": "23:31",
+          "targetDate": "2.12.2021",
+          "targetHour": "59:16",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 23,
+              "name": "Safa 23 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 23,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 24,
+          "type": 0,
+          "createDate": "24.112021",
+          "createHour": "24:31",
+          "targetDate": "3.0.2021",
+          "targetHour": "60:17",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 24,
+              "name": "Safa 24 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 24,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 16,
@@ -276,7 +4337,108 @@
       "createDate": "1605.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 16s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 17,
@@ -285,7 +4447,168 @@
       "createDate": "1705.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 17s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 0,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 1,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 1,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 0,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 18,
@@ -294,7 +4617,308 @@
       "createDate": "1805.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 18s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 0,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 1,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 0,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 1,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 0,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 0,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 1,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 1,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 0,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 1,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     },
     {
       "id": 19,
@@ -303,133 +4927,308 @@
       "createDate": "1905.2021",
       "comments": "Bu bir test hesab\u0131d\u0131r. 19s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
       "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 20,
-      "name": "Safa 20numara",
-      "username": "@Safa 20.kullan\u0131c\u0131",
-      "createDate": "2005.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 20s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 21,
-      "name": "Safa 21numara",
-      "username": "@Safa 21.kullan\u0131c\u0131",
-      "createDate": "2105.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 21s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 22,
-      "name": "Safa 22numara",
-      "username": "@Safa 22.kullan\u0131c\u0131",
-      "createDate": "2205.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 22s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 23,
-      "name": "Safa 23numara",
-      "username": "@Safa 23.kullan\u0131c\u0131",
-      "createDate": "2305.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 23s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 24,
-      "name": "Safa 24numara",
-      "username": "@Safa 24.kullan\u0131c\u0131",
-      "createDate": "2405.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 24s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 25,
-      "name": "Safa 25numara",
-      "username": "@Safa 25.kullan\u0131c\u0131",
-      "createDate": "2505.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 25s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 26,
-      "name": "Safa 26numara",
-      "username": "@Safa 26.kullan\u0131c\u0131",
-      "createDate": "2605.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 26s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 27,
-      "name": "Safa 27numara",
-      "username": "@Safa 27.kullan\u0131c\u0131",
-      "createDate": "2705.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 27s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 28,
-      "name": "Safa 28numara",
-      "username": "@Safa 28.kullan\u0131c\u0131",
-      "createDate": "2805.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 28s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 29,
-      "name": "Safa 29numara",
-      "username": "@Safa 29.kullan\u0131c\u0131",
-      "createDate": "2905.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 29s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 30,
-      "name": "Safa 30numara",
-      "username": "@Safa 30.kullan\u0131c\u0131",
-      "createDate": "005.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 30s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 31,
-      "name": "Safa 31numara",
-      "username": "@Safa 31.kullan\u0131c\u0131",
-      "createDate": "105.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 31s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 32,
-      "name": "Safa 32numara",
-      "username": "@Safa 32.kullan\u0131c\u0131",
-      "createDate": "205.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 32s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
-    },
-    {
-      "id": 33,
-      "name": "Safa 33numara",
-      "username": "@Safa 33.kullan\u0131c\u0131",
-      "createDate": "305.2021",
-      "comments": "Bu bir test hesab\u0131d\u0131r. 33s\u0131radaki hesab\u0131n yorum alan\u0131d\u0131r ayn\u0131 zamanda.",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig=",
-      "processed": []
+      "processes": [
+        {
+          "id": 1,
+          "type": 1,
+          "createDate": "1.12021",
+          "createHour": "1:31",
+          "targetDate": "11.3.2021",
+          "targetHour": "37:19",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 1,
+              "name": "Safa 1 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 1,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 2,
+          "type": 1,
+          "createDate": "2.22021",
+          "createHour": "2:31",
+          "targetDate": "12.4.2021",
+          "targetHour": "38:20",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 2,
+              "name": "Safa 2 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 2,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 3,
+          "type": 0,
+          "createDate": "3.32021",
+          "createHour": "3:31",
+          "targetDate": "13.5.2021",
+          "targetHour": "39:21",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 3,
+              "name": "Safa 3 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 3,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 4,
+          "type": 0,
+          "createDate": "4.42021",
+          "createHour": "4:31",
+          "targetDate": "14.6.2021",
+          "targetHour": "40:22",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 4,
+              "name": "Safa 4 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 4,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 5,
+          "type": 0,
+          "createDate": "5.52021",
+          "createHour": "5:31",
+          "targetDate": "15.7.2021",
+          "targetHour": "41:23",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 5,
+              "name": "Safa 5 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 5,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 6,
+          "type": 1,
+          "createDate": "6.62021",
+          "createHour": "6:31",
+          "targetDate": "16.8.2021",
+          "targetHour": "42:24",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 6,
+              "name": "Safa 6 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 6,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 7,
+          "type": 0,
+          "createDate": "7.72021",
+          "createHour": "7:31",
+          "targetDate": "17.9.2021",
+          "targetHour": "43:0",
+          "status": 1,
+          "statusText": "Kullan\u0131c\u0131ya eri\u015filemedi. L\u00fctfen yeniden hesab\u0131 aktive ediniz.",
+          "targetTweet": {
+            "account": {
+              "id": 7,
+              "name": "Safa 7 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 7,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 8,
+          "type": 0,
+          "createDate": "8.82021",
+          "createHour": "8:31",
+          "targetDate": "18.10.2021",
+          "targetHour": "44:1",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 8,
+              "name": "Safa 8 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 8,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 9,
+          "type": 0,
+          "createDate": "9.92021",
+          "createHour": "9:31",
+          "targetDate": "19.11.2021",
+          "targetHour": "45:2",
+          "status": 2,
+          "statusText": "\u0130\u015flem zaman\u0131 bekleniyor.",
+          "targetTweet": {
+            "account": {
+              "id": 9,
+              "name": "Safa 9 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 9,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 10,
+          "type": 0,
+          "createDate": "10.102021",
+          "createHour": "10:31",
+          "targetDate": "20.12.2021",
+          "targetHour": "46:3",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 10,
+              "name": "Safa 10 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 10,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 11,
+          "type": 1,
+          "createDate": "11.112021",
+          "createHour": "11:31",
+          "targetDate": "21.0.2021",
+          "targetHour": "47:4",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 11,
+              "name": "Safa 11 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 11,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 12,
+          "type": 1,
+          "createDate": "12.122021",
+          "createHour": "12:31",
+          "targetDate": "22.1.2021",
+          "targetHour": "48:5",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 12,
+              "name": "Safa 12 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 12,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 13,
+          "type": 0,
+          "createDate": "13.02021",
+          "createHour": "13:31",
+          "targetDate": "23.2.2021",
+          "targetHour": "49:6",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 13,
+              "name": "Safa 13 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 13,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 14,
+          "type": 0,
+          "createDate": "14.12021",
+          "createHour": "14:31",
+          "targetDate": "24.3.2021",
+          "targetHour": "50:7",
+          "status": 0,
+          "statusText": "\u0130\u015flem ba\u015far\u0131yla tamamland\u0131.",
+          "targetTweet": {
+            "account": {
+              "id": 14,
+              "name": "Safa 14 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 14,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        },
+        {
+          "id": 15,
+          "type": 1,
+          "createDate": "15.22021",
+          "createHour": "15:31",
+          "targetDate": "25.4.2021",
+          "targetHour": "51:8",
+          "status": 1,
+          "statusText": "\u0130\u015flem tarihinde tweet silinmi\u015fti.",
+          "targetTweet": {
+            "account": {
+              "id": 15,
+              "name": "Safa 15 numara",
+              "username": "@Safa kullan\u0131c\u0131",
+              "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
+            },
+            "tweetUrl": 15,
+            "tweetText": "\u00d6rnek i\u015flem yap\u0131lm\u0131\u015f tweet textidir bu."
+          }
+        }
+      ]
     }
   ],
   "tweetGroups": [

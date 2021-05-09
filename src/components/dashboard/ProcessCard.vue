@@ -21,12 +21,14 @@
     </q-card-section>
     <q-card-actions class="v count-text"
       ><span class="q-pl-sm">Kayıtlı İşlem Sayısı</span> <q-space />
-      <q-btn
-        color="primary"
-        icon="mdi-format-list-bulleted-square"
-        flat
-        label="İşlemlere git"
-      />
+      <transition appear enter-active-class="animated bounceIn">
+        <q-btn
+          color="primary"
+          icon="mdi-format-list-bulleted-square"
+          flat
+          label="İşlemlere git"
+        />
+      </transition>
     </q-card-actions>
   </q-card>
 </template>

@@ -1,66 +1,35 @@
 <template>
   <div class="relative-position column items-center">
-    <!-- <q-form @submit="onSubmit" class="q-gutter-md">
-      <q-input
-        disable
-        filled
-        v-model="username"
-        label="Telefon, e-posta veya kullanıcı adı"
-        lazy-rules
-        :rules="[(val) => (val && val.length > 0) || 'Please type something']"
-      />
-
-      <q-input
-        disable
-        filled
-        v-model="password"
-        type="password"
-        label="Şifre"
-        lazy-rules
-        :rules="[
-          (val) => (val !== null && val !== '') || 'Please type your age',
-          (val) => (val > 0 && val < 100) || 'Please type a real age',
-        ]"
-      />
-
-      <div>
-        <q-btn disable label="Giriş Yap" type="submit" color="primary" />
-      </div>
-      <span
-        >Buraya girilenlere göre backsideda giriş yapmaya çalışmalıyım. giriş
-        yapılırsa Account objesine gerekli veriler döndürürdüm. Ancak test için
-        tek tek girilmesini istiyfcem aşağıda.</span
-      >
-    </q-form> -->
-
     <q-form
       @submit="onSubmit"
       class="q-gutter-md form column items-center justify-center q-py-md"
     >
       <q-input
         filled
-        v-model="account.name"
-        label="Hesap ismi"
+        v-model="username"
+        prefix="@"
+        label="Eklenecek Twitter Hesabı"
         lazy-rules
         :rules="[(val) => (val && val.length > 0) || 'Please type something']"
       />
+      <span class="q-ma-none"
+        >Zorunlu değildir. Girilirse gönderilen mail içeriği daha detaylı
+        olacaktır.</span
+      >
       <q-input
         filled
-        v-model="account.username"
-        label="Hesap kullanıcı adı"
+        v-model="mail"
+        label="Hedef Mail Adresi"
         lazy-rules
         :rules="[(val) => (val && val.length > 0) || 'Please type something']"
       />
+      <span class="q-ma-none"
+        >Giriş yapacak kişinin mail adresi. Yazılan adrese hesabını sizin
+        sisteminize eklemesi için bir link gönderilecektir.</span
+      >
 
       <div>
-        <q-btn label="Submit" type="submit" color="primary" />
-        <q-btn
-          label="Reset"
-          type="reset"
-          color="primary"
-          flat
-          class="q-ml-sm"
-        />
+        <q-btn label="Giriş Yap" type="submit" color="primary" />
       </div>
     </q-form>
     <q-btn
@@ -75,31 +44,33 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-// import { useQuasar } from 'quasar';
-
-import Account from 'src/models/Account.model';
-import StoreClass from 'src/services/mockService';
+import { useQuasar } from 'quasar';
 
 export default defineComponent({
   name: 'AddAccountExternal',
   components: {},
   props: ['closeAddRow'],
   setup() {
-    const Store = new StoreClass();
-    const username = ref('');
-    const password = ref('');
+    const q = useQuasar();
 
-    const account = new Account();
-    account.profilePicUrl = 'https://source.unsplash.com/random/200x200?sig=';
-    account.id = Store.getAccounts.value.slice(-1)[0].id + 1;
+    const username = ref('');
+    const mail = ref('');
 
     return {
       username,
-      password,
-      account,
-
+      mail,
       onSubmit() {
-        Store.addActionsForNewAccountAndPushToAccounts(account);
+        q.notify({
+          type: 'positive',
+          message:
+            '@' +
+            username.value +
+            ' hesabına giriş yapması için ' +
+            mail.value +
+            ' adresine link gönderildi.',
+          timeout: 800,
+          position: 'top-right',
+        });
       },
     };
   },

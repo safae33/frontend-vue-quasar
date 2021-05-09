@@ -6,20 +6,15 @@
     id="account-process-scroll-area"
     visible
   >
-    <q-timeline layout="dense" color="secondary">
-      <q-timeline-entry heading class="text-h6 column items-center"
-        ><span>Hesap Aktiviteleri</span></q-timeline-entry
-      >
+    <q-timeline color="secondary">
       <q-virtual-scroll
         scroll-target="#account-process-scroll-area > .scroll"
-        :virtual-scroll-item-size="231"
+        :virtual-scroll-item-size="317"
         :items="processes"
         id="accounts-virtual-scroll"
       >
         <template v-slot="{ item, index }">
-          <div :key="index">
-            <TimelineEntry :process="item" />
-          </div>
+          <TimelineEntry :key="index" :process="item" />
         </template>
       </q-virtual-scroll>
     </q-timeline>
@@ -77,9 +72,9 @@ export default defineComponent({
 .detail-card {
   height: 200px;
 }
-.q-timeline__entry {
-  margin-left: 48px;
-  margin-right: 48px;
+.text-text-color {
+  font-size: 2.8rem;
+  font-weight: 500;
 }
 .tweet-col {
   border: $myCol1 solid 4px;

@@ -4,16 +4,24 @@
       <div
         class="col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5 column items-center q-mb-md"
       >
-        <AccountCard :accountCount="accountsLength" />
+        <transition appear enter-active-class="animated fadeInUp">
+          <AccountCard :accountCount="accountsLength" />
+        </transition>
       </div>
       <div
         class="col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5 column items-center q-mb-md"
       >
-        <ProcessCard />
+        <transition appear enter-active-class="animated fadeInUp">
+          <ProcessCard />
+        </transition>
       </div>
     </div>
     <div class="row justify-center items-center q-ma-sm">
-      <div class="col-12"><ProcessPanel /></div>
+      <div class="col-12">
+        <transition appear enter-active-class="animated fadeInUp"
+          ><ProcessPanel
+        /></transition>
+      </div>
     </div>
   </q-page>
 </template>

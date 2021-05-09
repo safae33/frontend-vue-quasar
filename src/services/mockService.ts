@@ -192,6 +192,12 @@ export class Store {
     });
   }
 
+  resetWhenRouteChange() {
+    this.setDelSelectMode(false);
+    this.setDelSelectedAccountIdArr([]);
+    this.setSelectedAccountId(null);
+  }
+
   //mock işlemler
   /**Mock accountları atama */
   setAc() {
