@@ -9,15 +9,7 @@
       "to": "/",
       "items": []
     },
-    {
-      "expansion": false,
-      "label": "İşlem Geçmişi",
-      "icon": "far fa-check-circle",
-      "iconColor": "text-color",
-      "iconTextColor": "text-color",
-      "to": "/1",
-      "items": []
-    },
+
     {
       "expansion": false,
       "label": "Hesaplar",

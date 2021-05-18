@@ -15,7 +15,14 @@
       :width="256"
     >
       <div
-        class="row items-center justify-center content-center q-py-md text-color-bg"
+        class="
+          row
+          items-center
+          justify-center
+          content-center
+          q-py-md
+          text-color-bg
+        "
       >
         <div
           v-if="!miniState"
@@ -46,30 +53,24 @@
         <Menu class="q-py-xs" />
       </q-scroll-area>
       <div
-        class="column justify-center items-center fixed-bottom"
+        class="column justify-center items-center fixed-bottom cursor-pointer"
         style="width: auto; height: 65px; background-color: #c5ddf3"
+        v-ripple:primary
       >
-        <q-btn
-          class="mitr-font fit text-subtitle1 text-weight-bolder"
-          flat
-          color="primary"
-          :label="!miniState ? 'Safa Emre Yıldırım' : null"
-          :icon="miniState ? 'fas fa-user' : null"
-        >
-          <q-menu fit>
-            <div class="row no-wrap q-pa-md">
-              <div class="col-12 items-center">
-                <q-btn
-                  style="width: 100%"
-                  color="negative"
-                  label="Çıkış"
-                  push
-                  v-close-popup
-                />
-              </div>
+        <span class="text-teal-4"> Safa Emre YILDIRIM </span>
+        <q-menu fit>
+          <div class="row no-wrap q-pa-md bg-teal-6">
+            <div class="col-12 items-center">
+              <q-btn
+                style="width: 100%"
+                color="negative"
+                label="Çıkış"
+                push
+                v-close-popup
+              />
             </div>
-          </q-menu>
-        </q-btn>
+          </div>
+        </q-menu>
       </div>
     </q-drawer>
 

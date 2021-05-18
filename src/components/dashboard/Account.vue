@@ -3,7 +3,12 @@
     <div
       v-for="account in accounts"
       :key="account.id"
-      class="col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12 q-pr-sm q-py-sm column items-center"
+      class="
+        col-xl-4 col-lg-4 col-md-6 col-sm-6 col-xs-12
+        q-pr-sm q-py-xs
+        column
+        items-center
+      "
     >
       <q-card class="max-size">
         <q-card-section class="q-pa-none data">
