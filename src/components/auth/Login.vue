@@ -1,5 +1,5 @@
 <template>
-  <q-card class="account-card mitr-font fit" flat>
+  <q-card class="account-card mitr-font fit">
     <q-card-section class="card-header" horizontal>
       <span class="v q-pa-sm">Giriş</span>
       <q-space />
@@ -10,30 +10,36 @@
         <q-input
           class="col-12"
           filled
-          v-model="username"
-          label="Your name *"
-          hint="Name and surname"
+          v-model="crediantials.username"
+          label="Mail"
+          hint="Kayıtlı mail adresiniz *"
           lazy-rules
-          :rules="[(val) => (val && val.length > 0) || 'Please type something']"
+          :rules="[
+            (val) => (val && val.length > 0) || 'Kullanıcı adını giriniz',
+          ]"
         />
 
         <q-input
           class="col-12"
           filled
-          type="number"
-          v-model="password"
-          label="Your age *"
+          type="password"
+          v-model="crediantials.password"
+          label="Şifre"
           lazy-rules
           :rules="[
-            (val) => (val !== null && val !== '') || 'Please type your age',
-            (val) => (val > 0 && val < 100) || 'Please type a real age',
+            (val) => (val !== null && val !== '') || 'Şifrenizi giriniz',
           ]"
         />
       </q-card-section>
-      <q-card-actions class="v count-text row">
+      <q-card-actions>
         <q-toggle v-model="remember" label="Beni Hatırla" class="q-ml-lg" />
         <q-space />
-        <q-btn label="Submit" type="submit" color="primary" class="q-mr-lg" />
+        <q-btn
+          label="Submit"
+          @click="login()"
+          color="primary"
+          class="q-mr-lg"
+        />
       </q-card-actions>
     </q-form>
   </q-card>
@@ -41,26 +47,46 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
+import AxiosClass from 'src/services/axios';
+import { useRouter } from 'vue-router';
+import { useQuasar } from 'quasar';
 export default defineComponent({
   name: 'Login',
   setup() {
-    const username = ref(null);
-    const password = ref(null);
+    const Api = new AxiosClass();
+    const router = useRouter();
+    const q = useQuasar();
+    const crediantials = ref({ username: '', password: '' });
     const remember = ref(false);
-    return { remember, username, password };
+    function login() {
+      q.loading.show({
+        message: 'Yükleniyor...',
+      });
+      Api.login(crediantials.value)
+        .then(() => {
+          q.loading.hide();
+          router.replace('/');
+        })
+        .catch(() => {
+          q.loading.hide();
+          q.notify({
+            type: 'negative',
+            message: 'API çalışmıyor.',
+            position: 'top-right',
+          });
+        });
+    }
+    return { remember, crediantials, login };
   },
 });
 </script>
 <style lang="scss">
 .account-card {
-  transform: skew(-5deg);
   margin: 24px;
   border-radius: 10px;
-  background-color: #f5f5f5;
+  background-color: $teal-5;
 }
-.v {
-  transform: skew(5deg);
-}
+
 .card-header {
   border-bottom: 5px solid $text-color;
 }

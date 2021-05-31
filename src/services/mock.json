@@ -5244,67 +5244,53 @@
 
   "tweets": [
     {
-      "tweetUrl": "1",
-      "tweetText": "Örnek bir tweet olması ihtiyacı ile yazılmıs random bir texttir.",
-      "account": {
-        "name": "Safa",
-        "username": "@testimizbu1",
-        "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-      }
+      "url": "1",
+      "text": "Örnek bir tweet olması ihtiyacı ile yazılmıs random bir texttir.",
+      "name": "Safa",
+      "username": "@testimizbu1",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
     },
     {
-      "tweetUrl": "2",
-      "tweetText": "Bu bir texttir ama bir sor nasıl bi text. bunu yapmak zorunda kalmaz ayrı üzücü.",
-      "account": {
-        "name": "Safa",
-        "username": "@testimiz bu2",
-        "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-      }
+      "url": "2",
+      "text": "Bu bir texttir ama bir sor nasıl bi text. bunu yapmak zorunda kalmaz ayrı üzücü.",
+      "name": "Safa",
+      "username": "@testimiz bu2",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
     },
     {
-      "tweetUrl": "3",
-      "tweetText": "Bu bir texttir.",
-      "account": {
-        "name": "Safa",
-        "username": "@testimiz bu3",
-        "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-      }
+      "url": "3",
+      "text": "Bu bir texttir.",
+      "name": "Safa",
+      "username": "@testimiz bu3",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
     },
     {
-      "tweetUrl": "4",
-      "tweetText": "Bu bir texttir.",
-      "account": {
-        "name": "Safa",
-        "username": "@testimiz bu4",
-        "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-      }
+      "url": "4",
+      "text": "Bu bir texttir.",
+      "name": "Safa",
+      "username": "@testimiz bu4",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
     },
     {
-      "tweetUrl": "5",
-      "tweetText": "Bu bir texttir.",
-      "account": {
-        "name": "Safa",
-        "username": "@testimiz bu5",
-        "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-      }
+      "url": "5",
+      "text": "Bu bir texttir.",
+      "name": "Safa",
+      "username": "@testimiz bu5",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
     },
     {
-      "tweetUrl": "6",
-      "tweetText": "Bu bir texttir.",
-      "account": {
-        "name": "Safa",
-        "username": "@testimiz bu6",
-        "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-      }
+      "url": "6",
+      "text": "Bu bir texttir.",
+      "name": "Safa",
+      "username": "@testimiz bu6",
+      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
     }
   ],
   "mockNewTweet": {
     "tweetUrl": "9999999",
     "tweetText": "Bu yeni eklenmiş bir tweetin textidir. herkes akıllı olacak ",
-    "account": {
-      "name": "Safa tabii",
-      "username": "@yeni eklenen test bu be",
-      "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
-    }
+    "name": "Safa tabii",
+    "username": "@yeni eklenen test bu be",
+    "profilePicUrl": "https://source.unsplash.com/random/200x200?sig="
   }
 }

@@ -13,13 +13,13 @@
     handle=".handle"
     v-model="tweets"
     v-bind="dragOptions"
-    @start="drag = true"
-    @end="end()"
+    @start="toggleDrag()"
+    @end="toggleDrag()"
     item-key="valueOf"
   >
     <template #item="{ element }">
       <div
-        class="row q-ma-xs list-group-item"
+        class="row q-ma-xs list-group-item relative-position"
         :class="{ 'not-selected': !isSelected(), selected: isSelected() }"
       >
         <div class="col-10" @click="setSelectedTweetGroup">
@@ -52,9 +52,13 @@
             @click="splitTweet(element)"
           />
         </div>
+        <div class="column items-center" v-if="drag" :class="{'is-dragging': drag }">
+          
+  </div>
       </div>
     </template>
   </draggable>
+  
 </template>
 
 <script lang="ts">
@@ -83,7 +87,7 @@ export default defineComponent({
         ghostClass: 'ghost',
       };
     });
-    const drag = ref(false);
+    const drag = Store.getIsDragging;
     const newAdded = ref(true);
 
     const tweets: ComputedRef<number[]> = computed({
@@ -113,8 +117,8 @@ export default defineComponent({
       isSelected,
       drag,
       dragOptions,
-      end() {
-        drag.value = false;
+      toggleDrag() {
+        Store.toggleDragging();
       },
       removeTweetIndex(tweetIndex: number) {
         Store.removeTweetIndexFromTweetGroup(props.tweetGroupId, tweetIndex);
@@ -125,6 +129,9 @@ export default defineComponent({
       setSelectedTweetGroup() {
         Store.setSelectedTweetGroupId(props.tweetGroupId);
       },
+      toggleDragging() {
+        Store.toggleDragging()
+      }
     };
   },
 });
@@ -135,6 +142,14 @@ export default defineComponent({
   box-shadow: 0 0 0 0 rgba(4, 61, 117, 0);
   border-radius: 10px;
   animation: pulse 0.8s infinite;
+}
+.is-dragging{
+  height: 110%;
+  width: 100%;
+
+  position: absolute;
+  background-color: #043d75a2
+  
 }
 @keyframes pulse {
   0% {

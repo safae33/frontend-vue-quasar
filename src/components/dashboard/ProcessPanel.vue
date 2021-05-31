@@ -6,6 +6,17 @@
     @mouseout="isHovering = false"
     flat
   >
+    <div class="q-pa-xl">
+      <q-btn
+        class="col q-mb-xs q-py-none full-width"
+        icon="fas fa-trash"
+        label="TEST BUTTONUUU"
+        size="md"
+        text-color="negative"
+        flat
+        @click="test()"
+      />
+    </div>
     <q-card-section class="col-12 row pp-header q-pa-none">
       <span class="q-pa-sm">İşlem Paneli</span>
       <q-space />
@@ -20,11 +31,23 @@
               type="text"
               v-model="addTweetValue"
               ref="addTweetRef"
+              color="teal-4"
               label="Tweet eklemek için linkini giriniz."
-              @keyup="addNewTweet"
               :class="{ pulse: !tweetGroups.length }"
               dense
-            />
+              @keydown.enter="addNewTweet"
+            >
+              <template v-slot:after>
+                <q-btn
+                  round
+                  dense
+                  flat
+                  text-color="teal-4"
+                  icon="send"
+                  @click="addNewTweet"
+                />
+              </template>
+            </q-input>
           </q-card-section>
           <!-- tweets-body -->
           <q-card-section
@@ -61,6 +84,7 @@
           </q-card-section>
           <q-inner-loading :showing="isNewTweetLoading" color="primary">
             <q-spinner-hourglass color="teal-4" size="100px" />
+            <span>Tweet getiriliyor. Lütfen Bekleyiniz...</span>
           </q-inner-loading>
         </q-card>
       </div>
@@ -69,7 +93,16 @@
         <div class="inset-shadow-down absolute-bottom shadow_div z-top"></div>
         <div
           v-if="!isSelected"
-          class="row fit items-center no-selected-text aldrich-font absolute-center z-top pulse"
+          class="
+            row
+            fit
+            items-center
+            no-selected-text
+            aldrich-font
+            absolute-center
+            z-top
+            pulse
+          "
         >
           <div class="col-2">
             <q-icon size="xl" name="fas fa-arrow-circle-left" />
@@ -165,6 +198,7 @@ import DraggableTweets from 'src/components/dashboard/DraggableTweets.vue';
 
 import AccountModel from 'src/models/Account.model';
 import StoreClass from 'src/services/mockService';
+import AxiosClass from 'src/services/axios';
 import TweetGroup from 'src/models/TweetGroup.model';
 
 export default defineComponent({
@@ -179,6 +213,7 @@ export default defineComponent({
     //*sabitler //////////////////////////////
     const $q = useQuasar();
     const Store = new StoreClass();
+    const Api = new AxiosClass();
     const thumbStyle = reactive({
       right: '4px',
       borderRadius: '5px',
@@ -256,13 +291,19 @@ export default defineComponent({
     const addTweetValue = ref('');
     const addTweetRef = ref<QInput>();
     function addNewTweet() {
-      isNewTweetLoading.value = true;
+      console.log('fonksiyona girdm şimndi addnewtweet');
       setTimeout(() => {
-        isNewTweetLoading.value = false;
-        addTweetValue.value = '';
-        addTweetRef.value?.blur();
-        Store.addNewTweet();
-      }, 3000);
+        if (addTweetValue.value.length != 1) {
+          isNewTweetLoading.value = true;
+          Api.add_tweet_info(addTweetValue.value).finally(() => {
+            addTweetValue.value = '';
+            isNewTweetLoading.value = false;
+          });
+          // Api.getAccounts().finally(() => {
+          //   isNewTweetLoading.value = false;
+          // });
+        }
+      }, 500);
     }
 
     return {
@@ -281,6 +322,10 @@ export default defineComponent({
       isHovering,
       thumbStyle,
       barStyle,
+      async test() {
+        await Api.test();
+        // Api.getAccounts()
+      },
     };
   },
 });

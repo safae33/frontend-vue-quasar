@@ -1,39 +1,34 @@
 <template>
-  <div class="relative-position column items-center">
-    <!-- <q-form @submit="onSubmit" class="q-gutter-md">
+  <div class="relative-position column items-center fit">
+    <q-form
+      @submit="onSubmit"
+      class="q-gutter-md form column items-center justify-center q-py-md"
+    >
       <q-input
-        disable
+        class="input"
         filled
-        v-model="username"
+        v-model="crediantials.username"
         label="Telefon, e-posta veya kullanıcı adı"
         lazy-rules
-        :rules="[(val) => (val && val.length > 0) || 'Please type something']"
+        :rules="[(val) => (val && val.length > 0) || 'Boş Bırakılamaz']"
       />
 
       <q-input
-        disable
+        class="input"
         filled
-        v-model="password"
+        v-model="crediantials.password"
         type="password"
         label="Şifre"
         lazy-rules
-        :rules="[
-          (val) => (val !== null && val !== '') || 'Please type your age',
-          (val) => (val > 0 && val < 100) || 'Please type a real age',
-        ]"
+        :rules="[(val) => (val !== null && val !== '') || 'Boş Bırakılamaz']"
       />
 
       <div>
-        <q-btn disable label="Giriş Yap" type="submit" color="primary" />
+        <q-btn label="Giriş Yap" type="submit" color="primary" />
       </div>
-      <span
-        >Buraya girilenlere göre backsideda giriş yapmaya çalışmalıyım. giriş
-        yapılırsa Account objesine gerekli veriler döndürürdüm. Ancak test için
-        tek tek girilmesini istiyfcem aşağıda.</span
-      >
-    </q-form> -->
+    </q-form>
 
-    <q-form
+    <!-- <q-form
       @submit="onSubmit"
       class="q-gutter-md form column items-center justify-center q-py-md"
     >
@@ -62,7 +57,7 @@
           class="q-ml-sm"
         />
       </div>
-    </q-form>
+    </q-form> -->
     <q-btn
       class="absolute-top-right q-mr-sm q-mt-sm"
       color="negative"
@@ -70,15 +65,19 @@
       icon="fas fa-times"
       @click="closeAddRow"
     />
+    <q-inner-loading :showing="isNewAccountInitializing" color="primary">
+      <q-spinner-hourglass color="teal-4" size="100px" />
+      <span>Lütfen bekleyiniz.</span>
+      <span>{{ loadingMessage }}</span>
+    </q-inner-loading>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-// import { useQuasar } from 'quasar';
 
-import Account from 'src/models/Account.model';
 import StoreClass from 'src/services/mockService';
+import AxiosClass from 'src/services/axios';
 
 export default defineComponent({
   name: 'AddAccountInternal',
@@ -86,27 +85,45 @@ export default defineComponent({
   props: ['closeAddRow'],
   setup() {
     const Store = new StoreClass();
-    // const username = ref('');
-    // const password = ref('');
+    const Api = new AxiosClass();
 
-    const account = new Account();
-    account.profilePicUrl = 'https://source.unsplash.com/random/200x200?sig=';
-    account.id = Store.getAccounts.value.slice(-1)[0].id + 1;
-    account.name = '';
-    account.username = '';
+    const crediantials = ref({ username: '', password: '' });
+    const loadingMessage = ref('');
+    const isNewAccountInitializing = ref(false);
 
-    const name = ref('');
-    const username = ref('');
+    // const account = new Account();
+    // account.profilePicUrl = 'https://source.unsplash.com/random/200x200?sig=';
+    // account.id = Store.getAccounts.value.slice(-1)[0].id + 1;
+    // account.name = '';
+    // account.username = '';
+
+    async function onSubmit() {
+      loadingMessage.value = '* Hesap bilgileri oluşturuluyor...';
+      isNewAccountInitializing.value = true;
+      await Api.add_new_account(crediantials.value).then(() => {
+        loadingMessage.value = '* Hesaba Giriş yapılıyor...';
+        var interval = setInterval(() => {
+          Api.check_task_id_status(Store.getAddAccountTaskId.value).then(() => {
+            if (Store.getAddAccountStatus.value == 'SUCCESS') {
+              loadingMessage.value = '* Son işlemler yapılıyor...';
+              isNewAccountInitializing.value = false;
+              clearInterval(interval);
+            }
+          });
+        }, 1500);
+      });
+    }
+
+    // watch(Store.getSelectedAccountId, () => {
+    //   if (Store.getSelectedAccountId != null)
+    //     isNewAccountInitializing.value = false;
+    // });
 
     return {
-      name,
-      username,
-      account,
-      onSubmit() {
-        account.username = username.value;
-        account.name = name.value;
-        Store.addActionsForNewAccountAndPushToAccounts(account);
-      },
+      onSubmit,
+      loadingMessage,
+      crediantials,
+      isNewAccountInitializing,
     };
   },
 });
@@ -114,7 +131,10 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .form {
-  width: 600px;
-  max-height: 600px;
+  width: 100%;
+  max-height: 35%;
+}
+.input {
+  width: 40%;
 }
 </style>

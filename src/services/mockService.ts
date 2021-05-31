@@ -7,6 +7,7 @@ import Account from 'src/models/Account.model';
 import TweetGroup from 'src/models/TweetGroup.model';
 import Tweet from 'src/models/Tweet.model';
 import Action from 'src/models/Action.model';
+import { ITweetInfo } from 'src/models/interfaces';
 
 export class Store {
   store = useStore();
@@ -33,6 +34,12 @@ export class Store {
   getSelectedTweetGroupId = computed(
     () => this.store.state.general.selectedTweetGroupId
   );
+  /**@return state.isDragging */
+  getIsDragging = computed(() => this.store.state.general.isDragging);
+  /**@return state.loggedInUser */
+  getLoggedInUser = computed(() => this.store.state.general.loggedInUser);
+  /**@return state.token */
+  getToken = computed(() => this.store.state.general.token);
 
   //allAccounts
   /**@return state.selectedAccountId */
@@ -46,6 +53,14 @@ export class Store {
   /**@return state.delSelectedAccountIdArr */
   getDelSelectedAccountIdArr: ComputedRef<number[]> = computed(
     () => this.store.state.general.delSelectedAccountIdArr
+  );
+  /**@return state.addAccountTaskId */
+  getAddAccountTaskId = computed(
+    () => this.store.state.general.addAccountTaskId
+  );
+  /**@return state.addAccountTaskId */
+  getAddAccountStatus = computed(
+    () => this.store.state.general.addAccountStatus
   );
 
   //*setters //////////////////////////////
@@ -74,7 +89,12 @@ export class Store {
   toggleRetweet(accountId: number) {
     this.store.commit('general/toggleActionRetweet', accountId);
   }
-
+  /**
+   * dragging değerini toggle eder. tutma başlayınca ve bitince çalışacak
+   */
+  toggleDragging() {
+    this.store.commit('general/toggleDragging');
+  }
   /**
    *  gönderilen tweetgroupid içindeki gönderilen tweet indexini çıkarır.
    * tweet silinmiş olmaz ancak grupsuz kaldığı için görünmez.
@@ -116,16 +136,31 @@ export class Store {
     });
   }
 
+  setToken(token: string | null) {
+    this.store.commit('general/setToken', token);
+  }
+
+  setAddAccountTaskId(taskId: string) {
+    this.store.commit('general/setAddAccountTaskId', taskId);
+  }
+
+  setAddAccountStatus(status: string) {
+    this.store.commit('general/setAddAccountStatus', status);
+  }
+
+  isAuth = computed(() => {
+    if (this.getToken.value == '') return true;
+    else return false;
+  });
+
   /**
    * mock içindeki yeni tweet tweets içine eklenir. Yeni bir grup oluşturulur.
    *  tweetindex değeri gönderilmediği için tüm tweetlerin en son indexini atar.
    *
    */
-  addNewTweet() {
-    this.store.commit(
-      'general/pushTweet',
-      Object.assign(new Tweet(), mockAccJson.mockNewTweet)
-    );
+  addNewTweet(tweet: ITweetInfo) {
+    const tweet1 = Object.assign(new Tweet(), tweet);
+    this.store.commit('general/pushTweet', tweet1);
     this.store.commit('general/createNewTweetGroup');
     this.store.commit('general/addActionForRecentAddedTweetGroup');
     //notify

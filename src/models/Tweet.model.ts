@@ -1,14 +1,29 @@
-import Account from './Account.model';
 export class Tweet {
-  account: Account;
-  tweetUrl: string;
-  tweetText: string;
+  url: string;
+  profilePicUrl: string;
+  name: string;
+  username: string;
+  text: string;
 
-  constructor(account?: Account, tweetText?: string, tweetUrl?: string);
-  constructor(account: Account, tweetText: string, tweetUrl: string) {
-    this.account = account;
-    this.tweetText = tweetText;
-    this.tweetUrl = tweetUrl;
+  constructor(
+    url?: string,
+    profilePicUrl?: string,
+    name?: string,
+    username?: string,
+    text?: string
+  );
+  constructor(
+    url: string,
+    profilePicUrl: string,
+    name: string,
+    username: string,
+    text: string
+  ) {
+    this.url = url;
+    this.profilePicUrl = profilePicUrl;
+    this.name = name;
+    this.username = username;
+    this.text = text;
   }
 }
 

@@ -57,7 +57,8 @@
         style="width: auto; height: 65px; background-color: #c5ddf3"
         v-ripple:primary
       >
-        <span class="text-teal-4"> Safa Emre YILDIRIM </span>
+        <span v-if="!miniState" class="text-teal-4">{{ loggedInUser }}</span>
+        <q-icon v-else size="md" name="fas fa-user" color="teal-4" />
         <q-menu fit>
           <div class="row no-wrap q-pa-md bg-teal-6">
             <div class="col-12 items-center">
@@ -67,6 +68,7 @@
                 label="Çıkış"
                 push
                 v-close-popup
+                @click="logout()"
               />
             </div>
           </div>
@@ -82,14 +84,16 @@
         ref="mainScroll"
         visible
       >
-        <transition
-          :appear="true"
-          mode="out-in"
-          enter-active-class="animated fadeIn"
-          leave-active-class="animated fadeOut"
-        >
-          <router-view class="page" />
-        </transition>
+        <router-view class="page" v-slot="{ Component }">
+          <transition
+            :appear="true"
+            mode="out-in"
+            enter-active-class="animated fadeIn"
+            leave-active-class="animated fadeOut"
+          >
+            <component :is="Component" />
+          </transition>
+        </router-view>
       </q-scroll-area>
     </q-page-container>
   </q-layout>
@@ -98,9 +102,10 @@
 <script lang="ts">
 import { defineComponent, ref, reactive, onMounted, watch } from 'vue';
 import { QScrollArea, useQuasar } from 'quasar';
-import { useRoute } from 'vue-router';
+import { useRoute, useRouter } from 'vue-router';
 import Menu from 'components/layout/Menu.vue';
 import StoreClass from 'src/services/mockService';
+import AxiosClass from 'src/services/axios';
 
 export default defineComponent({
   name: 'MainLayout',
@@ -109,12 +114,16 @@ export default defineComponent({
 
   setup() {
     const Store = new StoreClass();
-    const router = useRoute();
+    const route = useRoute();
+    const router = useRouter();
+    const Api = new AxiosClass();
     const drawer = ref(true);
     const alwaysNotMini = ref(false);
     const toggleButton = ref('col-2 q-pr-lg');
     const menuScrollArea = ref('width: 256px;');
     const miniState = ref(false);
+
+    const loggedInUser = Store.getLoggedInUser;
 
     const thumbStyle = reactive({
       right: '4px',
@@ -130,32 +139,36 @@ export default defineComponent({
       width: '9px',
       opacity: 0.2,
     });
-    const $q = useQuasar();
+    const q = useQuasar();
 
     const mainScroll = ref<QScrollArea>();
-    watch(router, () => {
+    watch(route, () => {
       mainScroll.value?.setScrollPosition('vertical', 0);
       Store.resetWhenRouteChange();
     });
 
     watch(Store.getSelectedAccountId, () => {
-      if (router.path == '/accounts')
+      if (route.path == '/accounts')
         setTimeout(() => {
           mainScroll.value?.setScrollPercentage('vertical', 1, 200);
         }, 300);
     });
 
     onMounted(() => {
-      if ($q.platform.is.mobile) {
+      if (q.platform.is.mobile) {
         drawer.value = false;
         miniState.value = false;
       }
-      if ($q.screen.name == 'md') miniState.value = true;
-      Store.initialize();
+      if (q.screen.name == 'md') miniState.value = true;
+      // Store.initialize();
+
+      Store.setToken(q.localStorage.getItem('token'));
     });
+
     return {
+      loggedInUser,
       mainScroll,
-      router,
+      route,
       alwaysNotMini,
       drawer,
       menuScrollArea,
@@ -194,6 +207,16 @@ export default defineComponent({
       },
       thumbStyle,
       barStyle,
+      logout() {
+        q.loading.show({
+          message: 'Yükleniyor...',
+        });
+        Api.logout(Store.getToken.value).then(() => {
+          q.localStorage.remove('token');
+          q.loading.hide();
+          router.replace('/auth');
+        });
+      },
     };
   },
 });

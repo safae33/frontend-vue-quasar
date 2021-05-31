@@ -9,14 +9,14 @@
       <q-item class="q-mx-none no-border q-pr-xs">
         <q-item-section avatar>
           <q-avatar>
-            <img :src="tweet.account.profilePicUrl + '1' + tweet.tweetUrl" />
+            <img :src="tweet.profilePicUrl" />
           </q-avatar>
         </q-item-section>
 
         <q-item-section>
-          <q-item-label lines="1">{{ tweet.account.name }}</q-item-label>
+          <q-item-label lines="1">{{ tweet.name }}</q-item-label>
           <q-item-label caption lines="1">
-            <span class="text-weight-bold">{{ tweet.account.username }}</span>
+            <span class="text-weight-bold">{{ tweet.username }}</span>
           </q-item-label>
         </q-item-section>
         <q-item-section top side
@@ -28,7 +28,7 @@
       <q-item class="q-pa-none">
         <q-item-section class="row">
           <q-item-label lines="2" header class="q-pa-none">
-            {{ tweet.tweetText }}
+            {{ tweet.text }}
           </q-item-label>
         </q-item-section>
       </q-item>

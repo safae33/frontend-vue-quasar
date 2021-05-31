@@ -10,7 +10,13 @@
         </q-card-section>
         <!-- accounts util row -->
         <q-card-section
-          class="ap-accounts-util-row q-pa-none q-pr-xs row align-between justify-between"
+          class="
+            ap-accounts-util-row
+            q-pa-none q-pr-xs
+            row
+            align-between
+            justify-between
+          "
         >
           <q-input
             class="col-4 q-pa-none q-px-sm"
@@ -62,14 +68,14 @@
                   <q-item
                     clickable
                     v-ripple:primary
-                    @click="addSelect = 'internal'"
+                    @click="setAddSelect('internal')"
                   >
                     <q-item-section>Sayfa İçi Ekle</q-item-section>
                   </q-item>
                   <q-item
                     clickable
                     v-ripple:primary
-                    @click="addSelect = 'external'"
+                    @click="setAddSelect('external')"
                   >
                     <q-item-section>Mail Gönderme</q-item-section>
                   </q-item>
@@ -80,7 +86,7 @@
         </q-card-section>
         <!-- add account row -->
         <q-card-section
-          class="ap-accounts-add-account q-pa-none q-pr-xs full-width row align-center justify-center"
+          class="ap-accounts-add-account q-pa-none q-pr-xs full-width"
           :class="{ 'ap-accounts-add-account__max_height': addSelect != '' }"
         >
           <transition
@@ -202,7 +208,7 @@ import Account from 'src/components/dashboard/Account.vue';
 import AccountDetail from 'src/components/accounts/AccountDetail.vue';
 import ProcessDetail from 'src/components/accounts/ProcessDetail.vue';
 import AddAccountInternal from 'src/components/accounts/AddAccountInternal.vue';
-import AddAccountExternal from 'src/components/accounts/AddAcountExternal.vue';
+import AddAccountExternal from 'src/components/accounts/AddAccountExternal.vue';
 
 import AccountModel from 'src/models/Account.model';
 export default defineComponent({
@@ -359,6 +365,10 @@ export default defineComponent({
         addSelect.value = '';
       },
       enableDelSelectMode,
+      setAddSelect(value: string) {
+        addSelect.value = value;
+        Store.setSelectedAccountId(null);
+      },
     };
   },
 });
@@ -383,6 +393,7 @@ export default defineComponent({
   transition: transform 300ms linear;
   transform: rotate(180deg);
 }
+
 .pulse {
   box-shadow: 0 0 0 rgba(4, 61, 117, 0.4);
   border-radius: 6px;

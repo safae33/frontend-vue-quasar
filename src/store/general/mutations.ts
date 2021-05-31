@@ -4,6 +4,19 @@ import { MutationTree } from 'vuex';
 import { GeneralState } from './state';
 
 const mutation: MutationTree<GeneralState> = {
+  setLoggedInUser(state, value) {
+    state.loggedInUser = value;
+  },
+  setToken(state, value) {
+    state.token = value;
+  },
+  setAddAccountTaskId(state, value) {
+    state.addAccountTaskId = value;
+  },
+  setAddAccountStatus(state, value) {
+    state.addAccountStatus = value;
+  },
+
   setSelectedTweetGroupId(state, id) {
     state.selectedTweetGroupId = id;
   },
@@ -27,6 +40,10 @@ const mutation: MutationTree<GeneralState> = {
         1
       );
     });
+  },
+
+  toggleDragging(state) {
+    state.isDragging = !state.isDragging;
   },
 
   createNewTweetGroup(state, tweetIndex?: number) {
