@@ -9,9 +9,9 @@ const routes: RouteRecordRaw[] = [
   {
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
-    beforeEnter: () => {
-      if (LocalStorage.getItem('token') == null) return { path: '/auth' };
-    },
+    // beforeEnter: () => { şimdilik kapatıldı
+    //   if (LocalStorage.getItem('token') == null) return { path: '/auth' };
+    // },
     // beforeEnter: (to, from, next) => {
     //   if (Store.isAuth.value) {
     //     next({ path: to.path });

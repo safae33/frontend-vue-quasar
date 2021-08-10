@@ -17,6 +17,8 @@ import { createApp } from 'vue'
 
 
 
+
+
 import '@quasar/extras/mdi-v5/mdi-v5.css'
 
 import '@quasar/extras/fontawesome-v5/fontawesome-v5.css'
@@ -56,6 +58,7 @@ import 'src/css/app.scss'
 
 
 import createQuasarApp from './app.js'
+import quasarUserOptions from './quasar-user-options.js'
 
 
 
@@ -126,11 +129,13 @@ async function start ({ app, router, store, storeKey }, bootFiles) {
       app.mount('#q-app')
     
 
+    
+
   
 
 }
 
-createQuasarApp(createApp)
+createQuasarApp(createApp, quasarUserOptions)
 
   .then(app => {
     return Promise.all([

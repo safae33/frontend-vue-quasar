@@ -55,8 +55,8 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { useQuasar } from 'quasar';
-import { useRoute } from 'vue-router';
+// import { useQuasar } from 'quasar';
+// import { useRoute } from 'vue-router';
 
 import StoreClass from 'src/services/mockService';
 import AxiosClass from 'src/services/axios';
@@ -66,12 +66,12 @@ export default defineComponent({
   components: {},
   props: ['closeAddRow'],
   setup() {
-    const q = useQuasar();
+    // const q = useQuasar();
     const Store = new StoreClass();
     const Api = new AxiosClass();
-    const Route = useRoute();
+    // const Route = useRoute();
 
-    const taskId = Route.params.taskId;
+    // const taskId = Route.params.taskId;
 
     const crediantials = ref({ username: '', password: '' });
     const loadingMessage = ref('');

@@ -13,7 +13,6 @@
 
 
 import { Quasar } from 'quasar'
-import quasarUserOptions from './quasar-user-options.js'
 import RootComponent from 'app/src/App.vue'
 
 
@@ -25,13 +24,12 @@ import createRouter from 'app/src/router/index'
 
 
 
-export default async function (createAppFn) {
+export default async function (createAppFn, quasarUserOptions) {
   // create store and router instances
   
   const store = typeof createStore === 'function'
     ? await createStore({})
     : createStore
-
 
   // obtain Vuex injection key in case we use TypeScript
   const { storeKey } = await import('app/src/store/index');

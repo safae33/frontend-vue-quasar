@@ -2,14 +2,24 @@
   <q-page>
     <div class="row justify-around items-center toparea">
       <div
-        class="col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5 column items-center q-mb-md"
+        class="
+          col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5
+          column
+          items-center
+          q-mb-md
+        "
       >
         <transition appear enter-active-class="animated fadeInUp">
           <AccountCard :accountCount="accountsLength" />
         </transition>
       </div>
       <div
-        class="col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5 column items-center q-mb-md"
+        class="
+          col-xs-11 col-sm-11 col-md-10 col-xl-5 col-lg-5
+          column
+          items-center
+          q-mb-md
+        "
       >
         <transition appear enter-active-class="animated fadeInUp">
           <ProcessCard />
@@ -35,14 +45,20 @@ import ProcessPanel from 'src/components/dashboard/ProcessPanel.vue';
 
 import StoreClass from 'src/services/mockService';
 
+import { useQuasar } from 'quasar';
+
 export default defineComponent({
   name: 'Dashboard',
   components: { AccountCard, ProcessCard, ProcessPanel },
   setup() {
     const Store = new StoreClass();
+    const q = useQuasar();
     const accountsLength = Store.getAccountsLength;
     // onMounted(() => {
+    // if (Store.getAccounts.value.length == 0) {
     //   Store.initialize();
+    // }
+
     // });
     const thumbStyle = reactive({
       right: '4px',

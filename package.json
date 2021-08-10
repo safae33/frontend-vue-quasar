@@ -10,16 +10,17 @@
     "test": "echo \"No test specified\" && exit 0"
   },
   "dependencies": {
-    "@quasar/extras": "^1.10.4",
+    "@quasar/extras": "^1.10.9",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "primevue": "^3.4.0",
-    "quasar": "^2.0.0-beta.15",
+    "quasar": "^2.0.3",
     "vue-i18n": "^9.0.0-beta.0",
-    "vuedraggable": "^4.0.1"
+    "vuedraggable": "^4.0.1",
+    "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@quasar/app": "^3.0.0-beta.20",
+    "@quasar/app": "^3.0.3",
     "@types/node": "^10.17.15",
     "@typescript-eslint/eslint-plugin": "^4.16.1",
     "@typescript-eslint/parser": "^4.16.1",

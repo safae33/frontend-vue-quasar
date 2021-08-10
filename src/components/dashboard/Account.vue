@@ -26,7 +26,7 @@
           >
             <q-item-section avatar>
               <q-avatar>
-                <img :src="account.profilePicUrl + account.id" />
+                <img :src="account.profilePicUrl" />
               </q-avatar>
             </q-item-section>
 

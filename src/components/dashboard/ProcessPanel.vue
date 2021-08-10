@@ -6,7 +6,7 @@
     @mouseout="isHovering = false"
     flat
   >
-    <div class="q-pa-xl">
+    <!-- <div class="q-pa-xl">
       <q-btn
         class="col q-mb-xs q-py-none full-width"
         icon="fas fa-trash"
@@ -16,7 +16,7 @@
         flat
         @click="test()"
       />
-    </div>
+    </div> -->
     <q-card-section class="col-12 row pp-header q-pa-none">
       <span class="q-pa-sm">İşlem Paneli</span>
       <q-space />
@@ -211,7 +211,7 @@ export default defineComponent({
     //ref içindeki value kullanmak gerekince arrow function ile yapmak gerekiyor.
 
     //*sabitler //////////////////////////////
-    const $q = useQuasar();
+    const q = useQuasar();
     const Store = new StoreClass();
     const Api = new AxiosClass();
     const thumbStyle = reactive({
@@ -267,9 +267,9 @@ export default defineComponent({
     }
     const accounts = computed(() => {
       const filter = accountsFilterValue.value;
-      if ($q.screen.name == 'xl' || $q.screen.name == 'lg') {
+      if (q.screen.name == 'xl' || q.screen.name == 'lg') {
         return slice(3, filter);
-      } else if ($q.screen.name == 'md' || $q.screen.name == 'sm') {
+      } else if (q.screen.name == 'md' || q.screen.name == 'sm') {
         return slice(2, filter);
       } else {
         return slice(1, filter);
@@ -292,18 +292,26 @@ export default defineComponent({
     const addTweetRef = ref<QInput>();
     function addNewTweet() {
       console.log('fonksiyona girdm şimndi addnewtweet');
-      setTimeout(() => {
-        if (addTweetValue.value.length != 1) {
-          isNewTweetLoading.value = true;
-          Api.add_tweet_info(addTweetValue.value).finally(() => {
+
+      if (addTweetValue.value.length != 1) {
+        isNewTweetLoading.value = true;
+        Api.add_tweet_info(addTweetValue.value)
+          .finally(() => {
             addTweetValue.value = '';
             isNewTweetLoading.value = false;
+          })
+          .catch((reason) => {
+            isNewTweetLoading.value = false;
+            q.notify({
+              type: 'negative',
+              message: 'API ye bağlanılamadı.',
+              position: 'top-right',
+            });
           });
-          // Api.getAccounts().finally(() => {
-          //   isNewTweetLoading.value = false;
-          // });
-        }
-      }, 500);
+        // Api.getAccounts().finally(() => {
+        //   isNewTweetLoading.value = false;
+        // });
+      }
     }
 
     return {
